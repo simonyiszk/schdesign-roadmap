@@ -1,0 +1,5 @@
+site_name: Roadmap
+nav:
+  - Kezdőlap: index.md
+  - Alapok: alapok.md
+theme: readthedocs
