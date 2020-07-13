@@ -1,5 +1,8 @@
-site_name: Roadmap
+site_name: schdesign Roadmap
 nav:
   - Kezdőlap: index.md
   - Alapok: alapok.md
+  - Web: web.md
+  - Grafika: grafika.md
+  - 3D: 3d.md
 theme: readthedocs
