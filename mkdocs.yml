@@ -1,8 +1,94 @@
-site_name: schdesign Roadmap
+site_name: schdesign roadmap
+site_author: schdesign
+site_description: >-
+  A Simonyi Károly Szakkollégiumban működő schdesign öntevékeny kör
+  szakmai anyagainak gyűjtőhelyéül szolgáló platform.
+
+repo_name: schdesign/roadmap
+repo_url: https://git.sch.bme.hu/schdesign/roadmap
+edit_uri: ""
+
+theme: 
+  name: null
+  custom_dir: mkdocs-material/material
+  static_templates:
+    - 404.html
+  include_search_page: false
+  search_index_only: true
+  features:
+    - tabs
+  language: hu
+  palette:
+    scheme: preference
+    primary: pink
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+  logo: img/schdesign_s_logo.svg
+  favicon: img/favicon.png
+  
+
+# Plugins
+plugins:
+  - search
+
+  # Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/schonherzdesignstudio/
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/schdesign.hu/
+    - icon: fontawesome/brands/behance
+      link: https://www.behance.net/wearethesds/
+
 nav:
   - Kezdőlap: index.md
   - Alapok: alapok.md
-  - Web: web.md
-  - Grafika: grafika.md
-  - 3D: 3d.md
-theme: readthedocs
+  - Web technológiák:
+    - HTML: web/html.md
+    - CSS: web/css.md
+    - Javascript: web/js.md
+  - Rólunk: rolunk.md
