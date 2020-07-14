@@ -1,7 +1,8 @@
 FROM python:slim
 
-RUN pip3 install mkdocs && \
-    rm -r /root/.cache
+RUN pip3 install mkdocs && \ 
+    rm -r /root/.cache && \
+    pip3 install markdown pymdown pymdown-extensions
 
 ADD . /docs/
 

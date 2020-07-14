@@ -1,0 +1,1 @@
+{"version":3,"file":"switchAll.d.ts","sourceRoot":"","sources":["../../../../src/internal/operators/switchAll.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,gBAAgB,EAAE,eAAe,EAAC,MAAM,UAAU,CAAC;AAI3D,wBAAgB,SAAS,CAAC,CAAC,KAAK,gBAAgB,CAAC,eAAe,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AACxE,wBAAgB,SAAS,CAAC,CAAC,KAAK,gBAAgB,CAAC,GAAG,EAAE,CAAC,CAAC,CAAC"}
