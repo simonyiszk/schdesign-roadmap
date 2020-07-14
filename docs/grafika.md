@@ -1,3 +1,0 @@
-#grafika divízió kezdőoldala
-
-Todo...
