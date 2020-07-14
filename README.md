@@ -39,3 +39,16 @@ Futtatáshoz:
 `docker run -it --rm --publish 8000:8000 roadmap`
 Ez a parancs elindít egy konténert a roadmap képből és annak 8000-es portját 
 kiengedi a gépedre.
+
+## Mindezt még ennél is egyszerűbben szeretnéd?
+A repo klónozása után add ki a következő parancsokat:
+```
+echo "#\!/bin/bash" > buildrun.sh
+echo "docker build -t roadmap ." >> buildrun.sh
+echo "docker run -it --rm --publish 8000:8000 roadmap" >> buildrun.sh
+chmod +x ./buildrun.sh
+./buildrun.sh
+```
+
+Ezután pedig a `./buildrun.sh` parancs kiadásával automatikusan elkészíted és
+elindítod a Docker imaget.
