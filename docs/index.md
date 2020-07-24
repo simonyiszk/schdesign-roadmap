@@ -3,24 +3,26 @@
 ##### Technikai
 
 - [x] A repo létrehozása, forduljon a projekt.
-- [ ] CI-al automatikusan fellőni egy webszerverre.
+- [ ] *WIP:* CI-al automatikusan fellőni egy webszerverre.
 - [x] Material téma integrálása.
-- [ ] Fölösleges fájlok törlése az `#!py3 mkdocs-material` mappából.
-- [ ] Extension-ök bekonfigurálása
+- [x] Material téma felülírása (szín és footer).
+- [ ] *WIP:* Extension-ök bekonfigurálása
 
 ##### Tartalmi
 
 - [ ] Az oldal általános struktúrájának kialakítása.
+- [ ] *WIP:* Markdown segédlet kódokkal együtt.
+- [ ] Oldal szerkesztéséhez segédlet megírása.
 - [ ] Webfejlesztős tartalmak feltöltése.
+- [ ] Dani-féle Blender tutorial integrálása
+- [ ] Grafikás anyagok
 - [ ] Újoncok számára hasznos tartalmak feltöltése.
 - [ ] Drive-on már meglévő hasznos doksit feltöltése.
-- [ ] Markdown segédlet kódokkal együtt.
-- [ ] Általános szerkesztői segédlet.
+- [ ] "Rólunk" szöveg megírása
 
 ##### Egyéb
 
 - [ ] Megismertetni az emberekkel a platformot.
-- [ ] Rendes nevet találni *roadmap* helyett.
 - [ ] __Design__
 
 

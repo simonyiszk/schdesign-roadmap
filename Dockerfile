@@ -2,7 +2,7 @@ FROM python:slim
 
 RUN pip3 install mkdocs && \ 
     rm -r /root/.cache && \
-    pip3 install pymdown-extensions
+    pip install mkdocs-material
 
 ADD . /docs/
 
