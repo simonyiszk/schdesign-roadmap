@@ -9,8 +9,8 @@ repo_url: https://git.sch.bme.hu/schdesign/roadmap
 edit_uri: ""
 
 theme: 
-  name: null
-  custom_dir: mkdocs-material/material
+  name: material
+  custom_dir: docs/theme
   static_templates:
     - 404.html
   include_search_page: false
@@ -36,6 +36,7 @@ plugins:
 
   # Extensions
 markdown_extensions:
+  - smarty
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
   - markdown.extensions.codehilite:
@@ -55,8 +56,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: schdesign
+      repo: roadmap
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -86,9 +87,16 @@ extra:
 
 nav:
   - Kezdőlap: index.md
-  - Alapok: alapok.md
-  - Web technológiák:
+  - Markdown Alapok: alapok.md
+  - Web:
+    - Web divízió: web/web.md
     - HTML: web/html.md
     - CSS: web/css.md
     - Javascript: web/js.md
+  - Grafika:
+    - Grafika divízió: grafika/grafika.md
+    - Hasznos oldalak: grafika/grafika-hasznos.md
+  - 3D:
+    - 3D divízió: 3d/3d.md
+    - Interfész - 1.: 3d/interfesz-1.md
   - Rólunk: rolunk.md

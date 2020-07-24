@@ -1,11 +1,32 @@
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# Markdown szerkesztési segédlet
 
-Itt egy módosítás lol
+## Fejlécek
+
+!!! example ""
+
+    === "Output"
+        ## h2 header
+        ### h3 header
+        #### h4 header
+        ##### h5 header
+        ###### h6 header
+
+    === "Markdown"
+        ```
+        ## h2 header
+        ### h3 header
+        #### h4 header
+        ##### h5 header
+        ###### h6 header
+        ```
+
+!!! note
+    Jobb oldalon látható, hogy az egyes header-típusok szépen egymás alá ágyazódnak be a tartalomjegyzékben, fontossági sorrendben.
+
+!!! warning
+    A **h1 headerek** furcsán viselkednek. Minden oldalon az első lesz az oldal címe, és onnantól kezdve minden további ugyanúgy jelenik meg, mint a cím, azonban **megtöri a jobb oldali linkeket**, ezért használatuk nem ajánlott.
+
+
 ## Horizontal Rules
 
 ___
@@ -39,7 +60,6 @@ __This is bold text__
 _This is italic text_
 
 ~~Strikethrough~~
-
 
 ## Blockquotes
 
@@ -120,6 +140,36 @@ Right aligned columns
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
+
+## Tabok
+
+!!! example "Tabok példa"
+
+    === "Output"
+        === "Tab 1"
+            Markdown **content**.
+
+            Multiple paragraphs.
+
+        === "Tab 2"
+            More Markdown **content**.
+
+            - list item a
+            - list item b
+
+    === "Markdown"
+        ```
+        === "Tab 1"
+            Markdown **content**.
+
+            Multiple paragraphs.
+
+        === "Tab 2"
+            More Markdown **content**.
+
+            - list item a
+            - list item b
+        ```
 
 
 ## Links
