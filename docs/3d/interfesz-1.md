@@ -5,6 +5,8 @@
 !!! info ""
     Ez az oktatóanyag Ferenczi Róbert Magyar Blender 2.8 Tutoriál sorozatának első része alapján készült, azt kiegészítve a könnyebb kereshetőséget segítő linkekkel, a gyorsgombok gyűjteményével és néhány feladattal. Ha a leckével kapcsolatban bármi kérdésed vagy észrevételed lenne, írj a daniel.hegedus@schdesign.hu email címre, valamint ne felejtsd el likeolni a YouTube videót!
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G8zrru587Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Jelmagyarázat
 
 !!! info "Használt jelölések"
