@@ -1,0 +1,15 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = None
+indent_style = space
+indent_size = None
+trim_trailing_whitespace = None
+max_line_length = None
+
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = None
+indent_size = None

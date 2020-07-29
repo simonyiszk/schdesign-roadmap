@@ -1,14 +1,7 @@
-FROM python:slim
-
-RUN pip3 install mkdocs && \ 
-    rm -r /root/.cache && \
-    pip install mkdocs-material
+FROM squidfunk/mkdocs-material
 
 ADD . /docs/
 
 WORKDIR /docs
 
 RUN mkdocs build
-
-ENTRYPOINT ["mkdocs"]
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
