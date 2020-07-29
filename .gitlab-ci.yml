@@ -36,3 +36,6 @@ ftp:
     - master
   except:
     - tags
+  environment:
+    name: production
+    url: https://roadmap.sch.bme.hu/
