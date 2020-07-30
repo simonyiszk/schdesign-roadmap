@@ -1,5 +1,8 @@
 # Interfész - 2. rész
 
+!!! info "Friss tartalom"
+    Ez a tartalom a Blender 2.8-as vagy annál frissebb verziójához készült!
+
 ###### A lecke hossza 58 percnyi videó + gyakorlás és feladatok ~2.5 óra
 
 Ez az oktatóanyag Ferenczi Róbert Magyar Blender 2.8 Tutoriál sorozatának első része alapján készült, azt kiegészítve a könnyebb kereshetőséget segítő linkekkel, a gyorsgombok gyűjteményével és néhány feladattal. Ha a leckével kapcsolatban bármi kérdésed vagy észrevételed lenne, írj a <u>daniel.hegedus@schdesign.hu</u> email címre, valamint ne felejtsd el likeolni a YouTube videót!
