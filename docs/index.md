@@ -6,8 +6,7 @@ Szia!
 
 Nagyon örülök, hogy rátaláltál az oldalra. Gőzerőkkel fejlesztjük, rengeteg technikai és tartalmi fejlesztés van folyamatban.
 
-A roadmap projekt a [git.sch.bme.hu/schdesign/roadmap](git.sch.bme.hu/schdesign/roadmap) repoból [MkDocs](mkdocs.org) segítségével generál egy statikus
-weboldalt markdown (.md) fájlokból, amit most is éppen olvasol. :)
+A projekt a [roadmap git repóból](http://git.sch.bme.hu/schdesign/roadmap) [MkDocs](http://mkdocs.org) segítségével automatikusan generál egy statikus weboldalt markdown (.md) fájlokból, amit most is éppen olvasol. :)
 
 Ha van kedved beszállni az oldal fejlesztésébe, akkor nézz rá a git repóra. 
 A közeljövőben igyekszem minél átláthatóbbá tenni a technológiai hátteret az érdeklődők számára. Jelenleg a vonatkozó dokumentációkat célszerű böngészgetni, ha van hozzá kedved.
