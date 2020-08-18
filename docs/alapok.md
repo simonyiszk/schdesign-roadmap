@@ -1,5 +1,8 @@
 # Markdown szerkesztési segédlet
 
+!!! warning "Figyelmeztetés"
+    Ez a szekció még formázás alatt áll. Ennek ellenére hasznos információkat tartalmaz.
+
 ## Fejlécek
 
 !!! example ""
