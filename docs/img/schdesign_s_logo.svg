@@ -13,7 +13,7 @@
    sodipodi:docname="schdesign_s_logo.svg"
    width="140"
    height="140.14435"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
   <metadata
      id="metadata3837">
     <rdf:RDF>
@@ -34,15 +34,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1912"
-     inkscape:window-height="1046"
+     inkscape:window-width="1916"
+     inkscape:window-height="1039"
      id="namedview3835"
      showgrid="false"
      inkscape:zoom="3.9388819"
-     inkscape:cx="129.06547"
+     inkscape:cx="86.921531"
      inkscape:cy="81.636646"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="39"
      inkscape:window-maximized="0"
      inkscape:current-layer="Layer_1" />
   <defs
@@ -64,7 +64,7 @@
          d="m 138.73,134.63 h -110 A 43.39,43.39 0 0 1 70,104.69 43.22,43.22 0 0 1 100.65,117.37 L 119.48,98.51 A 70,70 0 0 0 26.68,93.05 68.35,68.35 0 0 0 20.5,98.53 70.33,70.33 0 0 0 10.43,111.23 69.83,69.83 0 0 0 0,145.62 v 4.9 a 70.69,70.69 0 0 0 1.24,11 h 110 a 43.39,43.39 0 0 1 -71.91,17.29 l -12.68,12.7 -6.15,6.16 a 70,70 0 0 0 99,0 69.79,69.79 0 0 0 20.5,-48.87 v -1.45 a 71,71 0 0 0 -1.27,-12.72 z m -68.73,13.5 -0.16,0.1 0.12,-0.12 v 0 0 l 0.07,0.07 z"
          id="path3825"
          inkscape:connector-curvature="0"
-         style="fill:#3d3d3d" />
+         style="fill:#f8485e;fill-opacity:1" />
     </g>
   </g>
 </svg>

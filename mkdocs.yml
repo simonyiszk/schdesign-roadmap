@@ -20,14 +20,17 @@ theme:
   language: hu
   palette:
     scheme: preference
-    primary: pink
-    accent: pink
   font:
     text: Roboto
     code: Roboto Mono
   icon:
   logo: img/schdesign_s_logo.svg
   favicon: img/favicon.png
+
+extra_javascript: 
+  - javascript/extra.js
+extra_css: 
+  - stylesheets/extra.css
   
 
 # Plugins
@@ -90,6 +93,7 @@ nav:
   - Markdown Alapok: alapok.md
   - Web:
     - Web divízió: web/web.md
+    - Első lépések: web/elso-lepesek.md
     - HTML: web/html.md
     - CSS: web/css.md
     - Javascript: web/js.md
