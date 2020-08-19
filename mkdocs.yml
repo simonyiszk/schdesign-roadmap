@@ -94,6 +94,7 @@ nav:
   - Web:
     - Web divízió: web/web.md
     - Első lépések: web/elso-lepesek.md
+    - Step by Step tutorial: web/tutorials/sbs/sbs-1.md
     - HTML: web/html.md
     - CSS: web/css.md
     - Javascript: web/js.md
