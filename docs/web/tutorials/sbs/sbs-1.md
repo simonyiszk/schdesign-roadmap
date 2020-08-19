@@ -37,9 +37,12 @@ Egészítsük ki (majdnem) teljessé a weboldalunkat:
 ```
 
 Ahogyan láthatod, sok minden egyébbel fel lett töltve a HTML fájl. Kezdjük mindjárt a legelejéről:
-- ```<head>```: Ez képezi a weboldalunknak a "fejét". Amit itt megadunk a ```<title>``` elemeken kívül, nem lesz sehol sem látható a weboldalunkon (nos, CSS-től, JS-től és néhány böngésző specifikus elemtől eltekintve, de ez majd később). Ebben a részben lesz lehetőségünk különböző keresőrobotoknak (pl. Google, Bing stb.) megadnunk a weboldalunk címét, illetve leírását. Emellett a weboldalunk ikonját is itt adhatjuk meg és ha külön fájlokkal dolgozunk, akkor azokat általában itt szoktuk importálni is.
-- ```<title>```: A böngésző tabjának a tetején az ilyen elemek közt megadott rész fog megjelenni. Érdemes odafigyelni arra, hogy célravezető és rövid legyen, mert a böngészők tetején a címnek véges helye van, illetve keresőkben ez jelenik meg a találat címeként is.
-- ```<body>```: Ez a weboldalunk "teste". Ez az, amit az átlag felhasználó látni fog. Itt készíthetjük el a weboldalnak a tetejét (header), az alját (footer) a fő részét (main), egyszóval: mindent.
+
+-  ```<head>```: Ez képezi a weboldalunknak a "fejét". Amit itt megadunk a ```<title>``` elemeken kívül, nem lesz sehol sem látható a weboldalunkon (nos, CSS-től, JS-től és néhány böngésző specifikus elemtől eltekintve, de ez majd később). Ebben a részben lesz lehetőségünk különböző keresőrobotoknak (pl. Google, Bing stb.) megadnunk a weboldalunk címét, illetve leírását. Emellett a weboldalunk ikonját is itt adhatjuk meg és ha külön fájlokkal dolgozunk, akkor azokat általában itt szoktuk importálni is.
+
+-  ```<title>```: A böngésző tabjának a tetején az ilyen elemek közt megadott rész fog megjelenni. Érdemes odafigyelni arra, hogy célravezető és rövid legyen, mert a böngészők tetején a címnek véges helye van, illetve keresőkben ez jelenik meg a találat címeként is.
+
+-  ```<body>```: Ez a weboldalunk "teste". Ez az, amit az átlag felhasználó látni fog. Itt készíthetjük el a weboldalnak a tetejét (header), az alját (footer) a fő részét (main), egyszóval: mindent.
 
 ## Ami feltűnhetett...
 
@@ -54,61 +57,71 @@ Itt van viszont egy fontos szabály: minden HTML elemet, aminek létezik záró 
 ## Még több HTML
 
 Ahogy az várható volt, még nagyon nem vagyunk készen a HTML elemek megismerésével. Rengeteg van, szóval most csak a leglényegesebbeket fogom felsorolni, amiket használni is fogunk majd:
-- ```<p>```: paragrafus, bekezdés, mintha Wordben ENTER-t nyomnál
-- ```<h1>```, ```<h2>``` ... (egészen 6-ig): címsorok. Az első van a legjobban kiemelve, a 6. a legkevésbé.
-- ```<div>```: ezzel oszthatjuk fel több egységre a weboldalunkat.
-- ```<span>```: hasonló mint a ```<div>```, csak ezzel szövegen belül osztunk fel részeket.
-- ```<a href="http://valami.hu">```: linkek megadása
-- ```<img src="logo.png" alt="logo" />```: képek megadása, nincs záró eleme
-- ```<br />```: sortörés, mintha Wordben SHIFT+ENTER-t nyomnál, nincs záró eleme
-- ```<pre>```: előre megformázott szöveget jelenít meg. Értsd: _"H   a    ilyen   a     kódot, akkor	így jelenik meg"_ (nem kezdi el kijavítani neked a szöveget, bennehagy minden szóközt, entert, tabulátort.)
+
+-  `<p>`: paragrafus, bekezdés, mintha Wordben ENTER-t nyomnál
+-  `<h1>`, `<h2>` ... (egészen 6-ig): címsorok. Az első van a legjobban kiemelve, a 6. a legkevésbé.
+-  `<div>`: ezzel oszthatjuk fel több egységre a weboldalunkat.
+-  `<span>`: hasonló mint a `<div>`, csak ezzel szövegen belül osztunk fel részeket.
+-  `<a href="http://valami.hu">`: linkek megadása
+-  `<img src="logo.png" alt="logo" />`: képek megadása, nincs záró eleme
+-  `<br />`: sortörés, mintha Wordben SHIFT+ENTER-t nyomnál, nincs záró eleme
+-  `<pre>`: előre megformázott szöveget jelenít meg. Értsd: _"H   a    ilyen   a     kódod, akkor	így jelenik meg"_ (nem kezdi el kijavítani neked a szöveget, bennehagy minden szóközt, entert, tabulátort.)
 
 És amikkel a tartalmi részt különítjük el, megkönnyítve a munkát a nyomtatóknak / weboldal alpján PDF-et készítőknek / ebook olvasóknak:
-- ```<header>```: a weboldalunk teteje "fejléce", általában itt taláhatóak meg a legfontosabb linkek
-- ```<nav>```: a weboldalnak a navigációs része (pl. tartalomjegyzék), a fejlécen belül is elhelyezkedhet
-- ```<main>``` a weboldal fő része, itt helyezkedik el a tartalmunk
-- ```<article>```: pl. a jelen cikk, amit olvasol, ebben az elemben helyezkedik el
-- ```<footer>```: a weboldal alja, ebben található meg, hogy ki készítette, ki üzemelteti az adott weboldalt, illetve a jogi cuccok.
+
+-  ```<header>```: a weboldalunk teteje "fejléce", általában itt taláhatóak meg a legfontosabb linkek
+-  ```<nav>```: a weboldalnak a navigációs része (pl. tartalomjegyzék), a fejlécen belül is elhelyezkedhet
+-  ```<main>``` a weboldal fő része, itt helyezkedik el a tartalmunk
+-  ```<article>```: pl. a jelen cikk, amit olvasol, ebben az elemben helyezkedik el
+-  ```<footer>```: a weboldal alja, ebben található meg, hogy ki készítette, ki üzemelteti az adott weboldalt, illetve a jogi cuccok.
 
 Lehet egy kicsit sok volt ez elsőre, de ez egy tanulási folyamatnak a kezdete. A ```<p>```-től ```<img />```-ig látható elemekket használjuk a leggyakrabban. A ```<br />``` és a ```<pre>``` elemeket jó, hogyha nem felejtük el, hogy léteznek. A többi elemet HTML dokumentumonként egyszer fogjuk használni (már ha helyes kódot szeretnénk írni).
 
 ## Akkor egy kezdetleges weboldal:
 
-``` html
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>My first weboldal!</title>
-	</head>
-	<body>
-		<header>
-			<img src="#" alt="logo" />
-			<nav>
-				<a>Link #1</a>
-				<a>Link #2</a>
-			</nav>
-		</header>
-		<main>
-			<article>
-				<h1>Életem első weboldala</h1>
-				<a href="https://google.com">Link a google.com-ra</a>
-				<p>Ide jönne valami "Lorem ipsum"-os szöveg, <span style="color: red;">hogy</span> jól nézzen ki. <br>Ez új sorban kezdődik</p>
-<pre>
-Ha nem itt lent kezdeném írni, hanem helyesen identálva lenne a kódban, akkor a tabulátorok miatt beljebb kezdődne a kód
-				pl. valahogy így.
-		Új sorban kezdődik, pedig nem is használtam a sortörés elemet.
-</pre>
-			</article>
-			<div>
-				<p>A cikkhez szóló hozzászólásoknak hely</p>
-			</div>
-		</main>
-		<footer>
-			<p>Valami jogi szövegnek hely</p>
-		</footer>
-	</body>
-</html>
-```
+=== "HTML"
+    ``` html
+    <!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>My first weboldal!</title>
+        </head>
+        <body>
+            <header>
+                <img src="#" alt="logo" />
+                <nav>
+                    <a>Link #1</a>
+                    <a>Link #2</a>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <h1>Életem első weboldala</h1>
+                    <a href="https://google.com">Link a google.com-ra</a>
+                    <p>
+                        Ide jönne valami "Lorem ipsum"-os szöveg, 
+                        <span style="color: red;">hogy</span> jól nézzen ki. <br> Ez új sorban kezdődik
+                    </p>
+                <pre>
+                Ha nem itt lent kezdeném írni,
+                    hanem helyesen identálva lenne a kódban, akkor
+                a tabulátorok miatt beljebb kezdődne a kód
+                                pl. valahogy így.
+                        Új sorban kezdődik, pedig nem is használtam a sortörés elemet.
+                </pre>
+                </article>
+                <div>
+                    <p>A cikkhez szóló hozzászólásoknak hely</p>
+                </div>
+            </main>
+            <footer>
+                <p>Valami jogi szövegnek hely</p>
+            </footer>
+        </body>
+    </html>
+    ```
+=== "Eredmény"
+    <iframe src="https://hardcore-kowalevski-2e0a60.netlify.app/" width="100%" style="height: 100vh;">
 
 ## Összefoglaló
 
