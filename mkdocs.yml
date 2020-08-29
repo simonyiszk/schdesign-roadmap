@@ -103,7 +103,6 @@ nav:
     - Hasznos oldalak: grafika/grafika-hasznos.md
   - 3D:
     - 3D divízió: 3d/3d.md
-    - Ferenczi Róbert sorozata:
-      - Interfész - 1.: 3d/Ferenczi Róbert sorozata/01. Kezelőfelület & Transzformációk jegyzet.md
-      - Interfész - 2.: 3d/Ferenczi Róbert sorozata/02. Szerkesztési- és Modellezési eszközök.md
+    - Interfész - 1.: 3d/interfesz-1.md
+    - Interfész - 2.: 3d/interfesz-2.md
   - Rólunk: rolunk.md
