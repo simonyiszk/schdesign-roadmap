@@ -12,7 +12,7 @@ mkdocs:
   artifacts:
     paths:
     - site
-    expire_in: 1 hour
+    expire_in: never
 
 editorconfig:
   stage: build
