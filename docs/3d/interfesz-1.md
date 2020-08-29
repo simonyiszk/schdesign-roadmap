@@ -22,7 +22,7 @@
 
 ### Felhasználói felület &rarr; https://youtu.be/G8zrru587Yc?t=43
 
-![picture](../../img/interface-1/image-20200505222332626.png)
+![picture](../img/interface-1/image-20200505222332626.png)
 
 ### Panelek
 #### Panelek átrendezése, törlése, új panel létrehozása &rarr; https://youtu.be/G8zrru587Yc?t=109
@@ -34,7 +34,7 @@
 
 #### Panelek tartalmának megváltoztatása  &rarr; https://youtu.be/G8zrru587Yc?t=171
 
-![picture](../../img/interface-1/image-20200505234107218.png)
+![picture](../img/interface-1/image-20200505234107218.png)
 
 
 #### Panelelrendezés lementése, alap panel-elrendezés visszatöltése &rarr; https://youtu.be/G8zrru587Yc?t=205
@@ -44,7 +44,7 @@
 
 ### Üzemmódok váltása (**Workspace**-ek) &rarr; https://youtu.be/G8zrru587Yc?t=255
 
-![picture](../../img/interface-1/image-20200505224241662.png)
+![picture](../img/interface-1/image-20200505224241662.png)
 
 - **Layout**          &rarr; jelenet berendezéséhez
 - **Modeling**        &rarr; Modellezés üzemmód, modellek szerkesztése
@@ -61,21 +61,21 @@
 
 A viewport nézetek közt a ``Z`` gyorsgomb segítségével lehet váltani.
 
-<img src="../../img/interface-1/image-20200505224856320.png" width="500px">
+![](../img/interface-1/image-20200505224856320.png))
 
-- **Wireframe** <img src="../../img/interface-1/image-20200505225001304.png" width="30px"> – drótvázas nézet
-- **Solid** <img src="../../img/interface-1/image-20200505225025626.png" width="30px"> – munka nézet
+- **Wireframe** ![](../img/interface-1/image-20200505225001304.png) – drótvázas nézet
+- **Solid** ![](../img/interface-1/image-20200505225025626.png) – munka nézet
   - **MatCap** &rarr; jobban láthatóvá teszi bizonyos részeit
   - **Cavity** &rarr; élek kiemelése
   - **Shadow** &rarr; árnyékok
   - **Shadeless** &rarr; árnyalás nélkül látszódjon a textúra
-- **LookDev**  <img src="../../img/interface-1/image-20200505225055292.png" width="30px"> – EEVEE engine alatt - PBR anyagokat mutat
-- **Rendered** <img src="../../img/interface-1/image-20200505225124109.png" width="30px"> – Render nézet
+- **LookDev**  ![](../img/interface-1/image-20200505225055292.png) – EEVEE engine alatt - PBR anyagokat mutat
+- **Rendered** ![](../img/interface-1/image-20200505225124109.png) – Render nézet
   - render engine váltás
   - **EEVEE** – gyorsabb
   - **Cycles** – fotorealisztikusabb, picit lassabb
     - GPU bekapcsolása &rarr; https://youtu.be/G8zrru587Yc?t=656
-    - ![](../../img/interface-1/GPU_enable.gif)
+    - ![](../img/interface-1/GPU_enable.gif)
 
 Opcionális beállítás: https://youtu.be/G8zrru587Yc?t=710 &rarr; kijelölt objektum körüli forgatás bekapcsolása/kikapcsolása
 - **Edit** &rarr; **Preferences** &rarr; **Navigation** &rarr; **Orbit Around Selection**
@@ -100,7 +100,7 @@ warning
   - Auto Perpective kikapcsolása:
     **Edit** &rarr; **Preferences** &rarr; **Navigation** &rarr; **Auto Perspective** (ezt nagyon érdemes kikapcsolni!)
 - **Quad View** (fixált elől-oldalt-felül és 3d nézet) &rarr; ``Alt + Ctrl + Q``
-  ![](../../img/interface-1/image-20200505230933230.png)
+  ![](../img/interface-1/image-20200505230933230.png)
 
 ### Transzformációk &rarr; https://youtu.be/G8zrru587Yc?t=959
 
@@ -174,15 +174,15 @@ warning
     Több olyan gyorsgomb is van, amire egy ehhez hasonló választós menü ugrik fel:
     Az ilyen fajta menüknél ha a menüt előhozó gombot (pl ``Z``) gyorsan nyomjátok le és engeditek fel, akkor megjelenve marad a menü, és csak úgy tudtok választani, ha rákattintotok ``bal egérgomb``bal a kívánt menüpontra. Azonban, ha hosszabban nyomva tartjátok a menüt előhozó gombot, és még közben ráviszitek valamelyik opcióra az egereteket, majd felengeditek a gyorsgombot, akkor ki is választódik az adott menüpont. Ez egy gyors módja a választásnak, ha már fejből tudja az ember, hogy melyik menüpont merre van. Ha mégsem akartok menüpontot választani, akkor a ``jobb egérgomb`` megnyomásával rögtön ki tudtok lépni a pie menüből. Próbáljátok ki a két verziót!
 
-![picture](../../img/interface-1/image-20200505225454861.png)
+![picture](../img/interface-1/image-20200505225454861.png)
 
 
 ## Feladatok
 
 Készíts el, az alábbiakhoz hasonló egyszerű primitív objektumokból álló képeket. Ehhez elég annyi plusz tudás, hogy új objektumot a ``Shift + A`` gyorsgombra felnyíló menü **Mesh** almenüje alól tudsz a jelenetedhez adni. Mozgasd, forgasd és méretezd a primitíveket, hogy megfelelő képet kapj, és a tanult módon járd körbe a jelenetet!
 
-![](../../img/interface-1/image-20200506000100551.png) 
-![](../../img/interface-1/image-20200506001111404.png)
+![](../img/interface-1/image-20200506000100551.png) 
+![](../img/interface-1/image-20200506001111404.png)
 
 Általában nem célszerű és nem is lehetséges mindent külön primitívekből összrakni, de sokszor jó kiindulási alapot biztosítanak nekünk a primitív objektumok. A következő részekben már megismerkedünk a szerkesztési üzemmóddal, hogy saját "építőelemeket" készíthessünk. A fentebbi kis képek elkészítésének célja inkább az alap gyorsgombok szórakoztató begyakoroltatása volt.
 
