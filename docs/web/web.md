@@ -1,5 +1,3 @@
-#Web divízió
-
 ## A divízió tevékenységéről
 
 A web divízióban webes arculatok tervezésével és elkészítésével foglalkozunk. Több visszatérő munkánk mellett (ilyenek például a Simonyi Konferencia vagy a Schönherz QPA weboldalai) mindig örömmel fogadunk megkereséseket honlapok frontendjének elkészítésére.
