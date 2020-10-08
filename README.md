@@ -32,13 +32,15 @@ kódot a docs/ mappából az mkdocs.yml fájl alapján Docker környezetben. A
 Ezt a folyamatot automatikusan végrehajtja a Git.sch CI folyamata.
 
 ## Hogyan próbálhatom ki a saját gépemen?
-A Docker kép elkészítéséhez használd a következő parancsot:
-`docker build -t roadmap .` Ez az aktuális (ponttal jelzett) mappában található Dockerfile alapján elkészíti a roadmap nevű Docker képet.
+A Docker kép elkészítéséhez használd a következő parancsot: `docker build -t
+roadmap .` Ez az aktuális (ponttal jelzett) mappában található Dockerfile
+alapján elkészíti a roadmap nevű Docker képet.
 
 Futtatáshoz:
-`docker run -it --rm --publish 8000:8000 roadmap`
+`docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 roadmap`
 Ez a parancs elindít egy konténert a roadmap képből és annak 8000-es portját 
-kiengedi a gépedre.
+kiengedi a gépedre. Ha módosítasz a forrásfájljaidon, az oldal *automatikusan
+frissül*.
 
 ### Mindezt még ennél is egyszerűbben szeretnéd?
 A repo klónozása után add ki a `./buildrun.sh` parancsot, amivel elkészíted és
