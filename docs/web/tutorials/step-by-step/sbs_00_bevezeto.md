@@ -22,5 +22,5 @@ Ha tovább szeretnél majd haladni:
 
 1. Megnézzük, mi is ez a HTML, lefektetjük a weboldalunk alapjait
 2. Kicsit szépítjük CSS-sel, megpróbáljuk megérteni a reszponzivitást
-3. Majd kísérletet teszünk a felhasználó gépét jobban leterhelni JS-tel, túllépünk a statikusságon
-4. És végül mindezt publikussá tesszük, hova tovább, stb.
+3. Majd kísérletet teszünk a felhasználó gépének a leterhelésére JS-tel, túllépünk a statikusságon
+4. És végül mindezt publikussá tesszük; hova tovább?; stb.
