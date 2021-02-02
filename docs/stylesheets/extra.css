@@ -2,7 +2,9 @@
 
 :root {
     --md-primary-fg-color:        #3d3d3d;
-    --md-primary-fg-color--light: #3d3d3d;
+    /* Ezzel a színnel olvashatatlanak a linkek :( */
+    /*--md-primary-fg-color--light: #3d3d3d;*/
+    --md-primary-fg-color--light: #7b88cc;
     --md-primary-fg-color--dark:  #3d3d3d;
 
     --md-accent-fg-color: #f8485e;
