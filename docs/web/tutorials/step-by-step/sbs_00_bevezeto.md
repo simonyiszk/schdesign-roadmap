@@ -16,7 +16,7 @@ Opcionális:
 Ha tovább szeretnél majd haladni:
 
 - GitHub felhasználó
-- Valamilyen terminál, amibe tudsz `git` parancsokat írni és értelmezi
+- Valamilyen terminál, amibe tudsz `git` parancsokat írni és ezt értelmezi neked
 
 ## Mit is fogunk pontosan csinálni
 
@@ -24,3 +24,13 @@ Ha tovább szeretnél majd haladni:
 2. Kicsit szépítjük CSS-sel, megpróbáljuk megérteni a reszponzivitást
 3. Majd kísérletet teszünk a felhasználó gépének a leterhelésére JS-tel, túllépünk a statikusságon
 4. És végül mindezt publikussá tesszük; hova tovább?; stb.
+
+## Környezet
+
+Lesz egy gyökér mappánk *(step-by-step)*, aminek lesz 3 darab almappája *(css, img, js)*.
+
+Az alábbi mappa/fájlstruktúrát fogjuk használni:
+
+<img src="/web/tutorials/step-by-step/sbs_00_mappa-struktura.png">
+
+Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva *(hanem pl. ASCII)*, akkor változtassuk meg azt UTF-8-ra.
