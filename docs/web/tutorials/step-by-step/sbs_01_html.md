@@ -53,7 +53,7 @@ Viszont, amint más más elemeket akarunk közrefogni, akkor sokkal inkább ajá
 
 ## Ahol minden elkezdődik: *index.html*
 
-Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.html` legyen a kiterjesztése *(pl. Windows szereti a .txt végződést elrejteni)*. Nyissuk meg kedvenc szövegszerkesztőnkben *(igen, akár Notepad-ban is)*, majd gépeljük le az alábbi sorokat:
+Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.html` legyen a kiterjesztése *(pl. Windows szereti a .txt végződést elrejteni)* a projektunk gyökér könyvtárában *(step-by-step)*. Nyissuk meg kedvenc szövegszerkesztőnkben *(igen, akár Notepad-ban is)*, majd gépeljük le az alábbi sorokat:
 
 !!! example ""
     === "index.html"
