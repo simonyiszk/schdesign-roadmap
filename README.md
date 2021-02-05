@@ -45,3 +45,22 @@ frissül*.
 ### Mindezt még ennél is egyszerűbben szeretnéd?
 A repo klónozása után add ki a `./buildrun.sh` parancsot, amivel elkészíted és
 elindítod a Docker imaget.
+
+
+### Windows cuccos
+
+Ellenőrizd le, hogy a Windows felhasználód benne van-e a `docker-users` csoportban.
+
+*(Windows keresőbe)* Computer Management -> *(megnyílik a program)* -> Computer Management -> System tools -> Local Users and Groups -> Groups -> docker-users *(dupla klikk)*
+
+Add hozzá magad, ha nem vagy a listán. Jelentkezz ki, majd lépj be újra, hogy a módosítás érvényesüljön.
+
+``` PowerShell
+git clone git@git.sch.bme.hu:schdesign/roadmap.git
+cd .\roadmap\
+git checkout -b uj-branch-neve
+docker build -t roadmap .
+docker run -it -v "${PWD}:/docs" --rm --publish 8000:8000 roadmap
+```
+
+Ezt követően a http://localhost:8000/ címen lesz elérhető a weboldal.
