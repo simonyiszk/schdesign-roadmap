@@ -9,7 +9,7 @@ Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegend
 
 ## A nyelv építőelemei
 
-<img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgba(0,0,0,0.4)" />
+<img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
 
 Egy HTML elem *(HTML tag)* 3 részre lehet bontani: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
 ``` HTML
@@ -87,7 +87,7 @@ Egy kis értelmezés a fentihez:
 
 Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
 
-<img src="/web/tutorials/step-by-step/sbs_01_html_document.png" style="background-color: rgba(0,0,0,0.2)" />
+<img src="/web/tutorials/step-by-step/sbs_01_html_document.png" style="background-color: rgb(33, 34, 44);" />
 
 !!! warning "Erre figyelj"
     A böngészők nem mindig helyes HTML kódot kapnak *(pl. elfelejtettük/elgépeltük a záró elemet; indokolatlanul sok szóköz van egy szövegben stb.)*. Érdekes módon, ilyenkor is valamennyire *"helyesen"* fog megjelenni a weboldal. Ez azért van, mert a böngészők mielőtt elkezdenék megjeleníteni az oldalt, megpróbálják a hibákat javítani *(pl. lezárják a le nem zárt elemeket; kitörlik az indokolatlanul sok szóközt; stb.)*. Így abban a tudatban tudsz tovább haladni, hogy minden rendben és a hibák csak később lesznek láthatóak *(vagy soha)*.
@@ -114,7 +114,7 @@ Ezeken kívül nem nagyon szoktunk más elemekkel találkozni a `<head>`-en bel�
 
 ## Egy kicsit bővebben: `<body>`
 
-Most nézzek meg jobban a `<body>`-t is.
+Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 
 ``` HTML
 <body>
@@ -148,12 +148,12 @@ Most nézzek meg jobban a `<body>`-t is.
 | `<main>` | A weboldal fő tartalmát tartalmazza; a weboldal közepe |
 | `<footer>` | Jogi nyilatkozat, kapcsolattartási linkek, stb.; a weboldal alja |
 | `<nav>` | Navigációs linkeket foglal egybe; az adott oldalnak a főbb pontjait foglalja egybe; a weboldal főbb aloldalait foglalja egybe |
-| `<a>` | Egy link, amire rákattinta át lesz irányítva a felhasználó |
-| `<h1>`, `<h2>`, ... , `<h6>` | Cím, 1-es a legnagyobb, 6-os a legkisebb |
+| `<a>` | Egy link, amire rákattintva át lesz irányítva a felhasználó |
+| `<h1>`, `<h2>`, ... , `<h6>` | Fejlécek, 1-es a legnagyobb, 6-os a legkisebb |
 | `<p>` | Egy bekezdés / paragrafus |
 | `<img>` | Képeket tudunk elhelyezni a dokumentumban, nem kell lezárni |
 
-## Kiemelt HTML attribútumok: *id*, *class*
+## Kiemelt HTML attribútumok: *id*, *class*, *style*
 
 Egyetlen egyszer sem használtuk még az `id` és `class` attribútumokat, de most mégis egy kiemelt helyet fogunk nekik adni. Ahhoz, hogy komolyabban tudjunk majd CSS-sel és JavaScripttel foglalkozni, szükséges ennek a két attribútumnak az ismerete. Ugyanis ezeknek az ismeretével, használatával fogunk tudni hatékonyabban dolgozni. Nem biztos, hogy itt, ebben a tutorialban, de a jövőben minden biztosan.
 
@@ -162,7 +162,7 @@ Egyetlen egyszer sem használtuk még az `id` és `class` attribútumokat, de mo
 Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értékének egyedinek kell lennie. Nem lehet két HTML elem ugyan azzal az id-val egy dokumentumban. Nagyon jól tud jönni, ha sok hasonló közül egy elemet szeretnénk kiemelni, vagy ha már nagyon mélyen vagyunk egy HTML dokumentumban és nem kell észben tartani, hogy minek a leszármazottja. Egy elemnek maximum egy id-ja lehet.
 
 ``` HTML
-<valamilyen-elem id="Ez-egy-egyedi-szöveg"></valamilyen-elem>
+<elem id="Ez-egy-egyedi-szöveg"></elem>
 ```
 
 !!! warning "Erre figyelj"
@@ -173,13 +173,33 @@ Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értéké
 Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének nem szükséges egyedinek lennie. Lehet két HTML elemnek ugyan az a class-a egy dokumentumban. Konkrét megjelenési/viselkedési tulajdonságokkal ruházunk fel velük HTML elemeket. Egy elemnek lehet több class-a is. Ahogyan láthatjuk, kvázi az id ellentéte a class.
 
 ``` HTML
-<valamilyen-elem class="piros dolt felkover alahuzott"></valamilyen-elem>
+<elem class="piros dolt felkover alahuzott"></elem>
 ```
 
 !!! warning "Erre figyelj"
     Egy elemnek lehet több class-a, illetve egy class-t más elemeknél is újrahasználhatjuk
 
+### style
+
+Ezt az attribútumot is megkaphatja mindegyik HTML elem, de a funkciója túlmutat a HTML-en. A következő *(CSS)* részben olvashatsz róla bővebben. 
+
+Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel tudunk benne sorolni `attibutum: ertek;` formában.
+
+``` html
+<elem style="attr1: valami; attr2: 12;">
+```
+
 ## Összegzés
+
+- Egy HTML dokumentum `<elem>`-ből épül fel.
+- Egy HTML elemnek vagy van lezáró eleme, vagy nincs.
+- A kezdő elemben lehet megadni különböző attribútumokat
+- Ha rosszul írsz valamit, akkor a böngésző nem fog rád szólni
+- `<head>`-en belül találhatóak meg egy HTML dokumentumnak a metaadatai
+- `<body>`-n belül található meg a HTML dokumentum fő része
+- `id`-nak egyedi értéket kell adni
+- `class`-szal közös viselkedési, megjelenési formákat írunk le
+- `style`-lal további attribútumokat tudunk felsorolni
 
 ### Végleges kód
 
