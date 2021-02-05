@@ -7,7 +7,7 @@ Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezd
 
 ## A nyelv építőelemei
 
-<img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" />
+<img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgba(0,0,0,0.4)" />
 
 Egy HTML elem *(HTML tag)* 3 részre lehet bontani: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
 
