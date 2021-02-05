@@ -82,7 +82,7 @@ Egy kis értelmezés a fentihez:
 | ----------- | ---------------------------------------------------------------------------------------- |
 | `<!DOCTYPE>` | A dokumentum típusát adja meg *(jelen esetben ez HTML)* |
 | `<html>`    | A HTML dokumentum gyökere, minden ebből fog leszármazni |
-| `<head>`    | A dokumentum metaadatait, információit tartalmazza |
+| `<head>`    | A dokumentum metaadatait, információit, kapcsolatait tartalmazza |
 | `<body>`    | A dokumentum *"teste"*, ez fogja közre mindazt, amit a felhasználó látni fog |
 
 Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
@@ -94,7 +94,7 @@ Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biz
 
 ## Egy kicsit bővebben: `<head>`
 
-Az előző táblázatból kiderül, hogy különféle metaadatok fognak itt helyet kapni. De mik is ezek?
+Az előző táblázatból kiderül, hogy különféle metaadatok/kapcsolatok fognak itt helyet kapni. De mik is ezek?
 
 ``` HTML
 <head>
@@ -127,6 +127,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
         </nav>
     </header>
     <main>
+        <!-Ez egy komment, ami ezen belül van, azt figyelmen kívül hagyja a böngésző-!>
         <article>
             <nav>
                 <a href="#elso-bekezdes"></a>
@@ -144,6 +145,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 
 | HTML elem   | Mire használjuk |
 | ----------- | ---------------------------------------------------------------------------------------- |
+| `<!- ... -!>` | Komment, más nyelvekhez haosnlóan ez figyelmen kívül lesz hagyva |
 | `<header>` | A weboldalunk logóját, főbb linkjeit gyűjtjük benne össze; tartalomjegyzék stb.; a weboldal teteje |
 | `<main>` | A weboldal fő tartalmát tartalmazza; a weboldal közepe |
 | `<footer>` | Jogi nyilatkozat, kapcsolattartási linkek, stb.; a weboldal alja |
