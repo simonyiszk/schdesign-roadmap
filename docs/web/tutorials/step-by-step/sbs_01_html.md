@@ -1,6 +1,8 @@
 # HTML
 
-Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezdődik. Ez nem egy programozási nyelv, hanem egy leíró nyelv. Az ilyen típusú dokumentumoknak a kiterjesztése rendre `.html` vagy `.htm` szokott lenni. Ezek közül az előbbi van sokkal jobban elterjedve.
+Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezdődik. Ez nem egy programozási nyelv, hanem egy leíró nyelv. Az ilyen típusú egyszerű szöveges dokumentumoknak a kiterjesztése rendre `.html` vagy `.htm` szokott lenni. Ezek közül az előbbi van sokkal jobban elterjedve.
+
+Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegendő akár a Windows-os Notepad.
 
 !!! note "Megjegyzés"
     A C és más programozási nyelvekhez hasonlóan ebben is lehet kommentelni. Sőt, ha elég távolra tévedünk, akkor még feltételes elemekkel *[(conditional comments)](https://htmldog.com/guides/html/advanced/conditionalcomments/)* is találkozhatunk.
@@ -10,8 +12,19 @@ Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezd
 <img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgba(0,0,0,0.4)" />
 
 Egy HTML elem *(HTML tag)* 3 részre lehet bontani: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
+``` HTML
+<tag szín="kék">Ez egy kék szöveg</tag> <!-szín: kék, hidden: false-!>
+<tag hidden>Ezt a böngésző nem fogja megjeleníteni</tag> <!-hidden: true-!>
+```
 
 A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De viszont elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése az ilyen elemeknek. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
+
+``` HTML
+<!-A HTML elemek lezárásának 3 fajtája: -!>
+<tag></tag>
+<tag>
+<tag />
+```
 
 !!! note "Megjegyzés"
     A HTML-nek létezik egy XHTML nevű variánsa, amiben viszont kötelező kirakni a `/` jelet, így ott csak az `<elem>...</elem>` és a `<elem />` helyes.
@@ -49,8 +62,6 @@ Viszont, amint más más elemeket akarunk közrefogni, akkor sokkal inkább ajá
 !!! note "Megjegyzés"
     A fenti példában az identálásnak köszönhetően azonnal leolvasható egyfajta leszármazottsági rendszer. Az `<elem>`-nek van egy közvetlen leszármazottja: `<masik-elem>`, és egy közvetett leszármazottja: `<egyeb-elem>`. Illetve, az `<elemek>`-nek három leszármazottja van: `<elem-egy>`, `<elem-ketto>`, `<elem-harom>`.
 
-
-
 ## Ahol minden elkezdődik: *index.html*
 
 Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.html` legyen a kiterjesztése *(pl. Windows szereti a .txt végződést elrejteni)* a projektunk gyökér könyvtárában *(step-by-step)*. Nyissuk meg kedvenc szövegszerkesztőnkben *(igen, akár Notepad-ban is)*, majd gépeljük le az alábbi sorokat:
@@ -74,7 +85,9 @@ Egy kis értelmezés a fentihez:
 | `<head>`    | A dokumentum metaadatait, információit tartalmazza |
 | `<body>`    | A dokumentum *"teste"*, ez fogja közre mindazt, amit a felhasználó látni fog |
 
-Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biztos, hogy ezekből az elemekből épül fel.
+Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
+
+<img src="/web/tutorials/step-by-step/sbs_01_html_document.png" style="background-color: rgba(0,0,0,0.2)" />
 
 !!! warning "Erre figyelj"
     A böngészők nem mindig helyes HTML kódot kapnak *(pl. elfelejtettük/elgépeltük a záró elemet; indokolatlanul sok szóköz van egy szövegben stb.)*. Érdekes módon, ilyenkor is valamennyire *"helyesen"* fog megjelenni a weboldal. Ez azért van, mert a böngészők mielőtt elkezdenék megjeleníteni az oldalt, megpróbálják a hibákat javítani *(pl. lezárják a le nem zárt elemeket; kitörlik az indokolatlanul sok szóközt; stb.)*. Így abban a tudatban tudsz tovább haladni, hogy minden rendben és a hibák csak később lesznek láthatóak *(vagy soha)*.
@@ -208,9 +221,12 @@ Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének n
 
 ## Kvíz a tanultakhoz
 
-/* Ide be lehetne illeszteni, egy Google Forms-t, amit kvíznek állítunk be */
+<iframe width="640" height="886" src="https://docs.google.com/forms/d/e/1FAIpQLSeVjDyJ-0DKm3oaD6dO7WzZTZAetoU6JUIipXb3t0dly7RTUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
+
+<iframe width="640px" height= "1000px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=q0g1anB1cUKRqFjaAGlwKUmQdzbz_jpGrVQfQsP9IFFURFk0RlhQWUM5TElZNDEzV0VQRlROUE1JTy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 ## TODO
 
 - Kódokhoz előnézet
 - Linkek átírása
+
