@@ -245,7 +245,7 @@ Ezen felül bevett szokás `<header>`-ben a logót bal oldalra, a linkeket jobb 
 
 Szerencsénkre `flex`-szel mindezt nagyon egyszerűen el tudjuk érni.
 
-#### Magic, amivel (majdnem) minden bajunk megoldódik
+#### Flex, amivel (majdnem) minden bajunk megoldódik
 
 ``` css
 body {
@@ -269,10 +269,39 @@ footer {
 }
 main {
     align-self: center;
-    margin: 10px;
+    padding: 10px;
     margin: 10px;
 }
 ```
 
+| Tulajdonság | Mire való |
+| - | - |
+| display | Milyen módon jelenjen meg az adott elem |
+| flex-direction | Milyen irányba helyezze el a leszármazottakat |
+| flex | A tartalomhoz mérten mekkorára nyúljon az elem |
+| justify-content | A tartalom horizontálisan/vertikálisan hol helyezkedjen el |
+| align-self | Önmagát helyezi el vertikálisan/horizontálisan |
+
+Lehet, hogy elsőre bonyolultnak tűnik, de ha megnéznénk, mi volt HTML5 és CSS3 előtt, akkor biztosan mindenki a fenti megoldást választaná.
+
+Akkor most szavakkal, hogy mi is történt:
+
+Mivel a `<header>`, `<main>` és `<footer>` a `<body>`-ból származnak le, ezért ezt a külső *"konténert"* beállítjuk, hogy *flex*-ként viselkedjen és oszlopszerűen jelenítse meg a tartalmát.
+
+A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex* legyen, de sorban jelenítse meg a leszármazottakat. A benne lévő `<img>`-et felhasználjuk arra, hogy jobbra tolja a linkeket.
+
+`<footer>`-t a headerhöz hasonlóan *flex*-ként megjelenítjük és a tartalmát középre rendezzük.
+
+A `<main>` meg szimplán középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
+
+#### Tegyük láthatóbbá eddigi munkánkat
+
+Adjunk a `<header>`, `<main>` és `<footer>`-nek egy szürke hátteret:
+
+``` css
+header, main, footer {
+    background-color: gray;
+}
+```
 
 ### Nem is olyan rossz dolog ez a metrikus rendszer

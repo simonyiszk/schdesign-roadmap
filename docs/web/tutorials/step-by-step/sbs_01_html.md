@@ -130,8 +130,8 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
         <!-Ez egy komment, ami ezen belül van, azt figyelmen kívül hagyja a böngésző-!>
         <article>
             <nav>
-                <a href="#elso-bekezdes"></a>
-                <a href="#masodik-bekezdes"></a>
+                <a href="#elso-bekezdes">elso bekezdes</a>
+                <a href="#masodik-bekezdes">masodik bekezdes</a>
             </nav>
             <h1>Ez a cikk címe</h1>
             <p>Valami bevezetőnek a bekezdése</p>
@@ -227,8 +227,8 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
                 <main>
                     <article>
                         <nav>
-                            <a href="#elso-bekezdes"></a>
-                            <a href="#masodik-bekezdes"></a>
+                            <a href="#elso-bekezdes">elso bekezdes</a>
+                            <a href="#masodik-bekezdes">masodik bekezdes</a>
                         </nav>
                         <h1>Ez a cikk címe</h1>
                         <p>Valami bevezetőnek a bekezdése</p>
