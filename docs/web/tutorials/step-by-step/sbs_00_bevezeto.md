@@ -25,12 +25,18 @@ Ha tovább szeretnél majd haladni:
 3. Majd kísérletet teszünk a felhasználó gépének a leterhelésére JS-tel, túllépünk a statikusságon
 4. És végül mindezt publikussá tesszük; hova tovább?; stb.
 
+### Előnézet
+
+<iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/vegleges/index.html"></iframe>
+
 ## Környezet
 
-Lesz egy gyökér mappánk *(step-by-step)*, aminek lesz 3 darab almappája *(css, img, js)*.
+Lesz egy gyökér mappánk *(step-by-step)*, amiben létre fogjuk hozni az általunk használandó fájlokat.
 
-Az alábbi mappa/fájlstruktúrát fogjuk használni:
+Az alábbi fájlstruktúrát fogjuk használni:
 
-<img src="/web/tutorials/step-by-step/sbs_00_mappa-struktura.png">
+<img src="/web/tutorials/step-by-step/sbs_00_fajlok.png">
 
 Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva *(hanem pl. ASCII)*, akkor változtassuk meg azt UTF-8-ra.
+
+A képeket *(cat.jpg, logo.png, logo.svg)* és a szövegtípus fájlt *(Roboto-Regular.ttf)* nem kell létrehozni, azokat majd az internetről fogjuk letölteni.

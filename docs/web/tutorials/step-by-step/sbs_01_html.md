@@ -11,10 +11,10 @@ Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegend
 
 <img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
 
-Egy HTML elem *(HTML tag)* 3 részre lehet bontani: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
+Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
 ``` HTML
-<tag szín="kék">Ez egy kék szöveg</tag> <!-szín: kék, hidden: false-!>
-<tag hidden>Ezt a böngésző nem fogja megjeleníteni</tag> <!-hidden: true-!>
+<tag szín="kék">Ez egy kék szöveg</tag> <!--szín: kék, hidden: false-->
+<tag hidden>Ezt a böngésző nem fogja megjeleníteni</tag> <!--hidden: true-->
 ```
 
 A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De viszont elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése az ilyen elemeknek. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
@@ -41,7 +41,7 @@ Szöveg esetén érdemes egy sorba írni mindent:
 <elem szin="fehér">Ez egy szöveg</elem>
 ```
 
-Viszont, amint más más elemeket akarunk közrefogni, akkor sokkal inkább ajánlott az új sorban kezdés és identálás *(általában egy tabulátor vagy valamennyi szóköz)*.
+Viszont, amint más-más elemeket akarunk közrefogni, akkor sokkal inkább ajánlott az új sorban kezdés és identálás *(általában egy tabulátor vagy valamennyi szóköz)*.
 
 ``` HTML
 <elem>
@@ -99,7 +99,7 @@ Az előző táblázatból kiderül, hogy különféle metaadatok/kapcsolatok fog
 ``` HTML
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://a-weboldal-logoja.hu/egy/utvonal/logo.png">
+    <link rel="icon" href="/eleresi_ut_a/logohoz.png">
     <title>Ez a weboldalam címe</title>
 </head>
 ```
@@ -119,7 +119,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 ``` HTML
 <body>
     <header>
-        <img src="http://weboldalunk.hu/img/logo.png" alt="A weboldalnak a logója">
+        <img src="http://weboldalunk.hu/img/logo.png" alt="Ha a kép nem elérhető, akkor ezt a szöveget fogja látni a felhasználó">
         <nav>
             <a href="http://weboldalunk.hu/fooldal">Főoldal</a>
             <a href="http://weboldalunk.hu/rolunk">Rólunk</a>
@@ -127,7 +127,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
         </nav>
     </header>
     <main>
-        <!-Ez egy komment, ami ezen belül van, azt figyelmen kívül hagyja a böngésző-!>
+        <!--Ez egy komment, ami ezen belül van, azt figyelmen kívül hagyja a böngésző-->
         <article>
             <nav>
                 <a href="#elso-bekezdes">elso bekezdes</a>
@@ -145,7 +145,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 
 | HTML elem   | Mire használjuk |
 | ----------- | ---------------------------------------------------------------------------------------- |
-| `<!- ... -!>` | Komment, más nyelvekhez haosnlóan ez figyelmen kívül lesz hagyva |
+| `<!-- ... -->` | Komment, más nyelvekhez haosnlóan ez figyelmen kívül lesz hagyva |
 | `<header>` | A weboldalunk logóját, főbb linkjeit gyűjtjük benne össze; tartalomjegyzék stb.; a weboldal teteje |
 | `<main>` | A weboldal fő tartalmát tartalmazza; a weboldal közepe |
 | `<footer>` | Jogi nyilatkozat, kapcsolattartási linkek, stb.; a weboldal alja |
@@ -191,6 +191,74 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
 <elem style="attr1: valami; attr2: 12;">
 ```
 
+## Bővítsük ki a `<body>`-t
+
+``` html
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.svg" alt="A weboldalnak a logója">
+        </div>
+        <nav>
+            <a href="#">Link #1</a>
+            <a href="#">Link #2</a>
+            <a href="#">Link #2</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="title">Egy online jegyzet</h1>
+        <h2 id="tartalomjegyzek">Tartalomjegyzék</h2>
+        <nav>
+            <ol start="0">
+                <li>
+                    <a href="#tartalomjegyzek">Tartalomjegyzék</a>
+                </li>
+                <li>
+                    <a href="#elso-fejezet">Első fejezet</a>
+                    <ol>
+                        <li>
+                            <a href="#elso-alfejezet">Első alfejezet</a>
+                        </li>
+                        <li>
+                            <a href="#masodik-alfejezet">Második alfejezet</a>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+        <article>
+            <section>
+                <h1 id="elso-fejezet">Első fejezet</h1>
+                <p>Ezt majd később feltöltjük.</p>
+            </section>
+            <section>
+                <h2 id="elso-alfejezet">Első alfejezet</h2>
+                <p>Ezt majd később feltöltjük.</p>
+                <img src="cat.jpg">
+                <p class="img-caption">Ez egy magyarázat a képhez</p>
+                <p>Ezt majd később feltöltjük.</p>    
+            </section>
+            <section>
+                <h2 id="masodik-alfejezet">Második alfejezet</h2>
+                <p>Ezt majd később feltöltjük.</p>
+            </section>
+        </article>
+    </main>
+    <footer>valami jogi &copy; szöveg</footer>
+</body>
+```
+
+Mik az új elemek:
+
+| HTML elem   | Mire használjuk |
+| ----------- | ---------------------------------------------------------------------------------------- |
+| `<div>` | egy általános nevő HTML elem, id-n és CSS-en keresztül fog értelmet kapni; a logót ez lesz a konténere |
+| `<ol>` | "ordered list"; számozott lista |
+| `<li>` | "list elem"; egy számozott/számozatlan listának az eleme |
+| `<section>` | szekció; az egyes fejezeteket/kiemelendő részeket fogjuk bennük tárolni |
+
+Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a tartalomjegyzék egy elemére kattintva a felhasználó az adott fejezethez irányítva.
+
 ## Összegzés
 
 - Egy HTML dokumentum `<elem>`-ből épül fel.
@@ -212,28 +280,57 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
         <html>
             <head>
                 <meta charset="UTF-8">
-                <link rel="icon" href="https://a-weboldal-logoja.hu/egy/utvonal/logo.png">
+                <link rel="icon" href="logo.svg">
                 <title>Ez a weboldalam címe</title>
             </head>
-            <body>            
+            <body>
                 <header>
-                    <img src="http://weboldalunk.hu/img/logo.png" alt="A weboldalnak a logója">
+                    <div id="logo">
+                        <img src="logo.svg" alt="A weboldalnak a logója">
+                    </div>
                     <nav>
-                        <a href="http://weboldalunk.hu/fooldal">Főoldal</a>
-                        <a href="http://weboldalunk.hu/rolunk">Rólunk</a>
-                        <a href="http://weboldalunk.hu/kapcsolat">Kapcsolat</a>
+                        <a href="#">Link #1</a>
+                        <a href="#">Link #2</a>
+                        <a href="#">Link #2</a>
                     </nav>
                 </header>
                 <main>
+                    <h1 id="title">Egy online jegyzet</h1>
+                    <h2 id="tartalomjegyzek">Tartalomjegyzék</h2>
+                    <nav>
+                        <ol start="0">
+                            <li>
+                                <a href="#tartalomjegyzek">Tartalomjegyzék</a>
+                            </li>
+                            <li>
+                                <a href="#elso-fejezet">Első fejezet</a>
+                                <ol>
+                                    <li>
+                                        <a href="#elso-alfejezet">Első alfejezet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#masodik-alfejezet">Második alfejezet</a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </nav>
                     <article>
-                        <nav>
-                            <a href="#elso-bekezdes">elso bekezdes</a>
-                            <a href="#masodik-bekezdes">masodik bekezdes</a>
-                        </nav>
-                        <h1>Ez a cikk címe</h1>
-                        <p>Valami bevezetőnek a bekezdése</p>
-                        <h2>Ez egy alcím</h2>
-                        <p>Itt már valami másról is írhatunk</p>
+                        <section>
+                            <h1 id="elso-fejezet">Első fejezet</h1>
+                            <p>Ezt majd később feltöltjük.</p>
+                        </section>
+                        <section>
+                            <h2 id="elso-alfejezet">Első alfejezet</h2>
+                            <p>Ezt majd később feltöltjük.</p>
+                            <img src="cat.jpg">
+                            <p class="img-caption">Ez egy magyarázat a képhez</p>
+                            <p>Ezt majd később feltöltjük.</p>    
+                        </section>
+                        <section>
+                            <h2 id="masodik-alfejezet">Második alfejezet</h2>
+                            <p>Ezt majd később feltöltjük.</p>
+                        </section>
                     </article>
                 </main>
                 <footer>valami jogi &copy; szöveg</footer>
@@ -249,6 +346,8 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
 
 ## TODO
 
+- Normális kvíz
+- Egyszerűbb fogalmazás? / Kisebb lépések?
 - Kódokhoz előnézet
 - Linkek átírása
 
