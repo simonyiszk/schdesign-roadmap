@@ -619,9 +619,10 @@ footer {
 
 ## Összegzés
 
-- szelektorokon keresztül meghatározzuk, hogy mit akarank megváltoztatni
-- `{...}` belül `tulajdonság: érték;` formában felsoroljuk a változtatásokat
-- Ha többször szerepel egy tulajdonság, akkor a legutolsó értéke fog érvényesülni
+- `<link>`-eket felhasználva tudjuk hozzáadni a CSS fájlokat a HTML dokumentumunkhoz.
+- szelektorokon keresztül meghatározzuk, hogy mit akarank megváltoztatni.
+- `{...}` belül `tulajdonság: érték;` formában felsoroljuk a változtatásokat.
+- Ha többször szerepel egy tulajdonság, akkor a legutolsó értéke fog érvényesülni.
 
 ## Végleges kód
 
@@ -801,3 +802,6 @@ footer {
             justify-content: center;
         }
         ```
+
+!!! note "Megjegyzés"
+    A CSS fájlokban sok nagyon feladat specifikus szelektor lett használva, így a kódot nem nagyon lehet egyszerűen újra felhasználni.
