@@ -338,12 +338,12 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            main.style.marginTop = "70px";
-        } else {
-            header.classList.remove("sticky");
-            main.style.marginTop = "20px";
-        }
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                main.style.marginTop = "70px";
+            } else {
+                header.classList.remove("sticky");
+                main.style.marginTop = "20px";
+            }
         }
         ```
