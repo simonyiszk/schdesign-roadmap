@@ -704,7 +704,8 @@ footer {
             background-color: rgb(240, 240, 240);
         }
         header {
-            background-color: rgb(136, 99, 64);box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            background-color: rgb(136, 99, 64);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         }
         header > nav > a {
             color: white;
