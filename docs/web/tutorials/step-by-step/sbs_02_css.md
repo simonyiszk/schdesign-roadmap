@@ -619,6 +619,10 @@ footer {
 
 ## Összegzés
 
+- szelektorokon keresztül meghatározzuk, hogy mit akarank megváltoztatni
+- `{...}` belül `tulajdonság: érték;` formában felsoroljuk a változtatásokat
+- Ha többször szerepel egy tulajdonság, akkor a legutolsó értéke fog érvényesülni
+
 ## Végleges kód
 
 !!! example ""
