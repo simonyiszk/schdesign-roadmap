@@ -637,7 +637,6 @@ footer {
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
-                <!-- Itt adjuk a böngésző tudtára, hogy létezik egy css fájlunk is, amit használni szeretnénk -->
                 <link rel="stylesheet" href="layout.css"> 
                 <link rel="stylesheet" href="style.css"> 
                 <title>Ez a weboldalam címe</title>

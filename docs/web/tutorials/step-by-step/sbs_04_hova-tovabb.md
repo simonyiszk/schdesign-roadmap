@@ -111,7 +111,7 @@ Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni,
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
-                <!-- Itt adjuk a böngésző tudtára, hogy létezik egy css fájlunk is, amit használni szeretnénk -->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" href="layout.css"> 
                 <link rel="stylesheet" href="style.css"> 
                 <link rel="stylesheet" href="responsive.css">
