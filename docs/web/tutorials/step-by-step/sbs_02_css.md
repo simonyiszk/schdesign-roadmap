@@ -24,7 +24,7 @@ valami {
 }
 ```
 
-A `valami`-t *szelektor*-nak hívjuk. Ezzel fogjuk megmondani a böngésző számára, hogy ha egy olyan HTML elemet találna, amire illik a szelektorban meghatározott feltétel, akkor a `{..}`-en *(deklaráción)* belül lévő tulajdonságokat alkalmazza rá a megadott értékekkel.
+A `valami`-t *szelektor*-nak *(selector)* hívjuk. Ezzel fogjuk megmondani a böngésző számára, hogy ha egy olyan HTML elemet találna, amire illik a szelektorban meghatározott feltétel, akkor a `{..}`-en *(deklaráción)* belül lévő tulajdonságokat alkalmazza rá a megadott értékekkel.
 
 Szóval igazából ezt fogjuk csinálni, amikor CSS-t írunk:
 
@@ -49,23 +49,23 @@ Szelektorokat rengeteg féle képpen meg lehet adni. Ezekhez nézzünk meg egy l
 | `elem1, elem2 {...}` | Minden `<elem1>`-re és `<elem2>`-re a HTML dokumentumban |
 | `elem:first-child` | Az `<elem>` első leszármazottjára |
 
-És ezek nem állnak meg 2 elemnél, rengeteg elemet fel lehet sorolni egy szelektorban, amikbe általában jól bele is szoktunk zavarodni, de legalább itt van három HTML attribútum, amik segítenek *(valamennyire)*. Többségében ezekből, ezeknek a variációiból fogunk építkezni.
+És ezek nem állnak meg 2 elemnél, rengeteg elemet fel lehet sorolni egy szelektorban, amikbe általában bele is szoktunk zavarodni, de legalább itt van három HTML attribútum, amik segítenek *(valamennyire)*. Többségében a fentiekből, ezeknek a variációiból fogunk építkezni.
 
 ### flashback: *id*, *class*, *style*
 
-Ugye az `id`-nak a lényege, hogy egyedi, a `class`-nak, hogy adott tulajdonságokkal tud felruházni, a `style`-nak meg mi is?
+Ugye az `id`-nak a lényege, hogy egyedi, a `class`-nak, hogy többen használhatják, a `style`-nak meg mi is?
 
 #### `id`
 
 | Szelektor | Mire fog hatni |
 | --------- | ---------- |
-| `#valami {...}` | Arra az elemre, aminek az id-ja *valami* |
+| `#valami {...}` | Arra az elemre, aminek az *id*-ja *valami* |
 
 #### `class`
 
 | Szelektor | Mire fog hatni |
 | --------- | ---------- |
-| `.valami {...}` | Mindenre, aminek a van *valami* nevű class-sza |
+| `.valami {...}` | Mindenre, aminek a van *valami* nevű *class*-sza |
 
 #### inline CSS: `style`
 
@@ -77,9 +77,9 @@ Most vonatkoztassunk el a képzeletbeli `*.css` fájltól, maradjunk `*.html`-en
 
 Ebben a környezetben a `style` egy attribútum, amivel megadhatunk további... attribútumokat. Ezek a *"további"* attribútumok nem csak úgy jönnek, itt konkrétan CSS deklarációján belül lévő `tulajdonság: érték;` párokat tudjuk felsorolni.
 
-Az egyik előnye, hogy biztosan arra az egy HTML elemre fog alkalmazódni, amin megadtuk. A másik, hogy nem kell szelektorral foglalkozni. 
+Az egyik előnye, hogy biztosan arra az egy HTML elemre fog alkalmazódni, aminek megadtuk. A másik, hogy nem kell szelektorral foglalkozni. 
 
-De, Ha mindent így akarnánk megoldani, akkor az a szomorú helyzet van, hogy kódot fogunk ismételni, MINDEN EGYES elemnek meg kéne adni stb. Kicsiben tökéletes, nagyban meg se próbáljuk alkalmazni.
+Ha mindent így akarnánk megoldani, akkor az a szomorú helyzet van, hogy kódot fogunk ismételni, MINDEN EGYES elemnek meg kéne adni stb. Kicsiben tökéletes, nagyban meg se próbáljuk alkalmazni.
 
 ## CSS alkalmazási sorrendek
 
@@ -110,15 +110,15 @@ Szóval kvázi egy felülírás történik.
 
 Ez viszont egy ökölszabály lehet arra, hogy mit fog végül kapni az elemünk:
 
-1. Fentről lefelé végigolvassuk a kódot
-2. Megjegyezzük az utolsó ismert értéket
-3. Leellenőrízzük, hogy van-e inline CSS (`style="..."`) az elemnek
-   1. Ha van, akkor végignézzük benne, hogy mi az utolsó ismert érték
-4. Megkaptuk a megoldást
+1. Fentről lefelé végigolvassuk a kódot.
+2. Megjegyezzük az utolsó ismert értéket.
+3. Leellenőrízzük, hogy van-e inline CSS (`style="..."`) az elemnek.
+   1. Ha van, akkor végignézzük benne, hogy mi az utolsó ismert érték.
+4. Megkaptuk a megoldást.
 
 ## Ahol minden folytatódik: style.css
 
-Hozzunk létre a gyökérmappában `style.css` nevű fájlt. Ez így önmagában még semmit sem tesz, mert a HTML dokumentumunk nem tud a CSS fájlnak a létezérésől. Hozzunk létre kapcsolatot a kettő között az `index.html` fájl `<head>` elemén belül:
+Hozzunk létre a gyökérmappában `style.css` nevű fájlt. Ez így önmagában még semmit sem tesz, mert a HTML dokumentum nem tud a CSS fájlnak a létezérésől. Hozzunk létre kapcsolatot a kettő között az `index.html` fájl `<head>` elemén belül:
 
 ``` html
 <link rel="stylesheet" href="style.css">
@@ -196,7 +196,7 @@ Ezzel kiegészítve az `index.html` fájl így fog kinézni:
 !!! note "Megjegyzés"
     Nagyobb projektek fejlesztési fázisában esetében érdemes nem mindent egy CSS fájlba írni. Jobb szokott lenni, ha kiszervezzük őket több, kisebb fájlba. Ezeket persze mind egyesével `<link>`-elni kell majd.
 
-Az átláthatóság kedvéért *(meg mert előre látóak vagyunk :) )*, hozzunk létre még egy `layout.css` és `responsive.css` nevű fájlt is, szintén a gyökérmappánkban.
+Az átláthatóság kedvéért *(meg mert előre látóak vagyunk :) )*, hozzunk létre még egy `layout.css` és `responsive.css` nevű fájlt is, szintén a gyökérmappában.
 
 ### Az a fránya `<body>`
 
@@ -277,7 +277,9 @@ Most már megkezdhetjük a `style.css` fájlnak a feltöltését kóddal:
 
 *Hogy mit csináltunk a `<body>`-val?*
 
-A böngészőknek van egy rossz szokása, hogy alapértelmezetten a HTML dokumentumok egy kicsit beljebb kezdődnek. Ez azért van, mert a `<body>`-nak van adva egy kicsi margó. A fenti sorokkal ezt a margót kapcsoltuk ki. De gyorsan vegyük végig ezeket:
+A böngészőknek van egy rossz szokása, hogy alapértelmezetten a HTML dokumentumok egy kicsit beljebb kezdődnek. Ez azért van, mert a `<body>`-nak van adva egy kicsi margó. A fenti sorokkal ezt a margót *"kikapcsoltuk"*.
+
+Margón kívül van még egy pár dolog, amivel méreteket tudunk megadni, vegyük is végig ezeket.
 
 ### Akkor merre mennyi?
 
@@ -288,9 +290,9 @@ A böngészőknek van egy rossz szokása, hogy alapértelmezetten a HTML dokumen
 | <span style="color: lightblue;">width, height</span> | ... legbelső része, kattintható | Igen |
 | <span style="color: green;">padding</span> | ... határa és legbelső része közti rés | Igen |
 | <span style="color: yellow;">border</span> | ... határa | Igen |
-| <span style="color: brown;">margin</span> | ... margója, mekkora rés legyen kihagyva két HTML elem közt | Nem |
+| <span style="color: brown;">margin</span> | ... margója, mekkora rés legyen kihagyva más HTML elemhez képest | Nem |
 
-Ezekkel a tulajdonságokkal le tudjuk írni, hogy melyik HTML elem mekkora legyen meg és mekkora rés legyen kihagyva más elemekhez képest. Még viszont hátra van az elrendezés.
+Ezekkel a tulajdonságokkal le tudjuk írni, hogy melyik HTML elem mekkora legyen és mekkora rés legyen kihagyva más elemekhez képest. Még viszont hátra van az elrendezés.
 
 ### Ki hol legyen?
 
@@ -303,7 +305,6 @@ Szóval:
 - A `<header>` kerüljön felülre és nyúljon szét
 - A `<footer>` kerüljön alulra és nyúljon szét
 - A `<main>` legyen középre igazítva
-- A `<article>`-ök sorakozzanak egymás alatt
 
 Ezen felül bevett szokás `<header>`-ben a logót bal oldalra, a linkeket jobb oldalra tolni.
 
@@ -313,10 +314,8 @@ Szerencsénkre `flex`-szel mindezt nagyon egyszerűen el tudjuk érni.
 
 ``` css
 body {
-    min-height: 100vh;
     margin: 0;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 header {
@@ -334,7 +333,7 @@ header {
 main {
     margin: 20px;
     padding: 20px;
-    max-width: 960px;
+    width: 960px;
     align-self: center;
 }
 footer {
@@ -347,13 +346,11 @@ footer {
 
 | Tulajdonság | Mire való |
 | - | - |
-| min-height | Minimum mekkora legyen a magassága az elemnek; változó méretű tartalomnál hasznos |
 | height | Konkrétan milyen magas legyen az elem |
-| max-width | Maximum milyen széles lehet az elem; változó méretű tartalomnál hasznos |
+| max-width | Konkrétan milyen széles legyen az elem |
 | display | Milyen módon jelenjen meg az adott elem |
 | flex-direction | Milyen irányba helyezze el a leszármazottakat |
 | flex | A tartalomhoz mérten mekkorára nyúljon az elem |
-| justify-content | A tartalom horizontálisan/vertikálisan hol helyezkedjen el |
 | align-self | Önmagát helyezi el vertikálisan/horizontálisan |
 | align-items | A közvetlen leszármazottak elhelyezkedése |
 
@@ -363,11 +360,14 @@ Akkor most szavakkal, hogy mi is történt:
 
 Mivel a `<header>`, `<main>` és `<footer>` a `<body>`-ból származnak le, ezért ezt a külső *"konténert"* beállítjuk, hogy *flex*-ként viselkedjen és oszlopszerűen jelenítse meg a tartalmát.
 
-A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex* legyen, de sorban jelenítse meg a leszármazottakat. A benne lévő `<img>`-et felhasználjuk arra, hogy jobbra tolja a linkeket.
+A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex* legyen, de sorban jelenítse meg a leszármazottakat. A benne lévő `<div id="logo">`-t felhasználjuk arra, hogy jobbra tolja a linkeket.
 
-`<footer>`-t a headerhöz hasonlóan *flex*-ként megjelenítjük és a tartalmát középre rendezzük.
+`<footer>`-t a headerhöz hasonlóan *flex*-ként megjelenítjük, a tartalmát középre igazítjuk.
 
 A `<main>` meg szimplán középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
+
+!!! note "Megjegyzés"
+    Jelenleg a `<footer>` nincs a böngésző aljába tolva. Ez azér van, mert nincs elég tartalom a jegyzetben. Az egyik megoldás, hogy kiegészítjük a jegyzetet elegendő tartalommal. A másikat meg majd a reszponzivitásnál fogjuk megnézni.
 
 #### Szervezzük ki egy másik fájlba
 
@@ -457,10 +457,8 @@ Most valahogy így állunk fájlokat tekintve:
     === "layout.css"
         ``` css
         body {
-            min-height: 100vh;
             margin: 0;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
         }
         header {
@@ -478,14 +476,12 @@ Most valahogy így állunk fájlokat tekintve:
         main {
             margin: 20px;
             padding: 20px;
-            max-width: 960px;
+            width: 960px;
             align-self: center;
         }
         footer {
             padding: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            text-align: center;
         }
         ```
 
@@ -497,10 +493,13 @@ Mindenek előtt importáljuk a letöltött szövegtípust.
 
 ``` css
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf')  format('truetype');
+    font-family: 'Roboto'; /* Milyen névvel érjük majd el */
+    src: url('Roboto-Regular.ttf') format('truetype'); /* Hol és milyen típusú a fájl */
 }
 ```
+
+!!! note "Megjegyzés"
+    Ha egy szövegtípus nincs előre telepítve az operációs rendszeren, akkor azt CSS-en keresztül importálni kell, különben nem fogja tudni a böngésző, hogy mit jelenítsen meg.
 
 Most már beállíthatjuk, hogy ezt használja minden. Ezen felül meg adjunk a `<body>`-nak egy nagyon világos szürke hátteret.
 
@@ -519,11 +518,13 @@ A jobb kattinthatóság kedvéért adjunk a linkeknek egy kis kitöltést.
 
 ``` css
 header {
-    background-color: rgb(136, 99, 64);box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgb(136, 99, 64);
+    /* Árnyékok révén térhatást tudunk adni a headernek */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 header > nav > a {
     color: white;
-    padding: 5px 20px;
+    padding: 5px 20px; /* Kitöltés a jobb kattinthatóság érdekében */
     text-decoration: none; /* Kikapcsoljuk az aláhúzást */
 }
 ```
@@ -532,13 +533,14 @@ Akkor a `<main>`-t is emeljük ki. Árnyékolással adjunk neki egy kis térhat�
 
 ``` css
 main {
-    border-radius: 5px;
+    border-radius: 5px; /* Lekerekítjük a négy sarkát */
     background-color: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* Árnyékkal térhatást lehet elérni */
+    /* Térhatás */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
 }
 ```
 
-A tartalomjegyzéket is probáljuk egy kicsit megkülönböztetni:
+A tartalomjegyzéket is próbáljuk egy kicsit megkülönböztetni:
 
 ``` css
 main > nav > ol li > a {
@@ -567,11 +569,15 @@ A jegyzet címét, a fejléceket és a paragrafust is variáljuk meg egy kicsit:
 }
 
 h1, h2, h3, h4, h5, h6 {
+    /* 
+        Fentről indulva, óramutató járásával megegyezően haladva
+        margin: Fent, jobbra, lent, balra
+    */
     margin: 30px 0 10px 0;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 35px; /* Mekkora legyen a betű */
 }
 
 h2 {
@@ -594,7 +600,7 @@ Mivel szeretnénk támogatni a képek beilesztését és a képaláírást, ezé
 article img { /* Minden jegyzeten belüli képre alkalmazódni fog */
     box-sizing: border-box; /* A böngésző nem mindig szereti "logikusan" számolni a dolgokat */
     display: block; /* Semmi képpen se kerüljön valami vele egy sorba */
-    max-width: 100%;
+    max-width: 100%; /* Erről majd a reszponzivitásban, most fogadjuk el, hogy itt van */
     padding: 0 20px;
     margin-left: auto; /* Régi trükk a középre illsztéshez */
     margin-right: auto; /* Régi trükk a középre illsztéshez */
@@ -772,10 +778,8 @@ footer {
     === "layout.css"
         ``` css
         body {
-            min-height: 100vh;
             margin: 0;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
         }
         header {
@@ -793,14 +797,12 @@ footer {
         main {
             margin: 20px;
             padding: 20px;
-            max-width: 960px;
+            width: 960px;
             align-self: center;
         }
         footer {
             padding: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            text-align: center;
         }
         ```
 
