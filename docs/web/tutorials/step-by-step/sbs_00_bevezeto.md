@@ -1,13 +1,13 @@
 # Bevezető
 
-Ebben a tutorial sorozatban az alapoktól kezdve fogunk felépíteni egy statikus weboldalt, ami tökéletes lesz egyszerű szövegek tárolására és valamennyire jól fog kinézni. Ezen kívül megpróbáljuk valami publikusan elérhető helyre feltenni, hogy egyszerűen meg tudjuk mutatni másoknak is a weboldalunk.
+Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva léte fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
 
 ## Mire lesz szükséged
 
 Minimum:
 
-- Szövegszerkesztő *(nem Word!)*
-- Böngésző
+- Szövegszerkesztő *(pl. Visual Studio Code)*
+- Böngésző *(pl. valami Chromium alapú böngésző)*
 
 Opcionális:
 
@@ -20,10 +20,11 @@ Ha tovább szeretnél majd haladni:
 
 ## Mit is fogunk pontosan csinálni
 
-1. Megnézzük, mi is ez a HTML, lefektetjük a weboldalunk alapjait
-2. Kicsit szépítjük CSS-sel, megpróbáljuk megérteni a reszponzivitást
-3. Majd kísérletet teszünk a felhasználó gépének a leterhelésére JS-tel, túllépünk a statikusságon
-4. És végül mindezt publikussá tesszük; hova tovább?; stb.
+1. Megnézzük, mi is ez a HTML, megcsináljuk a weboldalunk struktúráját.
+2. Tovább lépünk a CSS-re, leírjuk a HTML elemek elrendezését, megjelenését.
+3. Bevezetjük a JS-t, mire lehetne felhasználni ebben a projektben.
+4. Bónusz 1: mitől lesz valami reszponzív?
+5. Bónusz 2: GitHub-ra feltesszük, hogy bárki számára elérhető legyen.
 
 ### Előnézet
 
@@ -31,7 +32,7 @@ Ha tovább szeretnél majd haladni:
 
 ## Környezet
 
-Lesz egy gyökér mappánk *(step-by-step)*, amiben létre fogjuk hozni az általunk használandó fájlokat.
+Lesz egy gyökér mappánk *(step-by-step)*. Minden, amit használni fogunk ebben a mappában lesz.
 
 Az alábbi fájlstruktúrát fogjuk használni:
 
