@@ -11,19 +11,19 @@ Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegend
 
 <img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
 
-Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem, tartalom és záró elem. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
+Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem *(opening tag)*, tartalom *(content)* és záró elem *(closing tag)*. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
 ``` HTML
-<tag szín="kék">Ez egy kék szöveg</tag> <!--szín: kék, hidden: false-->
-<tag hidden>Ezt a böngésző nem fogja megjeleníteni</tag> <!--hidden: true-->
+<elem szín="kék">Ez egy kék szöveg</elem> <!-- szín: kék, hidden: false -->
+<elem hidden>Ezt a böngésző nem fogja megjeleníteni</elem> <!-- hidden: true -->
 ```
 
 A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De viszont elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése az ilyen elemeknek. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
 
 ``` HTML
-<!-A HTML elemek lezárásának 3 fajtája: -!>
-<tag></tag>
-<tag>
-<tag />
+<!-- A HTML elemek lezárásának 3 fajtája: -->
+<elem></elem>
+<elem>
+<elem />
 ```
 
 !!! note "Megjegyzés"
@@ -41,7 +41,10 @@ Szöveg esetén érdemes egy sorba írni mindent:
 <elem szin="fehér">Ez egy szöveg</elem>
 ```
 
-Viszont, amint más-más elemeket akarunk közrefogni, akkor sokkal inkább ajánlott az új sorban kezdés és identálás *(általában egy tabulátor vagy valamennyi szóköz)*.
+!!! note "Megjegyzés"
+    Ha új sorba kezdenénk és indentálnánk, akkor azt mondanánk, hogy a szöveg előtt van X mennyiségű szóköz/tabulátor.
+
+Viszont, amint más-más elemeket akarunk közrefogni, akkor sokkal inkább ajánlott az új sorban kezdés és indentálás *(általában egy tabulátor vagy valamennyi szóköz)*.
 
 ``` HTML
 <elem>
@@ -60,7 +63,7 @@ Viszont, amint más-más elemeket akarunk közrefogni, akkor sokkal inkább ajá
 És ezeknek a megannyi variációja.
 
 !!! note "Megjegyzés"
-    A fenti példában az identálásnak köszönhetően azonnal leolvasható egyfajta leszármazottsági rendszer. Az `<elem>`-nek van egy közvetlen leszármazottja: `<masik-elem>`, és egy közvetett leszármazottja: `<egyeb-elem>`. Illetve, az `<elemek>`-nek három leszármazottja van: `<elem-egy>`, `<elem-ketto>`, `<elem-harom>`.
+    A fenti példában az indentálásnak köszönhetően azonnal leolvasható egyfajta leszármazottsági rendszer. Az `<elem>`-nek van egy közvetlen leszármazottja: `<masik-elem>`, és egy közvetett leszármazottja: `<egyeb-elem>`. Illetve, az `<elemek>`-nek három leszármazottja van: `<elem-egy>`, `<elem-ketto>`, `<elem-harom>`.
 
 ## Ahol minden elkezdődik: *index.html*
 
@@ -83,11 +86,13 @@ Egy kis értelmezés a fentihez:
 | `<!DOCTYPE>` | A dokumentum típusát adja meg *(jelen esetben ez HTML)* |
 | `<html>`    | A HTML dokumentum gyökere, minden ebből fog leszármazni |
 | `<head>`    | A dokumentum metaadatait, információit, kapcsolatait tartalmazza |
-| `<body>`    | A dokumentum *"teste"*, ez fogja közre mindazt, amit a felhasználó látni fog |
+| `<body>`    | A dokumentum *"teste"*, ez foglalja magába mindazt, amit a felhasználó látni fog |
 
-Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor szinte biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
+Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
 
 <img src="/web/tutorials/step-by-step/sbs_01_html_document.png" style="background-color: rgb(33, 34, 44);" />
+
+HTML dokumentum készítésénél érdemes konténerekben gondolkozni, a sok egymáshoz tartozó részt egy közös dobozban elképzelni. Ezáltal, amikor megpróbáljuk majd elrendezni az elemeket, sokkal egyszerűbb dolgunk lesz.
 
 !!! warning "Erre figyelj"
     A böngészők nem mindig helyes HTML kódot kapnak *(pl. elfelejtettük/elgépeltük a záró elemet; indokolatlanul sok szóköz van egy szövegben stb.)*. Érdekes módon, ilyenkor is valamennyire *"helyesen"* fog megjelenni a weboldal. Ez azért van, mert a böngészők mielőtt elkezdenék megjeleníteni az oldalt, megpróbálják a hibákat javítani *(pl. lezárják a le nem zárt elemeket; kitörlik az indokolatlanul sok szóközt; stb.)*. Így abban a tudatban tudsz tovább haladni, hogy minden rendben és a hibák csak később lesznek láthatóak *(vagy soha)*.
@@ -111,6 +116,8 @@ Az előző táblázatból kiderül, hogy különféle metaadatok/kapcsolatok fog
 | `<title>`    | A dokumentum címe |
 
 Ezeken kívül nem nagyon szoktunk más elemekkel találkozni a `<head>`-en belül. Az ikont és a címet szükséges kiemelni, mert ezek határozzák meg, hogy a böngésző tetején milyen kép és szöveg jelenik meg, illetve könyvelzők közé mentés esetén ezek lesznek az alapértelmezett adatok. A `charset="UTF-8"`-cal megmondjuk, hogy a dokumentumunk kódolása UTF-8. Ha szeretnénk, hogy jól jelenjenek meg a magyar *(és kvázi minden, ami nem ASCII)* karakterek a weboldalunkon, akkor az UTF-8 kódolás nagyon erősen ajánlott.
+
+Néha lehet látni `<script>` és `<style>` elemeket, de sima statikus weboldalaknál nem érdemes ilyeneket a `<head>`-ben elhelyezni.
 
 ## Egy kicsit bővebben: `<body>`
 
@@ -155,13 +162,16 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 | `<p>` | Egy bekezdés / paragrafus |
 | `<img>` | Képeket tudunk elhelyezni a dokumentumban, nem kell lezárni |
 
+!!! note "Megjegyzés"
+    Nem mindig kell a fenti elrendezést követni. Ez csak egy nagyon leegyszerűsített, általánosított példa. Ha valaminek nincs értelme a weboldalon, akkor azt hagyjuk ki nyugodtan.
+
 ## Kiemelt HTML attribútumok: *id*, *class*, *style*
 
 Egyetlen egyszer sem használtuk még az `id` és `class` attribútumokat, de most mégis egy kiemelt helyet fogunk nekik adni. Ahhoz, hogy komolyabban tudjunk majd CSS-sel és JavaScripttel foglalkozni, szükséges ennek a két attribútumnak az ismerete. Ugyanis ezeknek az ismeretével, használatával fogunk tudni hatékonyabban dolgozni. Nem biztos, hogy itt, ebben a tutorialban, de a jövőben minden biztosan.
 
 ### id
 
-Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értékének egyedinek kell lennie. Nem lehet két HTML elem ugyan azzal az id-val egy dokumentumban. Nagyon jól tud jönni, ha sok hasonló közül egy elemet szeretnénk kiemelni, vagy ha már nagyon mélyen vagyunk egy HTML dokumentumban és nem kell észben tartani, hogy minek a leszármazottja. Egy elemnek maximum egy id-ja lehet.
+Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értékének egyedinek kell lennie. Nem lehet két HTML elem ugyan azzal az *id*-val egy dokumentumban. Nagyon jól tud jönni, ha sok hasonló közül egy elemet szeretnénk kiemelni, vagy ha már nagyon mélyen vagyunk egy HTML dokumentumban és nem kell észben tartani, hogy minek a leszármazottja. Egy elemnek maximum egy *id*-ja lehet.
 
 ``` HTML
 <elem id="Ez-egy-egyedi-szöveg"></elem>
@@ -170,16 +180,22 @@ Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értéké
 !!! warning "Erre figyelj"
     Ha egy elemnek id-t adunk, akkor annak az értékét már más elemnél nem használhatjuk fel.
 
+!!! note "Megjegyzés"
+    Senki sem csap a kezünkre ha mégis újra felhasználnánk. Csak ne csodálkozzunk, hogy nem a kívánt eredmény lesz látható.
+
 ### class
 
-Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének nem szükséges egyedinek lennie. Lehet két HTML elemnek ugyan az a class-a egy dokumentumban. Konkrét megjelenési/viselkedési tulajdonságokkal ruházunk fel velük HTML elemeket. Egy elemnek lehet több class-a is. Ahogyan láthatjuk, kvázi az id ellentéte a class.
+Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének nem szükséges egyedinek lennie. Lehet két HTML elemnek ugyan az a *class*-a egy dokumentumban. Konkrét megjelenési/viselkedési tulajdonságokkal ruházunk fel velük HTML elemeket. Egy elemnek lehet több *class*-a is. Ahogyan láthatjuk, kvázi az *id* ellentéte a *class*.
+
+!!! note "Megjegyzés"
+    Amikor megadjuk őket egy HTML elemnek, akkor mondhatnánk azt is, hogy *"megörököljük a tulajdonságait"*.
 
 ``` HTML
 <elem class="piros dolt felkover alahuzott"></elem>
 ```
 
 !!! warning "Erre figyelj"
-    Egy elemnek lehet több class-a, illetve egy class-t más elemeknél is újrahasználhatjuk
+    Egy elemnek lehet több *class*-a, illetve egy *class*-t más elemeknél is újrahasználhatjuk
 
 ### style
 
@@ -191,7 +207,26 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
 <elem style="attr1: valami; attr2: 12;">
 ```
 
+## Mit is szeretnénk elérni
+
+Fontos kérdés a fenti, megéri tisztázni.
+
+Nincs kőbe vésve, hogy egy online jegyzet hogyan nézhet ki. Mivel nem tervezünk egy komplex weboldalt csinálni, ezért ne is nagyon gondoljuk túl a dolgokat, maradjunk a bevezetőnél:
+
+- szöveg tárolása, kép megjelenítése
+- képaláírás
+
+Ezeket opcionálisan ki lehetne még egészíteni pl.:
+
+- tartalomjegyzék
+- header
+- footer
+
+És még lehetne sorolni egy jó pár dolgot, vagy belemenni, hogy kinek mi az opcionális, de most maradjunk meg ennyinél.
+
 ## Bővítsük ki a `<body>`-t
+
+Most bővítsük ki a HTML kódot úgy, hogy sokkal jobban illeszkedjen a jegyzetünk kialakításához.
 
 ``` html
 <body>
@@ -248,6 +283,8 @@ Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel
 </body>
 ```
 
+Tökéletes leírás nem nagyon létezik. Most egyszerűen érjük be azzal, hogy szubjektíven a fenti megoldás mellett döntöttem.
+
 Mik az új elemek:
 
 | HTML elem   | Mire használjuk |
@@ -263,13 +300,13 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 
 - Egy HTML dokumentum `<elem>`-ből épül fel.
 - Egy HTML elemnek vagy van lezáró eleme, vagy nincs.
-- A kezdő elemben lehet megadni különböző attribútumokat
-- Ha rosszul írsz valamit, akkor a böngésző nem fog rád szólni
-- `<head>`-en belül találhatóak meg egy HTML dokumentumnak a metaadatai
-- `<body>`-n belül található meg a HTML dokumentum fő része
-- `id`-nak egyedi értéket kell adni
-- `class`-szal közös viselkedési, megjelenési formákat írunk le
-- `style`-lal további attribútumokat tudunk felsorolni
+- A kezdő elemben lehet megadni különböző attribútumokat.
+- Ha rosszul írsz valamit, akkor a böngésző nem fog rád szólni.
+- `<head>`-en belül találhatóak meg egy HTML dokumentumnak a metaadatai.
+- `<body>`-n belül található meg a HTML dokumentum fő része.
+- `id`-nak egyedi értéket kell adni.
+- `class`-szal közös viselkedési, megjelenési formákat írunk le.
+- `style`-lal további attribútumokat tudunk felsorolni.
 
 ### Végleges kód
 

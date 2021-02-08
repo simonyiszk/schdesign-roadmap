@@ -2,6 +2,8 @@
 
 Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva léte fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
 
+Egyszerű, szövegeket szeretnénk tárolni, képeket megjeleníteni és opcionálisan képaláírást elhelyezni.
+
 ## Mire lesz szükséged
 
 Minimum:
