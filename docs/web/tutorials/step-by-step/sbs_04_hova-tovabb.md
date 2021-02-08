@@ -101,6 +101,8 @@ Szóval, mobilon megszűntetjük a `<main>`-nek a bal és jobb oldali margóját
 
 Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni, mint egy `if (...)`-et. Azért linkeltük utoljára, mert különben a `style.css` felülírná az itteni változtatásokat. És a legjobb, hogy ha megváltozik a kijelző szélessége, akkor a böngésző újra ellenőrzi, hogy a benne leírtaknak teljesülniük kéne-e még.
 
+Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méretű lesz a `<main>`. Most tekintsünk ennek a megoldásától, feltételezzük, hogy lesz elég tartalom, ami miatt max. 960px szélességig szét tud nyúlni.
+
 ## Most már tényleg a végleges kód
 
 !!! example ""
@@ -317,6 +319,24 @@ Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni,
 
 ## Hostoljuk a weboldalt.
 
+A GitHubnak van egy GitHub Pages nevű szolgáltatása. Ebben statikus, vagy kliens oldalon generálódó weboldalakat tudunk létrehozni.
+
 ### GitHub
 
-feltöltés alatt :(
+1. Készítsünk egy üres GitHub repositoryt, aminek a neve legyen `{github-felhasznalo-nevunk}.github.io`.
+2. Navigáljunk el az imént létrehozott repo beállításaihoz *(Options)*.
+3. Görgessünk le addig, ameddig nem látjuk a *GitHub Pages* címt.
+4. Állítsuk be, legyen a *master* (vagy *main*) branch-ként kiválasztva.
+5. Mappának állítsuk be a `/ (root)`-ot.
+
+Most ha a jelenlegi gyökérmappánk tartalmát feltöltjük ennek a reponak a gyökerébe, akkor a https://github-felhasznalo-nev.github.io/ oldalon be fog töltődni az általunk létrehozott `index.html` fájl és tartalma.
+
+## TODO az írónak
+
+- kódokhoz előnézet `<iframe>`-mel
+- kódokhoz előnézet képpel
+- kvíz a részek végén
+- több ábra
+- helyesírási hibák javítása
+- github leírás kiegészítése
+- teljes összegzés

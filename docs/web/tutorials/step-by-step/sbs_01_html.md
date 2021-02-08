@@ -380,11 +380,3 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 <iframe width="640" height="886" src="https://docs.google.com/forms/d/e/1FAIpQLSeVjDyJ-0DKm3oaD6dO7WzZTZAetoU6JUIipXb3t0dly7RTUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
 
 <iframe width="640px" height= "1000px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=q0g1anB1cUKRqFjaAGlwKUmQdzbz_jpGrVQfQsP9IFFURFk0RlhQWUM5TElZNDEzV0VQRlROUE1JTy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-
-## TODO
-
-- Normális kvíz
-- Egyszerűbb fogalmazás? / Kisebb lépések?
-- Kódokhoz előnézet
-- Linkek átírása
-

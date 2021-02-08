@@ -43,3 +43,10 @@ Az alábbi fájlstruktúrát fogjuk használni:
 Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva *(hanem pl. ASCII)*, akkor változtassuk meg azt UTF-8-ra.
 
 A képeket *(cat.jpg, logo.png, logo.svg)* és a szövegtípus fájlt *(Roboto-Regular.ttf)* nem kell létrehozni, azokat majd az internetről fogjuk letölteni.
+
+- cat.jpg : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/Roboto-Regular.ttf)
+- logo.png : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/cat.jpg)
+- logo.svg : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/logo.png)
+- Roboto-Regular.ttf : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/logo.svg)
+
+Helyezzük el ezeket a fájlokat a gyökérmappában.
