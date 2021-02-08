@@ -101,6 +101,220 @@ Szóval, mobilon megszűntetjük a `<main>`-nek a bal és jobb oldali margóját
 
 Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni, mint egy `if (...)`-et. Azért linkeltük utoljára, mert különben a `style.css` felülírná az itteni változtatásokat. És a legjobb, hogy ha megváltozik a kijelző szélessége, akkor a böngésző újra ellenőrzi, hogy a benne leírtaknak teljesülniük kéne-e még.
 
+## Most már tényleg a végleges kód
+
+!!! example ""
+    === "index.html"
+        ``` html
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <link rel="icon" href="logo.svg">
+                <!-- Itt adjuk a böngésző tudtára, hogy létezik egy css fájlunk is, amit használni szeretnénk -->
+                <link rel="stylesheet" href="layout.css"> 
+                <link rel="stylesheet" href="style.css"> 
+                <link rel="stylesheet" href="responsive.css">
+                <title>Ez a weboldalam címe</title>
+            </head>
+            <body>
+                <header>
+                    <div id="logo">
+                        <img src="logo.svg" alt="A weboldalnak a logója">
+                    </div>
+                    <nav>
+                        <a href="#">Link #1</a>
+                        <a href="#">Link #2</a>
+                        <a href="#">Link #2</a>
+                    </nav>
+                </header>
+                <main>
+                    <h1 id="title">Egy online jegyzet</h1>
+                    <h2 id="tartalomjegyzek">Tartalomjegyzék</h2>
+                    <nav>
+                        <ol start="0">
+                            <li>
+                                <a href="#tartalomjegyzek">Tartalomjegyzék</a>
+                            </li>
+                            <li>
+                                <a href="#elso-fejezet">Első fejezet</a>
+                                <ol>
+                                    <li>
+                                        <a href="#elso-alfejezet">Első alfejezet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#masodik-alfejezet">Második alfejezet</a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </nav>
+                    <article>
+                        <section>
+                            <h1 id="elso-fejezet">Első fejezet</h1>
+                            <p>Ezt majd később feltöltjük.</p>
+                        </section>
+                        <section>
+                            <h2 id="elso-alfejezet">Első alfejezet</h2>
+                            <p>Ezt majd később feltöltjük.</p>
+                            <img src="cat.jpg">
+                            <p class="img-caption">Ez egy magyarázat a képhez</p>
+                            <p>Ezt majd később feltöltjük.</p>    
+                        </section>
+                        <section>
+                            <h2 id="masodik-alfejezet">Második alfejezet</h2>
+                            <p>Ezt majd később feltöltjük.</p>
+                        </section>
+                    </article>
+                </main>
+                <footer>valami jogi &copy; szöveg</footer>
+                <script src="script.js"></script>
+            </body>
+        </html>
+        ```
+    === "style.css"
+        ``` css
+        @font-face {
+            font-family: 'Roboto';
+            src: url('Roboto-Regular.ttf')  format('truetype');
+        }
+        body {
+            font-family: 'Roboto';
+            background-color: rgb(240, 240, 240);
+        }
+        header {
+            background-color: rgb(136, 99, 64);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        header > nav > a {
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+        }
+        main {
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        main > nav > ol li > a {
+            text-decoration: none;
+            color: black;
+            font-style: italic;
+        }
+        main > nav > ol > li {
+            margin: 10px;
+        }
+        main > nav {
+            padding: 5px;
+            background-color: rgb(220,220,220);
+            border-radius: 5px;
+        }
+        #title {
+            text-align: center;
+            font-size: 40px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 30px 0 10px 0;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            text-align: justify;
+            margin: 10px 0 20px 0;
+        }
+        footer {
+            color: white;
+            background-color: rgb(102, 73, 47);
+            text-align: center;
+        }
+        article img {
+            box-sizing: border-box;
+            display: block;
+            max-width: 100%;
+            padding: 0 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-caption {
+            text-align: center;
+            color: rgb(150,150,150);
+            font-style: italic;
+            margin: 5px 0 20px 0;
+        }
+        ```
+    === "layout.css"
+        ``` css
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+        }
+        #logo {
+            flex: 1;
+        }
+        #logo > img {
+            height: 40px;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            max-width: 960px;
+            align-self: center;
+        }
+        footer {
+            padding: 20px;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        ```
+    === "responsive.css"
+        ``` css
+        @media only screen and (max-width: 959px) {
+            main {
+                border-radius: 0;
+                border: none;
+                margin: 20px 0 20px 0;
+            }
+        }
+        ```
+    === "script.js"
+        ``` js
+        window.onscroll = function() { changeHeader() };
+
+        var header = document.querySelector("header");
+        var main = document.querySelector("main");
+
+        var sticky = header.offsetTop;
+
+        function changeHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                main.style.marginTop = "70px";
+            } else {
+                header.classList.remove("sticky");
+                main.style.marginTop = "20px";
+            }
+        }
+        ```
+
 ## Hostoljuk a weboldalt.
 
 ### GitHub
