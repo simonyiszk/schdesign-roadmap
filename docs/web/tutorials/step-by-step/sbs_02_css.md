@@ -338,9 +338,6 @@ main {
 }
 footer {
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 ```
 
@@ -362,7 +359,7 @@ Mivel a `<header>`, `<main>` és `<footer>` a `<body>`-ból származnak le, ezé
 
 A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex* legyen, de sorban jelenítse meg a leszármazottakat. A benne lévő `<div id="logo">`-t felhasználjuk arra, hogy jobbra tolja a linkeket.
 
-`<footer>`-t a headerhöz hasonlóan *flex*-ként megjelenítjük, a tartalmát középre igazítjuk.
+`<footer>`-t majd stílusnál módosítjuk egy kicsit jobban.
 
 A `<main>` meg szimplán középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
 
@@ -481,7 +478,6 @@ Most valahogy így állunk fájlokat tekintve:
         }
         footer {
             padding: 20px;
-            text-align: center;
         }
         ```
 
@@ -760,6 +756,7 @@ footer {
         footer {
             color: white;
             background-color: rgb(102, 73, 47);
+            text-align: center;
         }
         article img {
             box-sizing: border-box;
@@ -803,8 +800,6 @@ footer {
         }
         footer {
             padding: 20px;
-            background-color: rgb(102, 73, 47);
-            text-align: center;
         }
         ```
 

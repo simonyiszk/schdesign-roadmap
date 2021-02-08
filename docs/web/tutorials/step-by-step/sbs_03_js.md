@@ -284,6 +284,7 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         footer {
             color: white;
             background-color: rgb(102, 73, 47);
+            text-align: center;
         }
         article img {
             box-sizing: border-box;
@@ -327,9 +328,6 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         }
         footer {
             padding: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
         }
         .sticky {
             position: fixed;
