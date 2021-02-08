@@ -614,12 +614,13 @@ article img { /* Minden jegyzeten belüli képre alkalmazódni fog */
 }
 ```
 
-Végül a `<footer>`-nek is adjunk egy kis stílust:
+Végül a `<footer>`-nek is adjunk egy stílust:
 
 ``` css
 footer {
     color: white;
     background-color: rgb(102, 73, 47);
+    text-align: center;
 }
 ```
 
@@ -802,6 +803,7 @@ footer {
         }
         footer {
             padding: 20px;
+            background-color: rgb(102, 73, 47);
             text-align: center;
         }
         ```
