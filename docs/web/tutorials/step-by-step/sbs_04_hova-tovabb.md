@@ -12,7 +12,7 @@ Nem mindenkinek van ugyan olyan paraméterű kijelzője mint nekünk. Ami nálun
 
 Ezt a megoldást választották egy jópáran, amikor elkezdett teret nyerni magának a mobilos böngészés. Például: asztalon a `facebook.com` jön be, míg mobilon az `m.facebook.com`.
 
-Az egyik probléma ezzel a megoldással az, hogy ha mobilról akarunk linket megosztani, akkor `m.` kezdetű lesz, szóval PC-n a webes kinézetet fogjuk megkapni.
+Az egyik probléma ezzel a megoldással az, hogy ha mobilról akarunk linket megosztani, akkor `m.` kezdetű lesz, szóval PC-n a mobilos kinézetet fogjuk megkapni.
 
 A másik, hogy kétszer dolgozunk, két külön projektet kell vezetni.
 

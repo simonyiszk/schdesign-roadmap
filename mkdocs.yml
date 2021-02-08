@@ -99,7 +99,7 @@ nav:
       - 1. HTML: web/tutorials/step-by-step/sbs_01_html.md
       - 2. CSS: web/tutorials/step-by-step/sbs_02_css.md
       - 3. JS: web/tutorials/step-by-step/sbs_03_js.md
-      - 4. Kitekintés: web/tutorials/step-by-step/sbs_04_kitekinto.md
+      - 4. Hova tovább: web/tutorials/step-by-step/sbs_04_hova-tovabb.md
       - régi (TÖRÖLD): web/tutorials/step-by-step/sbs_99_regi.md
       - régi átírva (TÖRÖLD): web/tutorials/step-by-step/sbs_99_regi-atirva.md
     - HTML: web/html.md
