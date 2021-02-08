@@ -1,6 +1,6 @@
 # JS
 
-Ahhoz, hogy el tudjunk rugaszkodni a statikus weboldalaktól és át tudjunk térni dinamikus weboldalakra, szükségünk van olyas valamire, ami képes kliens vagy szerver oldalon HTML+CSS kódot számunkra generálni. Erre az egyik legkézenfekvőbb megoldás a **JS** *(JavaScript)*, amit mára már egy programozási nyelvnek is hívhatunk.
+Ahhoz, hogy el tudjunk rugaszkodni a statikus weboldalaktól és át tudjunk térni dinamikus weboldalakra, szükségünk van olyas valamire, ami képes kliens vagy szerver oldalon *HTML+CSS* kódot számunkra generálni. Erre az egyik legkézenfekvőbb megoldás a **JS** *(JavaScript)*, amit mára már egy programozási nyelvnek is hívhatunk.
 
 Jellemzően `.js` kiterjesztést használnak a JavaScript fájlok.
 
@@ -36,59 +36,68 @@ Nagyon nagy valószínűséggel, ha valamit meg akarsz csinálni JavaScriptben, 
 !!! warning "Erre figyelj"
     És még sok egyéb *"érdekességet"* is tartogat a nyelv.
 
+!!! note "Megjegyzés"
+    C-től eltérően, JS-ben nincs kötelező `main()` függvény.
+
+Ha JavaScript kódot szeretnénk futtatni, akkor annak az egyik módszere, hogy valami külső dolog indítja el *(pl. a felhasználó kattint vmire; minden betöltődött a weboldalon stb.)*. Ezzel kivédhetjük azt, hogy **még** nem létező HTML elemen szeretnénk műveletet végrehajtani, ezzel elkerülünk egy hibaüzenetet.
+
 ### JS beillesztése HTML-be
 
 CSS-sel ellentétben JS fájlokat a `<script src="..."></script>` HTML elemmel tudunk hozzáadni a kódunkhoz. Ezt bárhol megtehetjük, de szélszerű közvetlen a `</body>` előtt megtenni.
 
-Ennek az egyik oka, hogy amint betöltődik a JavaScript, egyből le is fut. A probléma ezzel az, hogy még nem töltődött be minden HTML elem, így lehet hogy olyan elemet probálnánk módosítani, ami jelenleg nem is létezik, ez pedig hibaüzenethez vezet a konzolban.
+Ezt azért célszerű így csinálni, mert ekkor *(jelen projektben)* már minden HTML elem betöltődött, nem fogunk tudni olyan elemen műveletet végrehajtani, ami még nem létezik.
 
 !!! warning "Erre figyelj"
-    HTML-hez és CSS-hez hasonlóan, itt is van lehetőségünk súlyos következmény nélkül rossz kódot írni. De, ebben a környezetben már tudjuk hasznosítani a böngészők beépített JavaScript konzolját, amin keresztül tud üzenni nekünk a Chrome/Firefox stb. hogy valami gond van a kóddal. *(Persze attől még végig fut az egész.)*
+    Itt már szól a böngésző, ha valami baj van. Ezt a böngésző *Developer tools -> Console* részében tudjuk megtekinteni.
+
+!!! warning "Erre figyelj"
+    Ha valamit elgépelsz, akkor lehet lesz egy hibaüzeneted, de attól függetlenül **a kód tovább fog futni**.
 
 ## Ahol minden végződik: *script.js*
 
 Felmerülhet a kérdés: *"a weboldal már kvázi készen van, minek ide JS?"*
 
-Nos, jelen pillanatban a `<header>` csak úgy van a weboldal tetején. Ha elég tartalommal feltöltjük a bekezdésekes *(Lorem ipsum)*, akkor nyilvánvalóvá válik, hogy a fejlécünk nem nagyon követi a nézőpontot görgetés közben. Ezt meg tudnánk oldani egy egyszerű CSS `position: static;` hozzáadásával, de ezzel van egy kis gond:
+Nos, jelen pillanatban a `<header>` csak úgy van a weboldal tetején. Ha elég tartalommal feltöltjük a bekezdéseket *(Lorem ipsum)*, akkor nyilvánvalóvá válik, hogy a fejlécünk nem nagyon követi a nézőpontot görgetés közben. Ezt meg tudnánk oldani egy egyszerű CSS `position: static;` hozzáadásával, de ezzel van egy kis gond:
 
 Ha arra vetemednénk, hogy pl. PDF-et készítűnk a weboldalról, akkor a fenti megoldás következtében a PDF minden egyes oldalának a tetején ott lenne a `<header>`.
 
 Ennek a megoldása egy egyszerű JavaScript kódnak az írásával fog megvalósulni.
 
-``` js
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+!!! note "Megjegyzés"
+    Mivel nincsen fő belépési pont a kódban, ezért a függvények csak úgy maguktól nem tudnak lefutni. Ezért kihasználjuk azt az eseményt, amikor a felhasználó görget.
 
-// Get the header
+``` js
+// Amikor a felhasználó görget, akkor meghívjuk a 
+window.onscroll = function() { changeHeader() };
+
+// Már minden be van töltve a HTML-ben, ezért itt nyugodtan létrehozhatjuk ezeket a változókat
 var header = document.querySelector("header");
 var main = document.querySelector("main");
 
-// Get the offset position of the navbar
+// Megkérdezzük, hogy a <header> teteje függőlegesen hol helyezkedik el az oldalon
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    main.style.marginTop = "70px";
-  } else {
-    header.classList.remove("sticky");
-    main.style.marginTop = "20px";
-  }
+function changeHeader() {
+    // Ha túlgörgetünk, akkor legyen a header sticky
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        main.style.marginTop = "70px";
+    } else { // Különben vissza mindent
+        header.classList.remove("sticky");
+        main.style.marginTop = "20px";
+    }
 }
 ```
 
 Nézzük végig a kódnak a lényegi részeit és próbáljuk meg megérteni.
 
 ``` js
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() { changeHeader() };
 ```
 
-Megmondjuk a böngészőnek, hogy ha a felhasználó elkezd görgetni, akkor szeretnénk, hogy a `myFunction()` függvény lefusson.
+Megmondjuk a böngészőnek, hogy ha a felhasználó elkezd görgetni, akkor szeretnénk, hogy a `changeHeader()` függvény lefusson.
 
 ``` js
-// Get the header
 var header = document.querySelector("header");
 var main = document.querySelector("main");
 ```
@@ -96,16 +105,22 @@ var main = document.querySelector("main");
 Változóként elmnentjük a `<header>`-t és a `<main>`-t, mert így egyszerűbb lesz majd rájuk hivatkozni. A `document.querySelector("...")` CSS stílusú szelektort vár el tőlünk, amivel rá tudunk mutatni a keresett HTML elemekre.
 
 ``` js
+var sticky = header.offsetTop;
+```
+
+Megjegyezzük az eredeti pozícióját a `<header>`-nek `sticky` néven.
+
+``` js
 if (window.pageYOffset > sticky) {
 ```
-Megnézzük, hogy a görgetéssel a `<header>`-ön túlmennénk-e.
+Megkérdezzük, hogy a felhasználó éppen mennyire görgetett le a weboldalon. Ha túlgörgetett a header-ön, akkor lefut az igaz ág.
 
 ``` js
 header.classList.add("sticky");
 main.style.marginTop = "70px";
 ```
 
-Ha túlmegyünk, akkor hozzá adunk egy `sticky` class-t és megnöveljük a `<main>` fölső margóját (a miért egy kicsit lejjebb)
+Túlmegyünk, adjunk hozzá egy `sticky` class-t és növeljük meg a `<main>` felső margóját (a miért egy kicsit lejjebb)
 
 ``` js
 header.classList.remove("sticky");
@@ -128,7 +143,7 @@ A fixed pozíciójú elemeknek van egy-két rossz tulajdonsága, amiket a `stick
 
 Az egyik, hogy a *fixed* pozíciójú elemeknek explicit meg kell mondani, hogy mekkora legyen a mérete. A másik, hogy átkerülnek egy másik síkra, azzaz takarásba tud kerülni a többi elemünkkel.
 
-Mivel kikerül a síkból, ezért a helye üres marad. Minden ami alatta volt feljebb tolódik. Ez nagyon rosszul néz ki felhasználói szempontból. Erre az egyik bevett szokás, hogy akkor közvetlen utána következő elem megpróbálja ellensúlyozni a helyzetet. Ezért lesz a `<main>`-nek `70px` a felső margója.
+Mivel kikerül a síkból, ezért a helye üres marad. Minden ami alatta volt feljebb tolódik. Ez nagyon rosszul néz ki, ha görgetünk. Erre az egyik bevett szokás, hogy akkor közvetlen utána következő elem megpróbálja ellensúlyozni a helyzetet. Ezért lesz a `<main>`-nek `70px` a felső margója.
 
 Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
 
@@ -288,10 +303,8 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
     === "layout.css"
         ``` css
         body {
-            min-height: 100vh;
             margin: 0;
             display: flex;
-            justify-content: space-between;
             flex-direction: column;
         }
         header {
@@ -309,7 +322,7 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         main {
             margin: 20px;
             padding: 20px;
-            max-width: 960px;
+            width: 960px;
             align-self: center;
         }
         footer {
@@ -326,18 +339,14 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         ```
     === "script.js"
         ``` js
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function() { changeHeader() };
 
-        // Get the header
         var header = document.querySelector("header");
         var main = document.querySelector("main");
 
-        // Get the offset position of the navbar
         var sticky = header.offsetTop;
 
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
+        function changeHeader() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
                 main.style.marginTop = "70px";
