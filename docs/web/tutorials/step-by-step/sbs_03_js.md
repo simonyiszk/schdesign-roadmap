@@ -37,7 +37,7 @@ Nagyon nagy valószínűséggel, ha valamit meg akarsz csinálni JavaScriptben, 
     És még sok egyéb *"érdekességet"* is tartogat a nyelv.
 
 !!! note "Megjegyzés"
-    C-től eltérően, JS-ben nincs kötelező `main()` függvény.
+    C-től eltérően, JS-ben nincs kötelező `main()` függvény. A JavaScript kódok lefutását valamilyen eseményhez szoktuk kötni pl. betöltődik minden kért dokumentum.
 
 Ha JavaScript kódot szeretnénk futtatni, akkor annak az egyik módszere, hogy valami külső dolog indítja el *(pl. a felhasználó kattint vmire; minden betöltődött a weboldalon stb.)*. Ezzel kivédhetjük azt, hogy **még** nem létező HTML elemen szeretnénk műveletet végrehajtani, ezzel elkerülünk egy hibaüzenetet.
 
@@ -67,10 +67,11 @@ Ennek a megoldása egy egyszerű JavaScript kódnak az írásával fog megvalós
     Mivel nincsen fő belépési pont a kódban, ezért a függvények csak úgy maguktól nem tudnak lefutni. Ezért kihasználjuk azt az eseményt, amikor a felhasználó görget.
 
 ``` js
-// Amikor a felhasználó görget, akkor meghívjuk a 
+// Amikor a felhasználó görget, akkor meghívjuk a changeHeader()-t
 window.onscroll = function() { changeHeader() };
 
 // Már minden be van töltve a HTML-ben, ezért itt nyugodtan létrehozhatjuk ezeket a változókat
+// szelektorokon keresztül rámutatunk a keresett elemekre
 var header = document.querySelector("header");
 var main = document.querySelector("main");
 
@@ -127,7 +128,7 @@ header.classList.remove("sticky");
 main.style.marginTop = "20px";
 ```
 
-Különben elvesszük ezt a class-t és visszaálíltjuk a margót.
+Különben elvesszük ezt a class-t és visszaállíttjuk a margót.
 
 ## *sticky* class
 

@@ -10,7 +10,7 @@ Nem mindenkinek van ugyan olyan paraméterű kijelzője mint nekünk. Ami nálun
 
 Írjuk újra a HTML dokumentum megjelenését, de most figyeljünk arra, hogy egy másik eszközön jelenjen meg jól.
 
-Ezt a megoldást választották egy jópáran, amikor elkezdett teret nyerni magának a mobilos böngészés. Például: asztalon a `facebook.com` jön be, míg mobilon az `m.facebook.com`.
+Ezt a megoldást választották egy páran, amikor elkezdett teret nyerni magának a mobilos böngészés. Például: asztalon a `facebook.com` jön be, míg mobilon az `m.facebook.com`.
 
 Az egyik probléma ezzel a megoldással az, hogy ha mobilról akarunk linket megosztani, akkor `m.` kezdetű lesz, szóval PC-n a mobilos kinézetet fogjuk megkapni.
 
@@ -26,7 +26,7 @@ Mi most a `2. megoldást` fogjuk választani.
 
 #### HTML
 
-Ha most megnéznénk a készülő weboldalt mobilről, akkor látható hogy nagyon apró minden. Ez azért van, mert a metaadatok közt nem mondtuk meg a böngészőnek, hogy mit kezdjen kis jelzőkkel.
+Ha most megnéznénk a készülő weboldalt mobilről, akkor látható hogy nagyon apró minden. Ez azért van, mert a metaadatok közt nem mondtuk meg a böngészőnek, hogy mit kezdjen kis kijelzőkkel.
 
 Pótoljuk ezt a hiányosságot. Adjuk hozzá az alábbit a `<head>`-hez:
 

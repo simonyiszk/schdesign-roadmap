@@ -65,7 +65,7 @@ Ugye az `id`-nak a lényege, hogy egyedi, a `class`-nak, hogy többen használha
 
 | Szelektor | Mire fog hatni |
 | --------- | ---------- |
-| `.valami {...}` | Mindenre, aminek a van *valami* nevű *class*-sza |
+| `.valami {...}` | Mindenre, aminek van *valami* nevű *class*-sza |
 
 #### inline CSS: `style`
 
@@ -77,7 +77,7 @@ Most vonatkoztassunk el a képzeletbeli `*.css` fájltól, maradjunk `*.html`-en
 
 Ebben a környezetben a `style` egy attribútum, amivel megadhatunk további... attribútumokat. Ezek a *"további"* attribútumok nem csak úgy jönnek, itt konkrétan CSS deklarációján belül lévő `tulajdonság: érték;` párokat tudjuk felsorolni.
 
-Az egyik előnye, hogy biztosan arra az egy HTML elemre fog alkalmazódni, aminek megadtuk. A másik, hogy nem kell szelektorral foglalkozni. 
+Az egyik előnye, hogy biztosan arra az egy HTML elemre fog alkalmazódni, aminek megadtuk. A másik, hogy nem kell szelektorral foglalkozni.
 
 Ha mindent így akarnánk megoldani, akkor az a szomorú helyzet van, hogy kódot fogunk ismételni, MINDEN EGYES elemnek meg kéne adni stb. Kicsiben tökéletes, nagyban meg se próbáljuk alkalmazni.
 
@@ -287,12 +287,23 @@ Margón kívül van még egy pár dolog, amivel méreteket tudunk megadni, vegy�
 
 | Tulajdonság | A HTML elem... | Kattintható? |
 | - | - | - |
-| <span style="color: lightblue;">width, height</span> | ... legbelső része, kattintható | Igen |
-| <span style="color: green;">padding</span> | ... határa és legbelső része közti rés | Igen |
+| <span style="color: lightblue;">width, height</span> | ... szélessége és magassága, kattintható | Igen |
+| <span style="color: green;">padding</span> | ... kitöltése | Igen |
 | <span style="color: yellow;">border</span> | ... határa | Igen |
 | <span style="color: brown;">margin</span> | ... margója, mekkora rés legyen kihagyva más HTML elemhez képest | Nem |
 
 Ezekkel a tulajdonságokkal le tudjuk írni, hogy melyik HTML elem mekkora legyen és mekkora rés legyen kihagyva más elemekhez képest. Még viszont hátra van az elrendezés.
+
+!!! warning "Erre figylej!"
+    Ha egy elemnek megadjuk, hogy `width: 100px; padding: 10px;` akkor nem 100px széles lesz, hanem 120px. Ez úgy jön ki, hogy a 100px szélességhez hozzáadódik még a 10px kitöltés balról és jobbról is, így `100+10+10=120` lesz a valódi szélesség. Az alábbi kóddal ki lehet kapcsolni: 
+
+``` css
+/* A '*' szelektorral MINDEN html elemet kijelölünk */
+* {
+    box-sizing: border-box;
+}
+/* Ezt a kódot ebben a tutorialban nem használjuk, de jó tudni, hogy van ilyen */
+```
 
 ### Ki hol legyen?
 
@@ -315,17 +326,18 @@ Szerencsénkre `flex`-szel mindezt nagyon egyszerűen el tudjuk érni.
 ``` css
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* A tartalmadat flex-szerűen... */
+    flex-direction: column; /* ...függőleges irányban jelenítsd meg */
 }
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /* flex-szerű tartalom megjelenítés */
+    flex-direction: row; /* sorban jelenjen meg a tartalmad */
+    align-items: center; /* Függőlegesen középre kerül minden */
     height: 50px;
 }
 #logo {
-    flex: 1;
+    flex: 1; /* megengedjük neki, hogy az összes elérhető helyet megkapja */
+    /* emiatt fognak a linkek jobb oldalra kerülni */
 }
 #logo > img {
     height: 40px;
@@ -343,8 +355,8 @@ footer {
 
 | Tulajdonság | Mire való |
 | - | - |
-| height | Konkrétan milyen magas legyen az elem |
-| max-width | Konkrétan milyen széles legyen az elem |
+| height | Milyen magas legyen az elem |
+| max-width | Maximum milyen széles legyen az elem |
 | display | Milyen módon jelenjen meg az adott elem |
 | flex-direction | Milyen irányba helyezze el a leszármazottakat |
 | flex | A tartalomhoz mérten mekkorára nyúljon az elem |
@@ -359,16 +371,16 @@ Mivel a `<header>`, `<main>` és `<footer>` a `<body>`-ból származnak le, ezé
 
 A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex* legyen, de sorban jelenítse meg a leszármazottakat. A benne lévő `<div id="logo">`-t felhasználjuk arra, hogy jobbra tolja a linkeket.
 
-`<footer>`-t majd stílusnál módosítjuk egy kicsit jobban.
+`<footer>`-t majd a stílusnál módosítjuk egy kicsit jobban.
 
-A `<main>` meg szimplán középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
+A `<main>` középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
 
 !!! note "Megjegyzés"
     Jelenleg a `<footer>` nincs a böngésző aljába tolva. Ez azér van, mert nincs elég tartalom a jegyzetben. Az egyik megoldás, hogy kiegészítjük a jegyzetet elegendő tartalommal. A másikat meg majd a reszponzivitásnál fogjuk megnézni.
 
 #### Szervezzük ki egy másik fájlba
 
-Az eddig leírtak ha minden igaz, akkor a `style.css`-ben vannak. Most ezt tegyük át a `layout.css`-be.
+Az eddig leírtak, ha minden igaz, akkor a `style.css`-ben vannak. Most ezt tegyük át a `layout.css`-be.
 
 Ez csak egy kényelmi lépés, lehet nyugodtan a következő sorban is folytatni a további kódokat, nem lesz belőle probléma. De így valamennyire nyerünk az átláthatósággal.
 
@@ -531,7 +543,7 @@ Akkor a `<main>`-t is emeljük ki. Árnyékolással adjunk neki egy kis térhat�
 main {
     border-radius: 5px; /* Lekerekítjük a négy sarkát */
     background-color: white;
-    /* Térhatás */
+    /* Térhatás árnyékkal */
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
 }
 ```
@@ -598,8 +610,8 @@ article img { /* Minden jegyzeten belüli képre alkalmazódni fog */
     display: block; /* Semmi képpen se kerüljön valami vele egy sorba */
     max-width: 100%; /* Erről majd a reszponzivitásban, most fogadjuk el, hogy itt van */
     padding: 0 20px;
-    margin-left: auto; /* Régi trükk a középre illsztéshez */
-    margin-right: auto; /* Régi trükk a középre illsztéshez */
+    margin-left: auto; /* blokk megjelenítésű elemeket így kell középre igazítani */
+    margin-right: auto; /* blokk megjelenítésű elemeket így kell középre igazítani */
 }
 
 .img-caption {
@@ -803,4 +815,4 @@ footer {
         ```
 
 !!! note "Megjegyzés"
-    A CSS fájlokban sok nagyon feladat specifikus szelektor lett használva, így a kódot nem nagyon lehet egyszerűen újra felhasználni.
+    A CSS fájlokban sok, feladat specifikus szelektor lett használva, így a kódot nem nagyon lehet egyszerűen újra felhasználni.

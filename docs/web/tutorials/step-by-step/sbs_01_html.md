@@ -2,7 +2,7 @@
 
 Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezdődik. Ez nem egy programozási nyelv, hanem egy leíró nyelv. Az ilyen típusú egyszerű szöveges dokumentumoknak a kiterjesztése rendre `.html` vagy `.htm` szokott lenni. Ezek közül az előbbi van sokkal jobban elterjedve.
 
-Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegendő akár a Windows-os Notepad.
+Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegendő akár a Windows-os Notepad is.
 
 !!! note "Megjegyzés"
     A C és más programozási nyelvekhez hasonlóan ebben is lehet kommentelni. Sőt, ha elég távolra tévedünk, akkor még feltételes elemekkel *[(conditional comments)](https://htmldog.com/guides/html/advanced/conditionalcomments/)* is találkozhatunk.
@@ -17,7 +17,7 @@ Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem *(opening tag)*, tar
 <elem hidden>Ezt a böngésző nem fogja megjeleníteni</elem> <!-- hidden: true -->
 ```
 
-A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De viszont elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése az ilyen elemeknek. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
+A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De, elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
 
 ``` HTML
 <!-- A HTML elemek lezárásának 3 fajtája: -->
@@ -67,7 +67,7 @@ Viszont, amint más-más elemeket akarunk közrefogni, akkor sokkal inkább ajá
 
 ## Ahol minden elkezdődik: *index.html*
 
-Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.html` legyen a kiterjesztése *(pl. Windows szereti a .txt végződést elrejteni)* a projektunk gyökér könyvtárában *(step-by-step)*. Nyissuk meg kedvenc szövegszerkesztőnkben *(igen, akár Notepad-ban is)*, majd gépeljük le az alábbi sorokat:
+Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.html` legyen a kiterjesztése *(pl. Windows szereti a .txt végződést elrejteni)* a projektünk gyökérkönyvtárában *(step-by-step)*. Nyissuk meg kedvenc szövegszerkesztőnkben *(igen, akár Notepad-ban is)*, majd gépeljük le az alábbi sorokat:
 
 !!! example ""
     === "index.html"
@@ -95,7 +95,7 @@ Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor biztos, ho
 HTML dokumentum készítésénél érdemes konténerekben gondolkozni, a sok egymáshoz tartozó részt egy közös dobozban elképzelni. Ezáltal, amikor megpróbáljuk majd elrendezni az elemeket, sokkal egyszerűbb dolgunk lesz.
 
 !!! warning "Erre figyelj"
-    A böngészők nem mindig helyes HTML kódot kapnak *(pl. elfelejtettük/elgépeltük a záró elemet; indokolatlanul sok szóköz van egy szövegben stb.)*. Érdekes módon, ilyenkor is valamennyire *"helyesen"* fog megjelenni a weboldal. Ez azért van, mert a böngészők mielőtt elkezdenék megjeleníteni az oldalt, megpróbálják a hibákat javítani *(pl. lezárják a le nem zárt elemeket; kitörlik az indokolatlanul sok szóközt; stb.)*. Így abban a tudatban tudsz tovább haladni, hogy minden rendben és a hibák csak később lesznek láthatóak *(vagy soha)*.
+    A böngészők nem mindig helyes HTML kódot kapnak *(pl. elfelejtettük/elgépeltük a záró elemet; indokolatlanul sok szóköz van egy szövegben stb.)*. Érdekes módon, ilyenkor is valamennyire *"helyesen"* fog megjelenni a weboldal. Ez azért van, mert a böngészők mielőtt elkezdik megjeleníteni az oldalt, megpróbálják a hibákat javítani *(pl. lezárják a le nem zárt elemeket; kitörlik az indokolatlanul sok szóközt; stb.)*. Így abban a tudatban tudsz tovább haladni, hogy minden rendben és a hibák csak később lesznek láthatóak *(vagy soha)*.
 
 ## Egy kicsit bővebben: `<head>`
 
@@ -115,7 +115,7 @@ Az előző táblázatból kiderül, hogy különféle metaadatok/kapcsolatok fog
 | `<link>`    | A dokumentum és egy másik forrás közti kapcsolatot ír le *(jelenleg pl. a weboldalunk ikonjára mutat)* |
 | `<title>`    | A dokumentum címe |
 
-Ezeken kívül nem nagyon szoktunk más elemekkel találkozni a `<head>`-en belül. Az ikont és a címet szükséges kiemelni, mert ezek határozzák meg, hogy a böngésző tetején milyen kép és szöveg jelenik meg, illetve könyvelzők közé mentés esetén ezek lesznek az alapértelmezett adatok. A `charset="UTF-8"`-cal megmondjuk, hogy a dokumentumunk kódolása UTF-8. Ha szeretnénk, hogy jól jelenjenek meg a magyar *(és kvázi minden, ami nem ASCII)* karakterek a weboldalunkon, akkor az UTF-8 kódolás nagyon erősen ajánlott.
+Ezeken kívül nem nagyon szoktunk más elemekkel találkozni a `<head>`-en belül. Az ikont és a címet szükséges kiemelni, mert ezek határozzák meg, hogy a böngésző tetején milyen kép és szöveg jelenik meg, illetve könyvelzők közé mentés esetén ezek lesznek az alapértelmezett adatok. A `charset="UTF-8"`-cal megmondjuk, hogy a dokumentum kódolása UTF-8. Ha szeretnénk, hogy jól jelenjenek meg a magyar *(és kvázi minden más)* karakterek a weboldalon, akkor az UTF-8 kódolás nagyon erősen ajánlott.
 
 Néha lehet látni `<script>` és `<style>` elemeket, de sima statikus weboldalaknál nem érdemes ilyeneket a `<head>`-ben elhelyezni.
 
@@ -152,7 +152,7 @@ Most nézzek meg jobban a `<body>`-t is. Itt Egy átlagos tartalom:
 
 | HTML elem   | Mire használjuk |
 | ----------- | ---------------------------------------------------------------------------------------- |
-| `<!-- ... -->` | Komment, más nyelvekhez haosnlóan ez figyelmen kívül lesz hagyva |
+| `<!-- ... -->` | Komment, más nyelvekhez hasonlóan ez figyelmen kívül lesz hagyva |
 | `<header>` | A weboldalunk logóját, főbb linkjeit gyűjtjük benne össze; tartalomjegyzék stb.; a weboldal teteje |
 | `<main>` | A weboldal fő tartalmát tartalmazza; a weboldal közepe |
 | `<footer>` | Jogi nyilatkozat, kapcsolattartási linkek, stb.; a weboldal alja |
@@ -185,13 +185,14 @@ Egy olyan attribútum, amit bármelyik HTML elemnek megadhatunk, de az értéké
 
 ### class
 
-Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének nem szükséges egyedinek lennie. Lehet két HTML elemnek ugyan az a *class*-a egy dokumentumban. Konkrét megjelenési/viselkedési tulajdonságokkal ruházunk fel velük HTML elemeket. Egy elemnek lehet több *class*-a is. Ahogyan láthatjuk, kvázi az *id* ellentéte a *class*.
+Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének nem szükséges egyedinek lennie. Lehet két HTML elemnek ugyan az a *class*-a egy dokumentumban. Konkrét megjelenési/viselkedési tulajdonságokkal ruházunk fel velük HTML elemeket. Egy elemnek lehet több *class*-a is.
 
 !!! note "Megjegyzés"
     Amikor megadjuk őket egy HTML elemnek, akkor mondhatnánk azt is, hogy *"megörököljük a tulajdonságait"*.
 
 ``` HTML
 <elem class="piros dolt felkover alahuzott"></elem>
+<elem2 class="piros"></elem2>
 ```
 
 !!! warning "Erre figyelj"
@@ -289,7 +290,7 @@ Mik az új elemek:
 
 | HTML elem   | Mire használjuk |
 | ----------- | ---------------------------------------------------------------------------------------- |
-| `<div>` | egy általános nevő HTML elem, id-n és CSS-en keresztül fog értelmet kapni; a logót ez lesz a konténere |
+| `<div>` | egy általános nevű HTML elem, id-n, class-on és CSS-en keresztül fog értelmet kapni; a logónak ez lesz a konténere |
 | `<ol>` | "ordered list"; számozott lista |
 | `<li>` | "list elem"; egy számozott/számozatlan listának az eleme |
 | `<section>` | szekció; az egyes fejezeteket/kiemelendő részeket fogjuk bennük tárolni |
@@ -306,7 +307,7 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 - `<body>`-n belül található meg a HTML dokumentum fő része.
 - `id`-nak egyedi értéket kell adni.
 - `class`-szal közös viselkedési, megjelenési formákat írunk le.
-- `style`-lal további attribútumokat tudunk felsorolni.
+- `style`-al további attribútumokat tudunk felsorolni.
 
 ### Végleges kód
 
@@ -378,5 +379,3 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 ## Kvíz a tanultakhoz
 
 <iframe width="640" height="886" src="https://docs.google.com/forms/d/e/1FAIpQLSeVjDyJ-0DKm3oaD6dO7WzZTZAetoU6JUIipXb3t0dly7RTUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
-
-<iframe width="640px" height= "1000px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=q0g1anB1cUKRqFjaAGlwKUmQdzbz_jpGrVQfQsP9IFFURFk0RlhQWUM5TElZNDEzV0VQRlROUE1JTy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>

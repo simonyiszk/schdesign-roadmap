@@ -94,7 +94,7 @@ nav:
   - Web:
     - Web divízió: web/web.md
     - Első lépések: web/elso-lepesek.md
-    - Minden amit weboldal készítésről tudni akartál, de sosem merted megkérdezni:
+    - Weboldal készítés az alapoktól:
       - 0. Bevezetés: web/tutorials/step-by-step/sbs_00_bevezeto.md
       - 1. HTML: web/tutorials/step-by-step/sbs_01_html.md
       - 2. CSS: web/tutorials/step-by-step/sbs_02_css.md

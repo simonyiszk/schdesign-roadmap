@@ -1,8 +1,12 @@
 # Bevezető
 
-Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva léte fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
+Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva létere fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
 
-Egyszerű, szövegeket szeretnénk tárolni, képeket megjeleníteni és opcionálisan képaláírást elhelyezni.
+Mit is akarunk pontosan csinálni?
+
+- Szövegeket szeretnénk tárolni.
+- Képeket megjeleníteni.
+- Opcionális képaláírás.
 
 ## Mire lesz szükséged
 
@@ -34,19 +38,19 @@ Ha tovább szeretnél majd haladni:
 
 ## Környezet
 
-Lesz egy gyökér mappánk *(step-by-step)*. Minden, amit használni fogunk ebben a mappában lesz.
+Lesz egy gyökérkönyvtár *(step-by-step)*. Minden, amit használni fogunk ebben a mappában lesz.
 
 Az alábbi fájlstruktúrát fogjuk használni:
 
 <img src="/web/tutorials/step-by-step/sbs_00_fajlok.png">
 
-Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva *(hanem pl. ASCII)*, akkor változtassuk meg azt UTF-8-ra.
+Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva, akkor változtassuk meg azt UTF-8-ra.
 
-A képeket *(cat.jpg, logo.png, logo.svg)* és a szövegtípus fájlt *(Roboto-Regular.ttf)* nem kell létrehozni, azokat majd az internetről fogjuk letölteni.
+A képeket *(cat.jpg, logo.png, logo.svg)* és a szövegtípus fájlt *(Roboto-Regular.ttf)* nem kell létrehozni, azokat itt lehet letölteni:
 
 - cat.jpg : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/Roboto-Regular.ttf)
 - logo.png : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/cat.jpg)
 - logo.svg : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/logo.png)
 - Roboto-Regular.ttf : [letöltés](https://github.com/gergoradeczki/gergoradeczki.github.io/raw/master/tutorials/step-by-step/vegleges/logo.svg)
 
-Helyezzük el ezeket a fájlokat a gyökérmappában.
+Helyezzük el ezeket a fájlokat a gyökérkönyvtárban.
