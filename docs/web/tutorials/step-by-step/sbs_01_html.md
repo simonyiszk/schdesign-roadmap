@@ -375,6 +375,8 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
             </body>
         </html>
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/01_html/index.html"></iframe>
 
 ## Kvíz a tanultakhoz
 

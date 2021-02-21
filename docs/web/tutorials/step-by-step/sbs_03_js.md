@@ -354,3 +354,5 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
             }
         }
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/03_js/index.html"></iframe>

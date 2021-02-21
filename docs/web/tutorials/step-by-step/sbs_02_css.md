@@ -813,6 +813,8 @@ footer {
             padding: 20px;
         }
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/02_css/index.html"></iframe>
 
 !!! note "Megjegyzés"
     A CSS fájlokban sok, feladat specifikus szelektor lett használva, így a kódot nem nagyon lehet egyszerűen újra felhasználni.

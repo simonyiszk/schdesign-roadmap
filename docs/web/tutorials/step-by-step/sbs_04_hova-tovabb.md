@@ -47,7 +47,7 @@ Most viszont feltűnhet, hogy nem csak függőlegesen, hanem vízszintesen is va
 
 `layout.css`
 
-Ekőször javítsuk ki azt, hogy a `<footer>` mindig a weboldal alján legyen, akár van elég tartalom, akár nem. Ezt azzal fogjuk elérni, hogy a `<body>`-nak minimális magasságot fogunk beállítani, így abban szabadon fogunk tudni vertikálisan elemeket elhelyezni a `flex` megjelenítésnek köszönhetően.
+Először javítsuk ki azt, hogy a `<footer>` mindig a weboldal alján legyen, akár van elég tartalom, akár nem. Ezt azzal fogjuk elérni, hogy a `<body>`-nak minimális magasságot fogunk beállítani, így abban szabadon fogunk tudni vertikálisan elemeket elhelyezni a `flex` megjelenítésnek köszönhetően.
 
 ``` css
 body {
@@ -72,7 +72,7 @@ main {
 }
 ```
 
-Az `<img>`-nek ezt adtuk meg: `max-width: 100%;`. Itt nem konkrétan megmondtunk egy pixel számot, hanem hogy a konténernek a 100%-os szélességéig nyúlhat. Azaz, ha változik a konténer szélessége *(pl. átméretezzük az ablakot)*, akkor ahhoz fog viszonyulni.
+Az `<img>`-nek ezt adtuk meg: `max-width: 100%;`. Itt nem konkrétan megmondtunk egy pixel számot, hanem hogy a konténernek *(amiben benne van)* a 100%-os szélességéig nyúlhat. Azaz, ha változik a konténer szélessége *(pl. átméretezzük az ablakot)*, akkor ahhoz fog viszonyulni.
 
 
 
@@ -316,6 +316,8 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
             }
         }
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/04_hova-tovabb/index.html"></iframe>
 
 ## Hostoljuk a weboldalt.
 
