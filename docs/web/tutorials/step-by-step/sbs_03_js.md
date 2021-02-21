@@ -154,7 +154,8 @@ Most ha a tartalomjegyzékben rákattintunk egy linkre, akkor jó helyre fog ugr
 
 ``` css
 h1, h2, h3, h4, h5, h6 {
-    scroll-margin-top: 60px; /* mennyivel kerüljön lejjebb a tartalom ugráskor */
+    /* A header magassága 50px */
+    scroll-margin-top: 50px; /* mennyivel kerüljön lejjebb a tartalom ugráskor */
 }
 ```
 
@@ -277,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         h1, h2, h3, h4, h5, h6 {
             margin: 30px 0 10px 0;
-            scroll-margin-top: 60px;
+            scroll-margin-top: 50px;
         }
         h1 {
             font-size: 35px;

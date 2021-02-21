@@ -221,7 +221,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
         }
         h1, h2, h3, h4, h5, h6 {
             margin: 30px 0 10px 0;
-            scroll-margin-top: 60px;
+            scroll-margin-top: 50px;
         }
         h1 {
             font-size: 35px;
