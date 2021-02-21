@@ -380,4 +380,4 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 
 ## Kvíz a tanultakhoz
 
-<iframe width="640" height="886" src="https://docs.google.com/forms/d/e/1FAIpQLSeVjDyJ-0DKm3oaD6dO7WzZTZAetoU6JUIipXb3t0dly7RTUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVjDyJ-0DKm3oaD6dO7WzZTZAetoU6JUIipXb3t0dly7RTUg/viewform?embedded=true" width="640" height="2648" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>

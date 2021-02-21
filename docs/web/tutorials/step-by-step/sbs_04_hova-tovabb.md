@@ -103,7 +103,9 @@ Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni,
 
 Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méretű lesz a `<main>`. Most tekintsünk ennek a megoldásától, feltételezzük, hogy lesz elég tartalom, ami miatt max. 960px szélességig szét tud nyúlni.
 
-## Most már tényleg a végleges kód
+## Összegzés
+
+### Végleges kód (most már tényleg)
 
 !!! example ""
     === "index.html"
@@ -342,3 +344,7 @@ Most ha a jelenlegi gyökérmappánk tartalmát feltöltjük ennek a reponak a g
 - helyesírási hibák javítása
 - github leírás kiegészítése
 - teljes összegzés
+
+## Kvíz a tanultakhoz
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8EOASO07GUcbwNbhIqYmDN7FfAc7YPbGU3WGA-iIDeP2QZQ/viewform?embedded=true" width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>

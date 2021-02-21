@@ -155,7 +155,7 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
 - Elsőre nehéznek tűnő dolgokat JS-ben megoldani egyszerű lehet
 - JS fájlt a HTML dokumentum utolsó soraiban érdemes betölteni
 
-## Végleges kód
+### Végleges kód
 
 !!! example ""
     === "index.html"
@@ -356,3 +356,7 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         ```
     === "Előnézet"
         <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/03_js/index.html"></iframe>
+
+## Kvíz a tanultakhoz
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaX5Vnm7IY9OprdOVF7NpG8S18FT3zhzrTmtJMApSeKtKDDA/viewform?embedded=true" width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
