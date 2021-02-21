@@ -6,6 +6,8 @@
 
 Nem mindenkinek van ugyan olyan paraméterű kijelzője mint nekünk. Ami nálunk jól néz ki, még nem biztos, hogy másnál is jól fog kinézni. Ami nálunk olvasható, másnál lehet olvashatatlan. Stb.
 
+Vagy csak ha eddig valaki megnézte az *"Előnézet"*-eket a fejezetek végén, akkor elég csúnya volt a látvány :(
+
 ### 1. Megoldás
 
 Írjuk újra a HTML dokumentum megjelenését, de most figyeljünk arra, hogy egy másik eszközön jelenjen meg jól.
