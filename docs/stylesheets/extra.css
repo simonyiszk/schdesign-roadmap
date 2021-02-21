@@ -1,24 +1,24 @@
 /* Setting main color theme to schdesign style <3 */
 
 :root {
-    --md-primary-fg-color:        #3d3d3d;
-    /* Ezzel a színnel olvashatatlanak a linkek :( */
-    /*--md-primary-fg-color--light: #3d3d3d;*/
-    --md-primary-fg-color--light: #7b88cc;
-    --md-primary-fg-color--dark:  #3d3d3d;
+  --md-primary-fg-color:        #3d3d3d;
+  /* Ezzel a színnel olvashatatlanak a linkek :( */
+  /*--md-primary-fg-color--light: #3d3d3d;*/
+  --md-primary-fg-color--light: #7b88cc;
+  --md-primary-fg-color--dark:  #3d3d3d;
 
-    --md-accent-fg-color: #f8485e;
-    --md-accent-fg-color--light: #f8485e;
-    --md-accent-fg-color--dark: #f8485e;
-    
-    --md-primary-bg-color: #F2F2F2;    
-  }
+  --md-accent-fg-color: #f8485e;
+  --md-accent-fg-color--light: #f8485e;
+  --md-accent-fg-color--dark: #f8485e;
+  
+  --md-primary-bg-color: #F2F2F2;    
+}
 
 
 /* Setting footer's background color to match the theme */
 :root > * {
-    --md-footer-bg-color:       #3d3d3d;
-    --md-footer-bg-color--dark: #3d3d3d;
+  --md-footer-bg-color:       #3d3d3d;
+  --md-footer-bg-color--dark: #3d3d3d;
 }
 
 
@@ -28,11 +28,11 @@ html .md-footer-meta.md-typeset a:hover,
 .md-source:hover,
 .md-search__input:hover + label
 {
-  color: var(--md-accent-fg-color);
+color: var(--md-accent-fg-color);
 }
 
 /* Dotted underline for links so they are visible. */
 
 .md-content a[href]  {
-  text-decoration: underline dotted var(--md-primary-fg-color);
+text-decoration: underline dotted var(--md-primary-fg-color);
 }
