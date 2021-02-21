@@ -340,9 +340,6 @@ Most ha a jelenlegi gyökérmappánk tartalmát feltöltjük ennek a reponak a g
 
 ## TODO az írónak
 
-- kódokhoz előnézet `<iframe>`-mel
-- kódokhoz előnézet képpel
-- kvíz a részek végén
 - több ábra
 - helyesírási hibák javítása
 - github leírás kiegészítése
