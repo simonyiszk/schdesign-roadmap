@@ -148,6 +148,16 @@ Mivel kikerül a síkból, ezért a helye üres marad. Minden ami alatta volt fe
 
 Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
 
+### Fejlécek megjavítása
+
+Most ha a tartalomjegyzékben rákattintunk egy linkre, akkor jó helyre fog ugrani a nézőpont, de pont ki lesz takarva a header miatt a fejléc címe. Ezt orvosoljuk az alábbi CSS kóddal a `style.css`-ben:
+
+``` css
+h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 60px; /* mennyivel kerüljön lejjebb a tartalom ugráskor */
+}
+```
+
 ## Összegzés
 
 - Statikus (HTML+CSS) -> Dinamikus (HTML+CSS+JS) + (Szerver/kliens oldali kódgenerálás)
@@ -267,6 +277,7 @@ Eddig `20px` volt, de mivel a a `<header>` `50px` magas, így `20+50=70px` lesz.
         }
         h1, h2, h3, h4, h5, h6 {
             margin: 30px 0 10px 0;
+            scroll-margin-top: 60px;
         }
         h1 {
             font-size: 35px;
