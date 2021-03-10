@@ -6,12 +6,14 @@ Jellemzően `.js` kiterjesztést használnak a JavaScript fájlok.
 
 ## A nyelv építőelemei
 
+A JavaScript egy gyengén típusos nyelv. Ez azt jelenti, hogy változó létrehozásakor nem kell megmondani a változónak a típusát, az a környezetből kiderül. Ezen felül a típusok dinamikusak, azaz bármikor lehet olyat csinálni, hogy az egyik pillanatban még egy számot tároltunk, a másikban már egy szöveget ugyan abban a változóban.
+
 ``` js
 // egysoros komment
 /* 
    többsoros komment
 */
-var alma = 5; // változó létrehozása
+var alma = 5; // globális változó létrehozása
 var korte = 4;
 var osszeg = alma + korte // műveletek
 function csinaldEzt() {} // függvények
@@ -19,20 +21,42 @@ for(); while(); do {} while(); // ciklusok
 /*
 stb... 
 */
+
+// újdonságok, régebbi böngéyzők nem biztos hogy támogatják
+const a = 1; // konstans, értékét nem lehet megváltoztatni
+let b = "egy string" // csak adott scope-on belül van értelme, nem globális
 ```
+
+Típusok JavaScriptben:
+
+- string
+- number
+- boolean
+- undefined
+- bigint
+- symbol
+- object
+
+!!! note "Megjegyzés"
+    Number az lehet egész, illetve tört szám is. Ezen felül ki van egészítve olyanokkal is, mint `Infinity`, `-Infinity`. Igen, a ±végtelen JavaScriptben egy szám.
 
 Nagyon nagy valószínűséggel, ha valamit meg akarsz csinálni JavaScriptben, akkor azt meg fogod tudni csinálni. Még azt is, amire azt hiszed, hogy nem vagy képes.
 
 !!! warning "Erre figyelj"
     Változó létrehozáskor nem kell típust megadni.
+
 !!! warning "Erre figyelj"
-    Egy utasítási blokkon `{...}` belül létrehozott változót kívülről is el lehet érni.
+    A változók típusai dinamikusan tudnak változni.
+
+!!! warning "Erre figyelj"
+    `var`-ral létrehozott változó scope-on `{...}` kívül is látható, `const` és `let` csak scope-on belül.
+
 !!! warning "Erre figyelj"
     A `==` jel azonos típusra konvertál és azután ellenőriz értéket.
+
 !!! warning "Erre figyelj"
     A `===` jel ellenőrzi a típust és az értéket.
-!!! warning "Erre figyelj"
-    A számhalmaz ki van egészítve ezekkel: `NaN`, `Infinity`.
+    
 !!! warning "Erre figyelj"
     És még sok egyéb *"érdekességet"* is tartogat a nyelv.
 
@@ -43,9 +67,12 @@ Ha JavaScript kódot szeretnénk futtatni, akkor annak az egyik módszere, hogy 
 
 ### JS beillesztése HTML-be
 
-CSS-sel ellentétben JS fájlokat a `<script src="..."></script>` HTML elemmel tudunk hozzáadni a kódunkhoz. Ezt bárhol megtehetjük, de szélszerű közvetlen a `</body>` előtt megtenni.
+CSS-sel ellentétben JS fájlokat a `<script src="..."></script>` HTML elemmel tudunk hozzáadni a kódunkhoz. Ezt bárhol megtehetjük, de általában közvetlen a `</body>` előtt szokás megtenni.
 
 Ezt azért célszerű így csinálni, mert ekkor *(jelen projektben)* már minden HTML elem betöltődött, nem fogunk tudni olyan elemen műveletet végrehajtani, ami még nem létezik.
+
+!!! note "Megjegyzés"
+    Ha `<head>`-ben `<script src="..." defer></script>`-ként adjuk meg a fájlt, akkor azzal garantáljuk, hogy a HTML dokumentom teljes betöltődése után fussanak le a benne leírtak. Előnye, hogy előbb kimegy a kérés az `src="..."`-ben megadott fájlért, ezzel javulhat a megjelenítés sebessége. Hátránya, hogy meg kell várni a HTML dokumentom betöltődését ahhoz, hogy érvényesüljenek a fájlban leírtak.
 
 !!! warning "Erre figyelj"
     Itt már szól a böngésző, ha valami baj van. Ezt a böngésző *Developer tools -> Console* részében tudjuk megtekinteni.
@@ -57,7 +84,7 @@ Ezt azért célszerű így csinálni, mert ekkor *(jelen projektben)* már minde
 
 Felmerülhet a kérdés: *"a weboldal már kvázi készen van, minek ide JS?"*
 
-Nos, jelen pillanatban a `<header>` csak úgy van a weboldal tetején. Ha elég tartalommal feltöltjük a bekezdéseket *(Lorem ipsum)*, akkor nyilvánvalóvá válik, hogy a fejlécünk nem nagyon követi a nézőpontot görgetés közben. Ezt meg tudnánk oldani egy egyszerű CSS `position: static;` hozzáadásával, de ezzel van egy kis gond:
+Nos, jelen pillanatban a `<header>` csak úgy van a weboldal tetején. Ha elég tartalommal feltöltjük a bekezdéseket *(Lorem ipsum)*, akkor nyilvánvalóvá válik, hogy a fejlécünk nem nagyon követi a nézőpontot görgetés közben. Ezt meg tudnánk oldani egy egyszerű CSS `position: static;` hozzáadásával *(vagy khm... `@media print` query-vel)*, de ezzel van egy kis gond:
 
 Ha arra vetemednénk, hogy pl. PDF-et készítűnk a weboldalról, akkor a fenti megoldás következtében a PDF minden egyes oldalának a tetején ott lenne a `<header>`.
 
