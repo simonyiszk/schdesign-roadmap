@@ -41,7 +41,7 @@ Blenderben van a zaj és a firefly-ok ellen beépített denoiser. 2.81 óta ez e
 - **6.lépés:** Ha most újrarendereljük a képet, amikor elkészült renderen, le fog futni a denoiser.
 
 !!! warning "Figyelem"
-	Csak az elkészült renderen látszik a zajmentesítés, renderelés közben nem fog látszani!
+    Csak az elkészült renderen látszik a zajmentesítés, renderelés közben nem fog látszani!
 
 ![after_lowSample](../img/denoising/after_lowSample.png) 128 sample - 35 s - gtx 1070
 
@@ -50,12 +50,12 @@ Blenderben van a zaj és a firefly-ok ellen beépített denoiser. 2.81 óta ez e
 Látható, hogy a korábban zajos 128 samples zajos képből egy már prezentálható képet csinál, 2048 sample-vel pedig egy hibátlan képet.
 
 !!! info "Megjegyzés"
-	Ha realisztikus render a cél, érdemes kamerazajt utólag rárakni a képre, hogy valóságosabbnak érződjön.
+    Ha realisztikus render a cél, érdemes kamerazajt utólag rárakni a képre, hogy valóságosabbnak érződjön.
 
 ### Denoising bekapcsolása viewportban:
 
 !!! warning "Csak Blender 2.9+"
-	A viewport denoising csak a Blender 2.9-es, és annál újabb verziójával működik
+    A viewport denoising csak a Blender 2.9-es, és annál újabb verziójával működik
 
 Pipájuk be a Render properties &rarr; Sampling &rarr; Denoising &rarr; Viewport -ot, és hagyjuk automatikus-on. (Új nvidia videokártyákhoz az optix denoiser lesz használva, minden máshoz az open image denoiser)
 
