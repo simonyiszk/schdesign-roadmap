@@ -6,6 +6,8 @@
 
 Nem mindenkinek van ugyan olyan paraméterű kijelzője mint nekünk. Ami nálunk jól néz ki, még nem biztos, hogy másnál is jól fog kinézni. Ami nálunk olvasható, másnál lehet olvashatatlan. Stb.
 
+Vagy csak ha eddig valaki megnézte az *"Előnézet"*-eket a fejezetek végén, akkor elég csúnya volt a látvány :(
+
 ### 1. Megoldás
 
 Írjuk újra a HTML dokumentum megjelenését, de most figyeljünk arra, hogy egy másik eszközön jelenjen meg jól.
@@ -47,7 +49,7 @@ Most viszont feltűnhet, hogy nem csak függőlegesen, hanem vízszintesen is va
 
 `layout.css`
 
-Ekőször javítsuk ki azt, hogy a `<footer>` mindig a weboldal alján legyen, akár van elég tartalom, akár nem. Ezt azzal fogjuk elérni, hogy a `<body>`-nak minimális magasságot fogunk beállítani, így abban szabadon fogunk tudni vertikálisan elemeket elhelyezni a `flex` megjelenítésnek köszönhetően.
+Először javítsuk ki azt, hogy a `<footer>` mindig a weboldal alján legyen, akár van elég tartalom, akár nem. Ezt azzal fogjuk elérni, hogy a `<body>`-nak minimális magasságot fogunk beállítani, így abban szabadon fogunk tudni vertikálisan elemeket elhelyezni a `flex` megjelenítésnek köszönhetően.
 
 ``` css
 body {
@@ -72,7 +74,7 @@ main {
 }
 ```
 
-Az `<img>`-nek ezt adtuk meg: `max-width: 100%;`. Itt nem konkrétan megmondtunk egy pixel számot, hanem hogy a konténernek a 100%-os szélességéig nyúlhat. Azaz, ha változik a konténer szélessége *(pl. átméretezzük az ablakot)*, akkor ahhoz fog viszonyulni.
+Az `<img>`-nek ezt adtuk meg: `max-width: 100%;`. Itt nem konkrétan megmondtunk egy pixel számot, hanem hogy a konténernek *(amiben benne van)* a 100%-os szélességéig nyúlhat. Azaz, ha változik a konténer szélessége *(pl. átméretezzük az ablakot)*, akkor ahhoz fog viszonyulni.
 
 
 
@@ -103,7 +105,9 @@ Ezt a `@media only screen and (max-width: 959px)` próbáljuk meg úgy felfogni,
 
 Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méretű lesz a `<main>`. Most tekintsünk ennek a megoldásától, feltételezzük, hogy lesz elég tartalom, ami miatt max. 960px szélességig szét tud nyúlni.
 
-## Most már tényleg a végleges kód
+## Összegzés
+
+### Végleges kód (most már tényleg)
 
 !!! example ""
     === "index.html"
@@ -217,6 +221,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
         }
         h1, h2, h3, h4, h5, h6 {
             margin: 30px 0 10px 0;
+            scroll-margin-top: 50px;
         }
         h1 {
             font-size: 35px;
@@ -316,6 +321,8 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
             }
         }
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/04_hova-tovabb/index.html"></iframe>
 
 ## Hostoljuk a weboldalt.
 
@@ -333,10 +340,11 @@ Most ha a jelenlegi gyökérmappánk tartalmát feltöltjük ennek a reponak a g
 
 ## TODO az írónak
 
-- kódokhoz előnézet `<iframe>`-mel
-- kódokhoz előnézet képpel
-- kvíz a részek végén
 - több ábra
 - helyesírási hibák javítása
 - github leírás kiegészítése
 - teljes összegzés
+
+## Kvíz a tanultakhoz
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8EOASO07GUcbwNbhIqYmDN7FfAc7YPbGU3WGA-iIDeP2QZQ/viewform?embedded=true" width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>

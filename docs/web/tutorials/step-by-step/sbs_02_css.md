@@ -194,7 +194,7 @@ Ezzel kiegészítve az `index.html` fájl így fog kinézni:
         ```
 
 !!! note "Megjegyzés"
-    Nagyobb projektek fejlesztési fázisában esetében érdemes nem mindent egy CSS fájlba írni. Jobb szokott lenni, ha kiszervezzük őket több, kisebb fájlba. Ezeket persze mind egyesével `<link>`-elni kell majd.
+    Nagyobb projektek fejlesztési fázisában érdemes nem mindent egy CSS fájlba írni. Jobb szokott lenni, ha kiszervezzük őket több, kisebb fájlba. Ezeket persze mind egyesével `<link>`-elni kell majd.
 
 Az átláthatóság kedvéért *(meg mert előre látóak vagyunk :) )*, hozzunk létre még egy `layout.css` és `responsive.css` nevű fájlt is, szintén a gyökérmappában.
 
@@ -639,7 +639,7 @@ footer {
 - `{...}` belül `tulajdonság: érték;` formában felsoroljuk a változtatásokat.
 - Ha többször szerepel egy tulajdonság, akkor a legutolsó értéke fog érvényesülni.
 
-## Végleges kód
+### Végleges kód
 
 !!! example ""
     === "index.html"
@@ -813,6 +813,12 @@ footer {
             padding: 20px;
         }
         ```
+    === "Előnézet"
+        <iframe style="width: 100%; height: 500px;" src="https://gergoradeczki.github.io/tutorials/step-by-step/02_css/index.html"></iframe>
 
 !!! note "Megjegyzés"
     A CSS fájlokban sok, feladat specifikus szelektor lett használva, így a kódot nem nagyon lehet egyszerűen újra felhasználni.
+
+## Kvíz a tanultakhoz
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtK77CVms5gCefnMV1eTvCfUUVsbwPcp2buKmLJjNNf_7e9g/viewform?embedded=true" width="640" height="610" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
