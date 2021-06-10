@@ -1,6 +1,6 @@
 # schdesign
 
-![A 2020-as Simonyi Nyári Táborban](../img/eletkepek/schdesign-csapatkep-snyt-2020.jpg)
+![A 2020-as Simonyi Nyári Táborban](img/eletkepek/schdesign-csapatkep-snyt-2020.jpg)
 
 *A csapat egy kis része a 2020-as Simonyi Nyári Táborban, Balatonlellén.*
 
