@@ -92,22 +92,23 @@ nav:
   - Kezdőlap: index.md
   - Markdown Alapok: alapok.md
   - Web:
-    - Web divízió: web/web.md
+    - Web divízió: web/division.md
     - Első lépések: web/elso-lepesek.md
+    - Workshopok: 
+      - 2020/21/1 Todo: web/workshop/2020-21-1_todo-list.md
+      - 2020/21/2 Kezdő: web/workshop/2020-21-2_web-1.md
+      - 2020/21/2 Haladó: web/workshop/2020-21-2_web-2.md
     - Weboldal készítés az alapoktól:
       - 0. Bevezetés: web/tutorials/step-by-step/sbs_00_bevezeto.md
       - 1. HTML: web/tutorials/step-by-step/sbs_01_html.md
       - 2. CSS: web/tutorials/step-by-step/sbs_02_css.md
       - 3. JS: web/tutorials/step-by-step/sbs_03_js.md
       - 4. Hova tovább: web/tutorials/step-by-step/sbs_04_hova-tovabb.md
-    - HTML: web/html.md
-    - CSS: web/css.md
-    - Javascript: web/js.md
   - Grafika:
-    - Grafika divízió: grafika/grafika.md
+    - Grafika divízió: grafika/division.md
     - Hasznos oldalak: grafika/grafika-hasznos.md
   - 3D:
-    - 3D divízió: 3d/3d.md
+    - 3D divízió: 3d/division.md
     - Interfész - 1.: 3d/interfesz-1.md
     - Interfész - 2.: 3d/interfesz-2.md
     - Denoising: 3d/denoising.md
