@@ -81,12 +81,14 @@ extra:
   social:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schonherzdesignstudio/
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/schdesign.hu/
+    - icon: fontawesome/brands/gitlab
+      link: https://git.sch.bme.hu/schdesign
     - icon: fontawesome/brands/behance
       link: https://www.behance.net/wearethesds/
+    #- icon: fontawesome/brands/github
+    #  link: https://github.com/squidfunk
 
 nav:
   - Kezdőlap: index.md
