@@ -94,6 +94,8 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schonherzdesignstudio/
     - icon: fontawesome/brands/instagram
