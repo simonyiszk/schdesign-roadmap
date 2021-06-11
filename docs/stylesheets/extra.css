@@ -7,9 +7,9 @@
 }
 
 [data-md-color-scheme="default"] { /* Only applied when light theme (default) is selected */
-  --md-primary-fg-color:#8f8f8f;
+  --md-primary-fg-color:#3d3d3d;
   --md-primary-bg-color: #ffffff;
-  --md-typeset-a-color: #97a8ff;
+  --md-typeset-a-color: #474af8;
 }
 
 [data-md-color-scheme="slate"] { /* Only applied when dark theme (slate) is selected */
