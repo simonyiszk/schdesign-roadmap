@@ -1,8 +1,5 @@
 /* Setting main color theme to schdesign style <3 */
 
-:root {
-}
-
 [data-md-color-scheme="default"] { /* Only applied when light theme (default) is selected */
 
   --schdesign-hue: 353;
@@ -62,4 +59,9 @@
 .md-content a[href]:hover  {
   color: var(--md-accent-fg-color-invert);
   text-decoration: underline dotted var(--md-accent-fg-color-invert);
+}
+
+/* Use reddish logo when in dark mode */
+[data-md-color-scheme="slate"] img[alt="logo"] {
+  content: url("../../img/schdesign_s_logo_red.svg");
 }
