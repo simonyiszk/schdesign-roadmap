@@ -1,20 +1,41 @@
 /* Setting main color theme to schdesign style <3 */
 
 :root {
-  --md-accent-fg-color: #f8485e;
-  --md-accent-fg-color--light: #f8485e;
-  --md-accent-fg-color--dark: #f8485e;
 }
 
 [data-md-color-scheme="default"] { /* Only applied when light theme (default) is selected */
-  --md-primary-fg-color:#3d3d3d;
-  --md-primary-bg-color: #ffffff;
-  --md-typeset-a-color: #474af8;
+
+  --schdesign-hue: 353;
+
+  --md-primary-fg-color:               hsla(var(--schdesign-hue), 93%, 63%, 1);
+  --md-primary-fg-color--light:        hsla(var(--schdesign-hue), 93%, 90%, 1);
+  --md-primary-fg-color--dark:         hsla(var(--schdesign-hue), 93%, 20%, 1);
+  --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
+  --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+
+  --md-accent-fg-color:                hsla(var(--schdesign-hue), 90%, 63%, 1);
+  --md-accent-fg-color-invert: #7b88cc;
+  --md-accent-fg-color--transparent:   hsla(var(--schdesign-hue), 90%, 63%, 0.1);
+  --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
 }
 
 [data-md-color-scheme="slate"] { /* Only applied when dark theme (slate) is selected */
-  --md-primary-fg-color:#3d3d3d;
-  --md-primary-bg-color: #F2F2F2;
+  --schdesign-hue: 0;
+
+  --md-primary-fg-color:               hsla(var(--schdesign-hue), 0%, 24%, 1);
+  --md-primary-fg-color--light:        hsla(var(--schdesign-hue), 0%, 48%, 1);
+  --md-primary-fg-color--dark:         hsla(var(--schdesign-hue), 0%, 12%, 1);
+  --md-primary-bg-color:               hsla(0, 0%, 100%, 1);
+  --md-primary-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+
+
+  --md-accent-fg-color: #7b88cc;
+  --md-accent-fg-color-invert:                hsla(353, 93%, 63%, 1);
+  --md-accent-fg-color--transparent:   hsla(353, 90%, 63%, 0.1);
+  --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+
   --md-typeset-a-color: #7b88cc;
 }
 
@@ -31,15 +52,16 @@ html .md-footer-meta.md-typeset a:hover,
 .md-source:hover,
 .md-search__input:hover + label
 {
-  color: var(--md-accent-fg-color);
+  /*color: var(--md-primary-fg-color--dark);*/
 }
 
 /* Dotted underline for links so they are visible. */
 
 .md-content a[href]  {
-  text-decoration: underline dotted var(--md-typeset-a-color);
+  text-decoration: underline dotted var(--md-accent-fg-color);
 }
 
 .md-content a[href]:hover  {
-  text-decoration: underline dotted var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color-invert);
+  text-decoration: underline dotted var(--md-accent-fg-color-invert);
 }
