@@ -1,8 +1,5 @@
 /* Setting main color theme to schdesign style <3 */
 
-:root {
-}
-
 [data-md-color-scheme="default"] { /* Only applied when light theme (default) is selected */
 
   --schdesign-hue: 353;
