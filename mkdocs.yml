@@ -19,7 +19,8 @@ theme:
     - tabs
   language: hu
   palette:
-    scheme: preference
+    #scheme: preference # selects theme automatically using the user's preference in OS settings
+    scheme: slate # automatically selects dark theme no matter what OS settings are
   font:
     text: Roboto
     code: Roboto Mono
