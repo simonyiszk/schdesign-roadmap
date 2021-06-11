@@ -3,7 +3,8 @@
 :root {
   --md-primary-fg-color:        #3d3d3d;
   /* Ezzel a színnel olvashatatlanak a linkek :( */
-  /*--md-primary-fg-color--light: #3d3d3d;*/
+  /*--md-primary-fg-color--light: #3d3d3d;
+  --md-primary-fg-color--light: #7b88cc;*/
   --md-primary-fg-color--light: #7b88cc;
   --md-primary-fg-color--dark:  #3d3d3d;
 
@@ -28,11 +29,15 @@ html .md-footer-meta.md-typeset a:hover,
 .md-source:hover,
 .md-search__input:hover + label
 {
-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
 }
 
 /* Dotted underline for links so they are visible. */
 
 .md-content a[href]  {
-text-decoration: underline dotted var(--md-primary-fg-color);
+  text-decoration: underline dotted var(--md-primary-fg-color);
+}
+
+.md-content a[href]:hover  {
+  text-decoration: underline dotted var(--md-accent-fg-color);
 }
