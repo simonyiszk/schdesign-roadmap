@@ -2,66 +2,36 @@
 
 Egy dokumentációs repo.
 
-## Hogy is van ez?
+## Hogyan is van ez
+
 A `docs` mappában szöveges fájlokat találsz [markdown](https://www.markdownguide.org/cheat-sheet/) formátumban. Ezek könnyen olvashatóak a kedvenc szövegszerkesztődben és könnyen lehet belőlük akár weboldalt is generálni. Mindamellett megvan az az előnye, hogy verziókövetésre is alkalmas, azaz többen is szerkeszthetitek egyszerre.
 
-## Hogyan lehet szerkeszteni?
-Git.sch-n is megteheted online fájlszerkesztő használatával. Azonban, ha nem szeretnél fél giga memóriát elégetni csak ezzel, akkor:
-
-```bash
-git clone git@git.sch.bme.hu:schdesign/roadmap.git
-cd roadmap
-cd docs
-git checkout -b sajat_modositasod_vagy_neved
-nano 'kedvenc fájlod.md'
-git add 'kedvenc fájlod.md'
-git status
-git commit -m "Módosításod rövid és világos leírása"
-git push
-```
-
 ## Mi történik?
-Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HTML kódot a docs/ mappából az mkdocs.yml fájl alapján Docker környezetben. A `Dockerfile`-ban van leírva, hogy mi történjen a konténer építése során. Ezt a folyamatot automatikusan végrehajtja a Git.sch CI folyamata.
 
-## Hogyan próbálhatom ki a saját gépemen?
-
-A Docker kép elkészítéséhez használd a következő parancsot: `docker build -t roadmap .` Ez az aktuális (ponttal jelzett) mappában található Dockerfile alapján elkészíti a roadmap nevű Docker képet.
-
-Futtatáshoz: `docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 roadmap` Ez a parancs elindít egy konténert a roadmap képből és annak 8000-es portját  kiengedi a gépedre. Ha módosítasz a forrásfájljaidon, az oldal *automatikusan frissül*.
-
-### Mindezt még ennél is egyszerűbben szeretnéd?
-A repo klónozása után add ki a `./buildrun.sh` parancsot, amivel elkészíted és elindítod a Docker imaget.
-
-### Windows cuccos
-
-Ellenőrizd le, hogy a Windows felhasználód benne van-e a `docker-users` csoportban.
-
-*(Windows keresőbe)* Computer Management -> *(megnyílik a program)* -> Computer Management -> System tools -> Local Users and Groups -> Groups -> docker-users *(dupla klikk)*
-
-Add hozzá magad, ha nem vagy a listán. Jelentkezz ki, majd lépj be újra, hogy a módosítás érvényesüljön.
-
-``` PowerShell
-git clone git@git.sch.bme.hu:schdesign/roadmap.git
-cd .\roadmap\
-git checkout -b uj-branch-neve
-docker build -t roadmap .
-docker run -it -v "${PWD}:/docs" --rm --publish 8000:8000 roadmap
-```
-
-Ezt követően a http://localhost:8000/ címen lesz elérhető a weboldal.
-
-# Roadmap readma 2.0
-
-Ebben a részben megpróbálom jobban elmagyarázni hogyan működik minden.
+Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HTML kódot a *docs/* mappából az *mkdocs.yml* fájl alapján Docker környezetben. A `Dockerfile`-ban van leírva, hogy mi történjen a konténer építése során. Ezt a folyamatot automatikusan végrehajtja a GitLab CI folyamata.
 
 ## Repo letöltése
 
-Gitet használva, ssh-n keresztül töltsük le a projektet, majd lépjünk be az imént létrejött mappába:
+*Git*-et használva, *SSH*-n keresztül töltsük le a projektet, majd lépjünk be az imént létrejött mappába:
 
-``` PowerShell
+```bash
 git clone git@git.sch.bme.hu:schdesign/roadmap.git
 cd .\roadmap\
 ```
+
+## Futtatás egyszerűen
+
+Windows és Linux rendszerek alól egyszerűen el lehet indítani a projektet a megfelelő *builrun* fájlt kiválasztva.
+
+```bash
+# Linux bash
+./buildrun.sh
+
+# Windows PowerShell
+./buildrun.ps1
+```
+
+Ekkor megpróbál buildelni, azután meg elindítja a :8000 porton a lokális szervert.
 
 ## Docker image ...
 
@@ -89,6 +59,10 @@ Amennyiben hibával tér vissza a parancs, akkor:
 Az alábbi parancsot a `roadmap` mappából kiadva el fog indulni http://localhost:8000 címen a lokális másolatod a weboldalnak.
 
 ```bash
+# Linux Bash:
+docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 roadmap
+
+# Windows PowerShell:
 docker run -it -v "${PWD}:/docs" --rm --publish 8000:8000 roadmap
 ```
 
@@ -98,6 +72,8 @@ Amennyiben hibával tér vissza a parancs, akkor:
 - ellenőrizd le, hogy nem fut-e már *(lehet egy korábbi futás után nem zártad be rendese)*
 - ellenőrizd le, hogy a Windows felhasználód benne van-e a `docker-users` csoportban.\
   *(Windows keresőbe)* Computer Management -> *(megnyílik a program)* -> Computer Management -> System tools -> Local Users and Groups -> Groups -> docker-users *(dupla klikk)*
+
+Ez egy teljes értékű dev szerver, ha változtat valamelyik fájlon a `roadmap` mappában, akkor annak a módosítása automatikusan tükröződni fog egy kis idő elteltével, a weboldal újratöltése nélkül.
 
 ## Szerkesztés
 
