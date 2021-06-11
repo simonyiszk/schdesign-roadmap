@@ -16,11 +16,23 @@ theme:
   include_search_page: false
   search_index_only: true
   features:
-    - tabs
+     - navigation.instant
+    #- navigation.sections
+     - navigation.tabs
   language: hu
   palette:
     #scheme: preference # selects theme automatically using the user's preference in OS settings
-    scheme: slate # automatically selects dark theme no matter what OS settings are
+    #scheme: slate # automatically selects dark theme no matter what OS settings are
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -37,45 +49,48 @@ extra_css:
 # Plugins
 plugins:
   - search
+  - minify:
+      minify_html: true
 
   # Extensions
 markdown_extensions:
-  - smarty
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.codehilite:
-      guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: schdesign
-      repo: roadmap
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      check_paths: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
 
 
 extra:
@@ -92,8 +107,10 @@ extra:
     #  link: https://github.com/squidfunk
 
 nav:
-  - Kezdőlap: index.md
-  - Markdown Alapok: alapok.md
+  - Kezdőlap:
+    - Kezdőlap: index.md
+    - Markdown Alapok: alapok.md
+    - Rólunk: rolunk.md
   - Web:
     - Web divízió: web/division.md
     - Első lépések: web/elso-lepesek.md
@@ -115,4 +132,3 @@ nav:
     - Interfész - 1.: 3d/interfesz-1.md
     - Interfész - 2.: 3d/interfesz-2.md
     - Denoising: 3d/denoising.md
-  - Rólunk: rolunk.md
