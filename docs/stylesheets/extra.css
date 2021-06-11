@@ -36,31 +36,29 @@
   --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
   --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
 
-  --md-typeset-a-color: #7b88cc;
+  --md-typeset-a-color: var(--md-accent-fg-color); /* make links readable in main */
 }
 
 /* Setting footer's background color to match the theme */
 :root > * {
-  --md-footer-bg-color:       #3d3d3d;
-  --md-footer-bg-color--dark: #3d3d3d;
+  --md-footer-fg-color:              hsla(0, 0%, 100%, 1);
+  --md-footer-fg-color--light:       hsla(0, 0%, 100%, 0.7);
+  --md-footer-fg-color--lighter:     hsla(0, 0%, 100%, 0.3);
+  --md-footer-bg-color:              hsla(0, 0%, 24%, 0.87);
+  --md-footer-bg-color--dark:        hsla(0, 0%, 24%, 0.32);
 }
 
-
-/* Setting header and footer elements' color on hover to accent color */
-.md-tabs__link:hover,
-html .md-footer-meta.md-typeset a:hover,
-.md-source:hover,
-.md-search__input:hover + label
-{
-  /*color: var(--md-primary-fg-color--dark);*/
+/* Use the inver color on links in left and right navigation side */
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color-invert);
 }
 
-/* Dotted underline for links so they are visible. */
-
+/* make links in main dotted */
 .md-content a[href]  {
   text-decoration: underline dotted var(--md-accent-fg-color);
 }
 
+/* make links in main dotted and invert color on hover */
 .md-content a[href]:hover  {
   color: var(--md-accent-fg-color-invert);
   text-decoration: underline dotted var(--md-accent-fg-color-invert);
