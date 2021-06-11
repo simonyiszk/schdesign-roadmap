@@ -104,3 +104,5 @@ Ezt csak egyszer kell megtenni, következő push esetén nyugodtan használhatod
 ### Mergelés
 
 Webes felületen kövesd végig a merge-elés folyamatát, ahol kell, ott adják meg valamit, hogy mások tudják miért és mit merge-elsz.
+
+Amint valaki elfogadja a módosításaidat, akkor GitLab-en a háttérben el fog indulni 3 munkamenet, amik azért felelnek, hogy a módosításaid elérhetőek legyenek a weboldalon. Amennyiben ezek sikeresen lefutnak, akkor a módosításaid már meg is jelentek a weboldalon. Ez egy olyan maximum 1 perces folyamat lehet.
