@@ -23,10 +23,12 @@ cd roadmap
 
 Windows és Linux rendszerek alól egyszerűen el lehet indítani a projektet a megfelelő *builrun* fájlt kiválasztva.
 
-```powershell
+```bash
 # Linux bash
 ./buildrun.sh
+```
 
+```powershell
 # Windows PowerShell
 .\buildrun.ps1
 ```
@@ -58,10 +60,12 @@ Amennyiben hibával tér vissza a parancs, akkor:
 
 Az alábbi parancsot a `roadmap` mappából kiadva el fog indulni http://localhost:8000 címen a lokális másolatod a weboldalnak.
 
-```powershell
+```bash
 # Linux Bash:
 docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 schdesign/roadmap:mkdocs-material
+```
 
+```powershell
 # Windows PowerShell:
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs schdesign/roadmap:mkdocs-material
 ```
