@@ -47,11 +47,11 @@ theme:
   favicon: img/favicon.png
   logo: img/schdesign_s_logo_white.svg
 
+# Extra files for past build customization
 extra_javascript: 
-  - javascript/extra.js
+  - extra/extra.js
 extra_css: 
-  - stylesheets/extra.css
-  
+  - extra/extra.css
 
 # Plugins
 plugins:
