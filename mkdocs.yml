@@ -138,7 +138,7 @@ nav:
       - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
       - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
     - Weboldal készítés az alapoktól:
-      - 0. Bevezető: web/tutorial/step-by-step/bevezeto.md
+      - 0. Bevezető: web/tutorial/step-by-step/index.md
       - 1. HTML: web/tutorial/step-by-step/html.md
       - 2. CSS: web/tutorial/step-by-step/css.md
       - 3. JS: web/tutorial/step-by-step/js.md
