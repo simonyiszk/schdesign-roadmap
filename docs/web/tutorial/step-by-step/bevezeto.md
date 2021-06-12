@@ -42,7 +42,7 @@ Lesz egy gyökérkönyvtár *(step-by-step)*. Minden, amit használni fogunk ebb
 
 Az alábbi fájlstruktúrát fogjuk használni:
 
-<img src="/web/tutorials/step-by-step/sbs_00_fajlok.png">
+<img src="/web/tutorial/step-by-step/sbs_00_fajlok.png">
 
 Ügyeljünk arra, hogy minden fájl, amit létrehozunk, UTF-8-as kódolást használjon. Ezt a szövegszerkesztőnk *(általában)* jobb alsó sarkában tudjuk megtekinteni. Ha nem UTF-8 van kiválasztva, akkor változtassuk meg azt UTF-8-ra.
 

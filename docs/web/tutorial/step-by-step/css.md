@@ -283,7 +283,7 @@ Margón kívül van még egy pár dolog, amivel méreteket tudunk megadni, vegy�
 
 ### Akkor merre mennyi?
 
-<img src="/web/tutorials/step-by-step/sbs_02_css_padding-border-margin.png" style="background-color: rgb(33, 34, 44);" />
+<img src="/web/tutorial/step-by-step/sbs_02_css_padding-border-margin.png" style="background-color: rgb(33, 34, 44);" />
 
 | Tulajdonság | A HTML elem... | Kattintható? |
 | - | - | - |
@@ -309,7 +309,7 @@ Ezekkel a tulajdonságokkal le tudjuk írni, hogy melyik HTML elem mekkora legye
 
 Nézzük meg mit is akarunk elérni:
 
-<img src="/web/tutorials/step-by-step/sbs_02_css_website-layout.png" style="background-color: rgb(33, 34, 44);" />
+<img src="/web/tutorial/step-by-step/sbs_02_css_website-layout.png" style="background-color: rgb(33, 34, 44);" />
 
 Szóval:
 
