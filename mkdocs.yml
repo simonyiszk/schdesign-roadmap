@@ -1,28 +1,36 @@
+# Project information
 site_name: schdesign roadmap
+site_url: https://roadmap.sch.bme.hu/
 site_author: schdesign
 site_description: >-
   A Simonyi Károly Szakkollégiumban működő schdesign öntevékeny kör
   szakmai anyagainak gyűjtőhelyéül szolgáló platform.
 
+# Repository
 repo_name: schdesign/roadmap
 repo_url: https://git.sch.bme.hu/schdesign/roadmap
 edit_uri: ""
 
+# Copyright
+copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
+
+# Configuration
 theme: 
   name: material
   custom_dir: docs/theme
+  # Static files
   static_templates:
     - 404.html
+  # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
+  # Default values, taken from mkdocs_theme.yml
   features:
      - navigation.instant
     #- navigation.sections
      - navigation.tabs
   language: hu
   palette:
-    #scheme: preference # selects theme automatically using the user's preference in OS settings
-    #scheme: slate # automatically selects dark theme no matter what OS settings are
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
@@ -36,8 +44,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: img/schdesign_s_logo_white.svg
   favicon: img/favicon.png
+  logo: img/schdesign_s_logo_white.svg
 
 extra_javascript: 
   - javascript/extra.js
@@ -51,7 +59,24 @@ plugins:
   - minify:
       minify_html: true
 
-  # Extensions
+# Customization
+extra:
+  #analytics:
+  #  provider: google
+  #  property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/schonherzdesignstudio/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/schdesign.hu/
+    - icon: fontawesome/brands/gitlab
+      link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/behance
+      link: https://www.behance.net/wearethesds/
+
+# Extensions
 markdown_extensions:
   - admonition
   - abbr
@@ -77,8 +102,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: schdesign
+      repo: roadmap
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -90,23 +115,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      check_paths: true
 
-
-extra:
-  social:
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/schonherzdesignstudio/
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/schdesign.hu/
-    - icon: fontawesome/brands/gitlab
-      link: https://git.sch.bme.hu/schdesign
-    - icon: fontawesome/brands/behance
-      link: https://www.behance.net/wearethesds/
-    #- icon: fontawesome/brands/github
-    #  link: https://github.com/squidfunk
-
+# Page tree
 nav:
   - Kezdőlap:
     - Kezdőlap: index.md
