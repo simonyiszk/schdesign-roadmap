@@ -5,7 +5,7 @@ stages:
 mkdocs:
   stage: build
   image:
-    name: squidfunk/mkdocs-material:7.1.8
+    name: squidfunk/mkdocs-material:7.1.7
     entrypoint: [""]
   script:
     - mkdocs build

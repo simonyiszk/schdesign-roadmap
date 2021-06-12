@@ -26,9 +26,12 @@ theme:
   search_index_only: true
   # Default values, taken from mkdocs_theme.yml
   features:
-     - navigation.instant
+    - navigation.instant
     #- navigation.sections
-     - navigation.tabs
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
   language: hu
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -123,25 +126,25 @@ markdown_extensions:
 # Page tree
 nav:
   - Kezdőlap:
-    - Kezdőlap: index.md
+    - index.md
     - Design Principles: workshop/2021-02-26.md
     - Markdown Alapok: alapok.md
     - Rólunk: rolunk.md
   - Web:
-    - Web divízió: web/division.md
+    - web/index.md
     - Első lépések: web/elso-lepesek.md
     - Workshopok: 
       - 2020/21/1 Todo lista: web/workshop/2020-21-1_todo-list.md
       - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
       - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
     - Weboldal készítés az alapoktól:
-      - 0. Bevezetés: web/tutorial/step-by-step/bevezeto.md
+      - 0. Bevezető: web/tutorial/step-by-step/bevezeto.md
       - 1. HTML: web/tutorial/step-by-step/html.md
       - 2. CSS: web/tutorial/step-by-step/css.md
       - 3. JS: web/tutorial/step-by-step/js.md
       - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
   - Grafika:
-    - Grafika divízió: grafika/division.md
+    - grafika/index.md
     - Hasznos oldalak: grafika/grafika-hasznos.md
     - Workshopok: 
       - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
@@ -149,7 +152,7 @@ nav:
       - 2020/21/2 Illusztrator kezdő: grafika/workshop/2021-03-08.md
       - 2020/21/2 Illusztrator haladó: grafika/workshop/2021-03-17.md
   - 3D:
-    - 3D divízió: 3d/division.md
+    - 3d/index.md
     - Interfész - 1.: 3d/interfesz-1.md
     - Interfész - 2.: 3d/interfesz-2.md
     - Denoising: 3d/denoising.md
