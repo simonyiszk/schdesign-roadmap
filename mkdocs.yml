@@ -54,9 +54,13 @@ theme:
 
 # Extra files for past build customization
 extra_javascript: 
-  - extra/extra.js
+  - extras/extra.js
+  - extras/config.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css: 
-  - extra/extra.css
+  - extras/extra.css
 
 # Plugins
 plugins:
@@ -97,7 +101,8 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
+  - pymdownx.critic:
+      mode: view
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -119,6 +124,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets:
       check_paths: true
@@ -127,8 +133,10 @@ markdown_extensions:
 nav:
   - Kezdőlap:
     - index.md
+    - Szerkesztés: szerkesztes.md
     - Design Principles: workshop/2021-02-26.md
-    - Markdown Alapok: alapok.md
+    - Markdown Alapok: markdown-alapok.md
+    - Markdown Cheatsheet: markdown-cheatsheet.md
     - Rólunk: rolunk.md
   - Web:
     - web/index.md
