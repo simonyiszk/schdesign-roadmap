@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.meta and page.meta.title %}
+    {% set title = page.meta.title ~ " - " ~ title %}
+  {% elif page and page.title and not page.is_homepage %}
+    {% set title = page.title ~ " - " ~ title | striptags %}
+  {% endif %}
+  {% set description = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+    {% set description = page.meta.description %}
+  {% endif %}
+  <!-- OpenGraph stuff -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url" content="{{ page.canonical_url }}" />
+  <meta property="og:image" content="https://logotar.schdesign.hu/assets/database/Simonyi/schdesign/schdesign.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="960" />
+  <meta property="og:image:height" content="540" />
+  <!-- Twitter stuff -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="schdesign" />
+  <meta name="twitter:creator" content="schdesign" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="https://logotar.schdesign.hu/assets/database/Simonyi/schdesign/schdesign.png" />
+{% endblock %}
