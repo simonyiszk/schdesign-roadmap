@@ -110,6 +110,7 @@ extra:
 nav:
   - Kezdőlap:
     - Kezdőlap: index.md
+    - Design Principles: workshop/2021-02-26.md
     - Markdown Alapok: alapok.md
     - Rólunk: rolunk.md
   - Web:
