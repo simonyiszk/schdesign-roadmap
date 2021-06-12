@@ -94,6 +94,8 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schonherzdesignstudio/
     - icon: fontawesome/brands/instagram
@@ -108,26 +110,35 @@ extra:
 nav:
   - Kezdőlap:
     - Kezdőlap: index.md
+    - Design Principles: workshop/2021-02-26.md
     - Markdown Alapok: alapok.md
     - Rólunk: rolunk.md
   - Web:
     - Web divízió: web/division.md
     - Első lépések: web/elso-lepesek.md
     - Workshopok: 
-      - 2020/21/1 Todo: web/workshop/2020-21-1_todo-list.md
-      - 2020/21/2 Kezdő: web/workshop/2020-21-2_web-1.md
-      - 2020/21/2 Haladó: web/workshop/2020-21-2_web-2.md
+      - 2020/21/1 Todo lista: web/workshop/2020-21-1_todo-list.md
+      - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
+      - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
     - Weboldal készítés az alapoktól:
-      - 0. Bevezetés: web/tutorials/step-by-step/sbs_00_bevezeto.md
-      - 1. HTML: web/tutorials/step-by-step/sbs_01_html.md
-      - 2. CSS: web/tutorials/step-by-step/sbs_02_css.md
-      - 3. JS: web/tutorials/step-by-step/sbs_03_js.md
-      - 4. Hova tovább: web/tutorials/step-by-step/sbs_04_hova-tovabb.md
+      - 0. Bevezetés: web/tutorial/step-by-step/bevezeto.md
+      - 1. HTML: web/tutorial/step-by-step/html.md
+      - 2. CSS: web/tutorial/step-by-step/css.md
+      - 3. JS: web/tutorial/step-by-step/js.md
+      - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
   - Grafika:
     - Grafika divízió: grafika/division.md
     - Hasznos oldalak: grafika/grafika-hasznos.md
+    - Workshopok: 
+      - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
+      - 2020/21/2 Photoshop haladó: grafika/workshop/2021-03-01.md
+      - 2020/21/2 Illusztrator kezdő: grafika/workshop/2021-03-08.md
+      - 2020/21/2 Illusztrator haladó: grafika/workshop/2021-03-17.md
   - 3D:
     - 3D divízió: 3d/division.md
     - Interfész - 1.: 3d/interfesz-1.md
     - Interfész - 2.: 3d/interfesz-2.md
     - Denoising: 3d/denoising.md
+    - Workshopok: 
+      - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
+      - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
