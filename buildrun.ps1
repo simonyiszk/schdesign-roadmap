@@ -1,5 +1,8 @@
+# remove previous image
+docker image rm schdesign/roadmap:mkdocs-material
+
 # build docker image
-docker build -t roadmap .
+docker build -t schdesign/roadmap:mkdocs-material .
 
 # start docker image
-docker run -it -v "${PWD}:/docs" --rm --publish 8000:8000 roadmap
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs schdesign/roadmap:mkdocs-material

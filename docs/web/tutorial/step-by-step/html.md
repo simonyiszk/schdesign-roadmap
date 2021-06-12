@@ -9,7 +9,7 @@ Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegend
 
 ## A nyelv építőelemei
 
-<img src="/web/tutorials/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
+<img src="/web/tutorial/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
 
 Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem *(opening tag)*, tartalom *(content)* és záró elem *(closing tag)*. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
 ``` HTML
@@ -90,7 +90,7 @@ Egy kis értelmezés a fentihez:
 
 Ez egy HTML dokumentumnak az alapja. Ha látsz valamit a weben, akkor biztos, hogy ezekből az elemekből épül fel. A weboldal első eleme `<!DOCTYPE>`, amit `<html>` követ, benne pedig rendre `<head>` és `<body>`.
 
-<img src="/web/tutorials/step-by-step/sbs_01_html_document.png" style="background-color: rgb(33, 34, 44);" />
+<img src="/web/tutorial/step-by-step/sbs_01_html_document.png" style="background-color: rgb(33, 34, 44);" />
 
 HTML dokumentum készítésénél érdemes konténerekben gondolkozni, a sok egymáshoz tartozó részt egy közös dobozban elképzelni. Ezáltal, amikor megpróbáljuk majd elrendezni az elemeket, sokkal egyszerűbb dolgunk lesz.
 

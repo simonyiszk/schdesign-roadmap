@@ -1,28 +1,39 @@
+# Project information
 site_name: schdesign roadmap
+site_url: https://roadmap.sch.bme.hu/
 site_author: schdesign
 site_description: >-
   A Simonyi Károly Szakkollégiumban működő schdesign öntevékeny kör
   szakmai anyagainak gyűjtőhelyéül szolgáló platform.
 
+# Repository
 repo_name: schdesign/roadmap
 repo_url: https://git.sch.bme.hu/schdesign/roadmap
-edit_uri: ""
+edit_uri: "" # "edit/master/docs/"
 
+# Copyright
+copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
+
+# Configuration
 theme: 
   name: material
   custom_dir: docs/theme
+  # Static files
   static_templates:
     - 404.html
+  # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
+  # Default values, taken from mkdocs_theme.yml
   features:
-     - navigation.instant
+    - navigation.instant
     #- navigation.sections
-     - navigation.tabs
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
   language: hu
   palette:
-    #scheme: preference # selects theme automatically using the user's preference in OS settings
-    #scheme: slate # automatically selects dark theme no matter what OS settings are
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
@@ -36,14 +47,16 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: img/schdesign_s_logo_white.svg
   favicon: img/favicon.png
+  logo: img/schdesign_s_logo_white.svg
+  icon:
+    repo: fontawesome/brands/git-alt
 
+# Extra files for past build customization
 extra_javascript: 
-  - javascript/extra.js
+  - extra/extra.js
 extra_css: 
-  - stylesheets/extra.css
-  
+  - extra/extra.css
 
 # Plugins
 plugins:
@@ -51,7 +64,24 @@ plugins:
   - minify:
       minify_html: true
 
-  # Extensions
+# Customization
+extra:
+  #analytics:
+  #  provider: google
+  #  property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/schonherzdesignstudio/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/schdesign.hu/
+    - icon: fontawesome/brands/git-alt
+      link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/behance
+      link: https://www.behance.net/wearethesds/
+
+# Extensions
 markdown_extensions:
   - admonition
   - abbr
@@ -77,8 +107,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: schdesign
+      repo: roadmap
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -90,44 +120,31 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      check_paths: true
 
-
-extra:
-  social:
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/schonherzdesignstudio/
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/schdesign.hu/
-    - icon: fontawesome/brands/gitlab
-      link: https://git.sch.bme.hu/schdesign
-    - icon: fontawesome/brands/behance
-      link: https://www.behance.net/wearethesds/
-    #- icon: fontawesome/brands/github
-    #  link: https://github.com/squidfunk
-
+# Page tree
 nav:
   - Kezdőlap:
-    - Kezdőlap: index.md
+    - index.md
     - Design Principles: workshop/2021-02-26.md
     - Markdown Alapok: alapok.md
     - Rólunk: rolunk.md
   - Web:
-    - Web divízió: web/division.md
+    - web/index.md
     - Első lépések: web/elso-lepesek.md
     - Workshopok: 
       - 2020/21/1 Todo lista: web/workshop/2020-21-1_todo-list.md
       - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
       - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
     - Weboldal készítés az alapoktól:
-      - 0. Bevezetés: web/tutorial/step-by-step/bevezeto.md
+      - 0. Bevezető: web/tutorial/step-by-step/index.md
       - 1. HTML: web/tutorial/step-by-step/html.md
       - 2. CSS: web/tutorial/step-by-step/css.md
       - 3. JS: web/tutorial/step-by-step/js.md
       - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
   - Grafika:
-    - Grafika divízió: grafika/division.md
+    - grafika/index.md
     - Hasznos oldalak: grafika/grafika-hasznos.md
     - Workshopok: 
       - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
@@ -135,7 +152,7 @@ nav:
       - 2020/21/2 Illusztrator kezdő: grafika/workshop/2021-03-08.md
       - 2020/21/2 Illusztrator haladó: grafika/workshop/2021-03-17.md
   - 3D:
-    - 3D divízió: 3d/division.md
+    - 3d/index.md
     - Interfész - 1.: 3d/interfesz-1.md
     - Interfész - 2.: 3d/interfesz-2.md
     - Denoising: 3d/denoising.md

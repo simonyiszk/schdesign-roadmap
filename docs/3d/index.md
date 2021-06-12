@@ -1,4 +1,4 @@
-# 3D divízió
+# Bemutatkozó
 
 ## A divízió tevékenységéről
 A 3d divízióban a célunk 3d grafikus jelenetek készítése Blender segítségével. A divízión belül a modellezéssel, UV-zással, textúrázással, anyagozással, fényezéssel, szobrászkodással, csontozással, animálással és utómunkával is foglalkozunk. A jövőben pedig szeretnék bevonni a 3d nyomtatásra specializált modellek készítését, és vizuális effektek készítését is a profilunkba.

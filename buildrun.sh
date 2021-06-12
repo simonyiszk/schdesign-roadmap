@@ -1,11 +1,11 @@
 #!/bin/bash
 
-docker build -t roadmap .
+docker build -t schdesign/roadmap:mkdocs-material .
 
 docker run \
   -it \
   -v "$PWD:/docs" \
   --rm \
   --publish 8000:8000 \
-  roadmap
+  schdesign/roadmap:mkdocs-material
 
