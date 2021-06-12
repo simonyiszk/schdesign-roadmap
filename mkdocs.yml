@@ -9,7 +9,7 @@ site_description: >-
 # Repository
 repo_name: schdesign/roadmap
 repo_url: https://git.sch.bme.hu/schdesign/roadmap
-edit_uri: ""
+edit_uri: "" # "edit/master/docs/"
 
 # Copyright
 copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
@@ -46,6 +46,8 @@ theme:
     code: Roboto Mono
   favicon: img/favicon.png
   logo: img/schdesign_s_logo_white.svg
+  icon:
+    repo: fontawesome/brands/git-alt
 
 # Extra files for past build customization
 extra_javascript: 
@@ -71,7 +73,7 @@ extra:
       link: https://www.facebook.com/schonherzdesignstudio/
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/schdesign.hu/
-    - icon: fontawesome/brands/gitlab
+    - icon: fontawesome/brands/git-alt
       link: https://git.sch.bme.hu/schdesign
     - icon: fontawesome/brands/behance
       link: https://www.behance.net/wearethesds/
