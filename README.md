@@ -14,21 +14,21 @@ Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HT
 
 *Git*-et használva, *SSH*-n keresztül töltsük le a projektet, majd lépjünk be az imént létrejött mappába:
 
-```bash
+```powershell
 git clone git@git.sch.bme.hu:schdesign/roadmap.git
-cd .\roadmap\
+cd roadmap
 ```
 
 ## Futtatás egyszerűen
 
 Windows és Linux rendszerek alól egyszerűen el lehet indítani a projektet a megfelelő *builrun* fájlt kiválasztva.
 
-```bash
+```powershell
 # Linux bash
 ./buildrun.sh
 
 # Windows PowerShell
-./buildrun.ps1
+.\buildrun.ps1
 ```
 
 Ekkor megpróbál buildelni, azután meg elindítja a :8000 porton a lokális szervert.
@@ -41,8 +41,8 @@ Buildelni csak egyszer fog kelleni, különös esetekben többször, de olyan es
 
 Add ki az alábbi parancsot a `roadmap` mappából:
 
-```bash
-docker build -t roadmap .
+```powershell
+docker build -t schdesign/roadmap:mkdocs-material .
 ```
 
 Ezt követően a `Dockerimage` fájlban leírtak alapján létre fog jönni egy futtatható Docker Image.
@@ -58,12 +58,12 @@ Amennyiben hibával tér vissza a parancs, akkor:
 
 Az alábbi parancsot a `roadmap` mappából kiadva el fog indulni http://localhost:8000 címen a lokális másolatod a weboldalnak.
 
-```bash
+```powershell
 # Linux Bash:
-docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 roadmap
+docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 schdesign/roadmap:mkdocs-material
 
 # Windows PowerShell:
-docker run -it -v "${PWD}:/docs" --rm --publish 8000:8000 roadmap
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs schdesign/roadmap:mkdocs-material
 ```
 
 Amennyiben hibával tér vissza a parancs, akkor:
@@ -96,7 +96,7 @@ Ha végeztél a módosításokkal, akkor *push*-old fel a *commit*-jaidat, majd 
 Első push esetén hibát fog írni, ilyenkor az alábbi formában kell pusholni:
 
 ```bash
-git push --set-upstream origin fix-header-logo
+git push --set-upstream origin uj-agnak-a-neve
 ```
 
 Ezt csak egyszer kell megtenni, következő push esetén nyugodtan használhatod már a `git push` parancsot.
