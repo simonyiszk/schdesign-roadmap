@@ -160,9 +160,10 @@ nav:
       - 2020/21/2 Illusztrator haladó: grafika/workshop/2021-03-17.md
   - 3D:
     - 3d/index.md
-    - Interfész - 1.: 3d/interfesz-1.md
-    - Interfész - 2.: 3d/interfesz-2.md
-    - Denoising: 3d/denoising.md
+    - Interfész bemutatása:
+      - 1. rész: 3d/tutorial/interface/1.md
+      - 2. rész: 3d/tutorial/interface/2.md
+    - Denoising: 3d/tutorial/interface/denoising.md
     - Workshopok: 
       - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
       - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
