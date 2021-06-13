@@ -1,3 +1,9 @@
+---
+title: HTML
+description: TODO
+author: Radeczki Gergő István
+---
+
 # HTML
 
 Egy weboldalnak a felépítése a **HTML** _(Hypertext Markup Language)_-el kezdődik. Ez nem egy programozási nyelv, hanem egy leíró nyelv. Az ilyen típusú egyszerű szöveges dokumentumoknak a kiterjesztése rendre `.html` vagy `.htm` szokott lenni. Ezek közül az előbbi van sokkal jobban elterjedve.

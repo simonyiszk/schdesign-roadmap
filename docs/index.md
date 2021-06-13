@@ -1,3 +1,8 @@
+---
+title: TODO a weboldallal
+description: Vannak még el nem intézett dolgok, ezeket soroltuk itt fel.
+---
+
 # *Ami már megvan, és ami még hiányzik...*
 
 ### A roadmap projekt

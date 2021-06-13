@@ -1,3 +1,7 @@
+---
+title: A web divízióról
+---
+
 # Bemutatkozó
 
 ## A divízió tevékenységéről

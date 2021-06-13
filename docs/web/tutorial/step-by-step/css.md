@@ -1,3 +1,9 @@
+---
+title: CSS
+description: TODO
+author: Radeczki Gergő István
+---
+
 # CSS
 
 Egy HTML dokumentumnak a megjelenését **CSS** *(Cascading Style Sheets)*-sel tudjuk megadni. A CSS az egy stílusleíró nyelv, az ilyen típusú forráskódoknak a kiterjesztése `.css` szokott lenni.
