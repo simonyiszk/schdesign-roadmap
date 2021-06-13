@@ -1,3 +1,9 @@
+---
+title: Bevezető
+description: TODO
+author: Radeczki Gergő István
+---
+
 # Bevezető
 
 Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva létere fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.

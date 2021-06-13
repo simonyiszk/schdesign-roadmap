@@ -1,3 +1,8 @@
+---
+title: Első lépések a webfejlesztés világában
+description: Valahol el kell kezdeni, miért ne itt kezdenéd el?
+---
+
 # Első lépések a webfejlesztés világában
 
 ## HTML

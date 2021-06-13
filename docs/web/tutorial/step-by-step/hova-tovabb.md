@@ -1,3 +1,9 @@
+---
+title: Hova tovább
+description: TODO
+author: Radeczki Gergő István
+---
+
 # 4. Hova tovább
 
 ## Reszponzivitás

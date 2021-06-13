@@ -1,3 +1,9 @@
+---
+title: Todo lista készítése
+description: TODO
+author: Börcsök Barnabás
+---
+
 # Todo lista készítése
 
 !!! note ""

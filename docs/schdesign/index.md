@@ -1,3 +1,7 @@
+---
+title: Rólunk
+---
+
 # schdesign
 
 ![A 2020-as Simonyi Nyári Táborban](rolunk/schdesign-csapatkep-snyt-2020.jpg)

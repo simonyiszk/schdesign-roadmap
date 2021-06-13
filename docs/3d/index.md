@@ -1,3 +1,7 @@
+---
+title: A 3D divízióról
+---
+
 # Bemutatkozó
 
 ## A divízió tevékenységéről

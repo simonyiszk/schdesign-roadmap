@@ -1,3 +1,9 @@
+---
+title: JS
+description: TODO
+author: Radeczki Gergő István
+---
+
 # JS
 
 Ahhoz, hogy el tudjunk rugaszkodni a statikus weboldalaktól és át tudjunk térni dinamikus weboldalakra, szükségünk van olyas valamire, ami képes kliens vagy szerver oldalon *HTML+CSS* kódot számunkra generálni. Erre az egyik legkézenfekvőbb megoldás a **JS** *(JavaScript)*, amit mára már egy programozási nyelvnek is hívhatunk.

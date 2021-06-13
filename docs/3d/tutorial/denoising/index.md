@@ -1,3 +1,9 @@
+---
+title: Denoising
+description: TODO
+author: Ábrahám Zoltán
+---
+
 # Denoising
 
 ![from_to](denoising/from_to.jpg)
