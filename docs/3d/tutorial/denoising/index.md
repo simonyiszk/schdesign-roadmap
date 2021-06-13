@@ -1,15 +1,15 @@
 # Denoising
 
-![from_to](../img/denoising/from_to.jpg)
+![from_to](denoising/from_to.jpg)
 
 !!! info "Friss tartalom"
     Ez a tartalom a Blender 2.81-es vagy annál frissebb verziójához készült!
 
 A cycles-el sokáig probléma volt a zaj és a "firefly"-ok. Ezeken a képen látható, hogy már egy egyszerű jelenetnél is könnyen előjöhet a zaj, és egy komplexebb, vagy kevésbé megvilágított jelenetnél garantált. Persze egy ideig bruteforce-olni is lehet a sample size, vagy a felbontás emelésével, de ez nagyon hamar napokig tartó renderidőhöz vezethet teljesen feleslegesen, és így sem garantál szép eredményt. 
 
-![before_lowSample](../img/denoising/before_lowSample.png) 128 sample - 31 s - gtx 1070
+![before_lowSample](denoising/before_lowSample.png) 128 sample - 31 s - gtx 1070
 
-![before_highSample](../img/denoising/before_highSample.png) 2048 sample - 484 s - gtx 1070
+![before_highSample](denoising/before_highSample.png) 2048 sample - 484 s - gtx 1070
 
 ### A Zaj
 
@@ -25,27 +25,27 @@ Blenderben van a zaj és a firefly-ok ellen beépített denoiser. 2.81 óta ez e
 
 ### A denoiser bekapcsolása renderhez:
 
-- **1.lépés:** Jobb oldalt keressük meg a view layer properties fület, és pipáljuk be a denoising data-t.![step1_edited](../img/denoising/step1_edited.png) 
+- **1.lépés:** Jobb oldalt keressük meg a view layer properties fület, és pipáljuk be a denoising data-t.![step1_edited](denoising/step1_edited.png) 
 
-- **2.lépés:** Felül válasszuk ki a compositing workspace-t.![step2_edited](../img/denoising/step2_edited.png)
+- **2.lépés:** Felül válasszuk ki a compositing workspace-t.![step2_edited](denoising/step2_edited.png)
 
   !!! warning ""
       Ha nincs felül compositing fül, a + gombra kattintva ki lehet választani a + &rarr; General &rarr; Compositing almenüben
 
-- **3.lépés:** Pipáljuk be felül a Use Nodes-ot, és meg fog jelenni egy egyszerű node tree.![step3_edited](../img/denoising/step3_edited.png)
+- **3.lépés:** Pipáljuk be felül a Use Nodes-ot, és meg fog jelenni egy egyszerű node tree.![step3_edited](denoising/step3_edited.png)
 
-- **4.lépés:** A sötétszürke terület felett tartva az egeret nyomjunk egy ``shift+a`` -t és válasszuk ki a filter &rarr; denoise -t![step4_edited](../img/denoising/step4_edited.png)
+- **4.lépés:** A sötétszürke terület felett tartva az egeret nyomjunk egy ``shift+a`` -t és válasszuk ki a filter &rarr; denoise -t![step4_edited](denoising/step4_edited.png)
 
-- **5.lépés:** A hozzáadott denoise node-ot kössük be a node treebe, a következő módon:![step5_edited](../img/denoising/step5_edited.png)
+- **5.lépés:** A hozzáadott denoise node-ot kössük be a node treebe, a következő módon:![step5_edited](denoising/step5_edited.png)
 
 - **6.lépés:** Ha most újrarendereljük a képet, amikor elkészült renderen, le fog futni a denoiser.
 
 !!! warning "Figyelem"
     Csak az elkészült renderen látszik a zajmentesítés, renderelés közben nem fog látszani!
 
-![after_lowSample](../img/denoising/after_lowSample.png) 128 sample - 35 s - gtx 1070
+![after_lowSample](denoising/after_lowSample.png) 128 sample - 35 s - gtx 1070
 
-![after_highSample](../img/denoising/after_highSample.png) 2048 sample - 496 s - gtx 1070
+![after_highSample](denoising/after_highSample.png) 2048 sample - 496 s - gtx 1070
 
 Látható, hogy a korábban zajos 128 samples zajos képből egy már prezentálható képet csinál, 2048 sample-vel pedig egy hibátlan képet.
 
@@ -59,10 +59,10 @@ Látható, hogy a korábban zajos 128 samples zajos képből egy már prezentál
 
 Pipájuk be a Render properties &rarr; Sampling &rarr; Denoising &rarr; Viewport -ot, és hagyjuk automatikus-on. (Új nvidia videokártyákhoz az optix denoiser lesz használva, minden máshoz az open image denoiser)
 
-![+1step_edited](../img/denoising/+1step_edited.png)
+![+1step_edited](denoising/+1step_edited.png)
 
 <video width="100%" height="auto" autoplay loop muted>
-    <source src="../../img/denoising/video_demo.mp4" type="video/mp4">
+    <source src="denoising/video_demo.mp4" type="video/mp4">
     <!--nem generalja ki automatikusan videohoz ugyanazt az utat, mint kepekhez, kezzel beirva-->
 </video>
 
