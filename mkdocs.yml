@@ -133,10 +133,9 @@ markdown_extensions:
 nav:
   - Kezdőlap:
     - index.md
-    - Szerkesztés: szerkesztes.md
-    - Design Principles: workshop/2021-02-26.md
-    - Markdown Alapok: markdown-alapok.md
-    - Markdown Cheatsheet: markdown-cheatsheet.md
+    - Design Principles: schdesign/workshop/2021-02-26.md
+    - Markdown Alapok: schdesign/tutorial/markdown-alapok.md
+    - Markdown Cheatsheet: schdesign/tutorial/markdown-cheatsheet.md
     - Rólunk: rolunk.md
   - Web:
     - web/index.md

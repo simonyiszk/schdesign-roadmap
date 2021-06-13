@@ -1,6 +1,6 @@
 ---
-title: Lorem ipsum dolor sit amet
-description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
+title: Markdown Cheatsheet
+description: Az MCDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheatsheet, rövid kódrészlet mellett megmutatja hogyan fog inézni amit csinálsz
 author: Radeczki Gergő István
 date: June 12, 2021
 ---
