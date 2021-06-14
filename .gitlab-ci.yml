@@ -38,4 +38,4 @@ ftp:
     - tags
   environment:
     name: production
-    url: https://roadmap.sch.bme.hu/
+    url: https://roadmap.schdesign.hu/
