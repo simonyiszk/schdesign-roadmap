@@ -1,6 +1,6 @@
 # Project information
 site_name: schdesign roadmap
-site_url: https://roadmap.sch.bme.hu/
+site_url: https://roadmap.schdesign.hu/
 site_author: schdesign
 site_description: >-
   A Simonyi Károly Szakkollégiumban működő schdesign öntevékeny kör
@@ -9,7 +9,7 @@ site_description: >-
 # Repository
 repo_name: schdesign/roadmap
 repo_url: https://git.sch.bme.hu/schdesign/roadmap
-edit_uri: "" # "edit/master/docs/"
+edit_uri: "" # "edit/master/docs/" # it would add and edit link at the top of all the articles
 
 # Copyright
 copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
