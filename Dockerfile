@@ -4,4 +4,4 @@ ADD . /docs/
 
 WORKDIR /docs
 
-RUN mkdocs build
+RUN mkdocs build --verbose --strict
