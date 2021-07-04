@@ -4,9 +4,9 @@ title: Rólunk
 
 # schdesign
 
-![A 2020-as Simonyi Nyári Táborban](rolunk/schdesign-csapatkep-snyt-2020.jpg)
+![A 2020-as Simonyi Nyári Táborban](rolunk/schdesign-csapatkep-designtabor-2021.jpg)
 
-*A csapat egy kis része a 2020-as Simonyi Nyári Táborban, Balatonlellén.*
+*A csapat a 2021-es schdesign nyári táborban, Agárdon.*
 
 !!! note "TODO"
     - Ide írni magunkról pár bekezdést.
