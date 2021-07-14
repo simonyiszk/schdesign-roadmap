@@ -138,6 +138,7 @@ nav:
     - Markdown:
       - Alapok: schdesign/tutorial/markdown-alapok.md
       - Cheatsheet: schdesign/tutorial/markdown-cheatsheet.md
+    - Hozzájárulás: schdesign/hozzajarulas.md
     - Rólunk: schdesign/index.md
   - Web:
     - web/index.md
