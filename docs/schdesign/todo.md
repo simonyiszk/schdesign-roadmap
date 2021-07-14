@@ -26,21 +26,21 @@ A közeljövőben igyekszem minél átláthatóbbá tenni a technológiai hátte
 - [x] CI-al automatikusan fellőni egy webszerverre.
 - [x] Material téma integrálása.
 - [x] Material téma felülírása (szín és footer).
-- [ ] *WIP:* Extension-ök bekonfigurálása
+- [x] *WIP:* Extension-ök bekonfigurálása
 
 ##### Tartalmi
 
 - [x] Az oldal általános struktúrájának kialakítása.
-- [ ] *WIP:* Markdown segédlet kódokkal együtt.
+- [x] *WIP:* Markdown segédlet kódokkal együtt.
 - [ ] Oldal szerkesztéséhez segédlet megírása.
 - [ ] *WIP:* Webfejlesztős tartalmak feltöltése.
 - [x] Dani-féle Blender tutorial integrálása (első kész)
 - [ ] Webes projektjeinkről rendes leírás, link repóhoz, archiválás
-- [ ] Grafikás anyagok
+- [x] Grafikás anyagok
 - [ ] Újoncok számára hasznos tartalmak feltöltése.
 - [ ] Drive-on már meglévő hasznos doksit feltöltése.
-- [ ] Kép feltöltése a *Rólunk* szekcióhoz.
-- [ ] **"Rólunk" szöveg megírása.**
+- [x] Kép feltöltése a *Rólunk* szekcióhoz.
+- [x] **"Rólunk" szöveg megírása.**
 
 ##### Egyéb
 
