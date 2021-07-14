@@ -1,205 +1,341 @@
 ---
 title: Markdown szerkesztési segédlet
-description: TODO
+description: Végig megyünk a markdown alapjain, lényegretőrően bemutatva mi hogyan épül fel.
 ---
 
 # Markdown szerkesztési segédlet
 
-!!! warning "Figyelmeztetés"
-    Ez a szekció még formázás alatt áll. Ennek ellenére hasznos információkat tartalmaz.
+## Miért Markdown
 
-## Fejlécek
+WYSIWYG-nek hívjuk azt, amikor úgy szerkeszted a fájl, hogy közben a végeredményt látod. Ennek az egyik legnagyobb hátránya akkor jelentkezik, amikor formázott szövegek közt kell oda-vissza lépkedned. Hányszor fordult elő, hogy be volt kapcsolva a **félkövér**/*dőlt* betűtípus, de te már egy új sorban elkezdtél gépelni, erre *minden amit leírtál az formázott lett*. Markdownban sokkal valószínűtlenebb, hogy ilyen előfordul, mert mindig látod milyen stílusnak mikor van vége.
 
-!!! example ""
+*[WYSIWYG]: What You See Is What You Get
 
-    === "Output"
-        ## h2 header
-        ### h3 header
-        #### h4 header
-        ##### h5 header
-        ###### h6 header
-
-    === "Markdown"
-        ```
-        ## h2 header
-        ### h3 header
-        #### h4 header
-        ##### h5 header
-        ###### h6 header
-        ```
+A HTML-hez hasonló szintaxisa van, de ez sokkal jobban le van egyszerűsítve. Ez azt jelenti, hogy elég lesz nekünk csak a szöveges tartalomra, annak a helyes formázására koncentrálni. A webes megjelenést majd egy másik eszköz fogja megoldani.
 
 !!! note
-    Jobb oldalon látható, hogy az egyes header-típusok szépen egymás alá ágyazódnak be a tartalomjegyzékben, fontossági sorrendben.
+    Nincs megtiltva az, hogy HTML-t használj a fájlban, sőt, ezt még ki is egészítheted a `style` attribútummal, ezzel is jobban személyre szabhatod a fájlt.
 
-!!! warning
-    A **h1 headerek** furcsán viselkednek. Minden oldalon az első lesz az oldal címe, és onnantól kezdve minden további ugyanúgy jelenik meg, mint a cím, azonban **megtöri a jobb oldali linkeket**, ezért használatuk nem ajánlott.
+### Markdown fájl: .md
 
+Egy Markdown fájl létrehozásához elég egy `*.md` elnevezésű fájlt létrehoznod.
 
-## Horizontal Rules
+## Alap szintaxis
 
-___
+A szintaxist 2 csoportra lehet bontani: *teljes sorra* és *sor egy kis részére* alkalmazódóra.
 
----
+Egész sorra kiható elemeket mindig egy üres sorral kell elválasztani a többitől.
 
-***
+### Fejlécek
 
+Egy jól szervezett Markdown fájlnak a tartalmát fejlécek választják el. Ezek HTML-hez hasonlóan H1-től H6-ig terjednek, ahol H1 a legnagyobb. Általában egy darab H1-es fejléc szokott szerepelni egy dokumentumban, ami a dokumentum címét szokta viselni.
 
-## Typographic replacements
+=== "Kód"
+    ```markdown
+    # H1
 
-Enable typographer option to see result.
+    ## H2
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+    ### H3
 
-test.. test... test..... test?..... test!....
+    #### H4
 
-!!!!!! ???? ,,  -- ---
+    ##### H5
 
-"Smartypants, double quotes" and 'single quotes'
+    ###### H6
+    ```
+=== "Megjelenés"
+    Tönkre menne az aloldal, ha ide sima kódként lenne berakva a megjelenés. Szóval inkább néz körbe az oldalon.
 
+### Új sor
 
-## Emphasis
+Néha nem akarsz új bekezdést kezdeni, de új sort viszont igen. Erre két megoldás van:
 
-**This is bold text**
+**Simán új sorban kezded amit írsz.**
 
-__This is bold text__
+Ennek az a hátránya, hogy lehet nincs támogatva, így egy sornak fogja tekinteni a program, ami HTML kódot generál belőle.
 
-*This is italic text*
+**Használod a `<br>` HTML címkét**
 
-_This is italic text_
+Ez sokkal hatásosabb, látványosabb. Az ilyeneket 1:1-ben átemelei a HTML kódba a fordító.
 
-~~Strikethrough~~
+=== "Kód"
+    ```
+    Ez az első sor
+    Ez a második
 
-## Blockquotes
+    Ez az első sor<br>
+    Ez a második
+    ```
+=== "Megjelenés"
+    Ez az első sor
+    Ez a második
 
+    Ez az első sor<br>
+    Ez a második
 
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
+### Bekezdés
 
+Egy bekezdés egy sorból áll. Minden új bekezdést egy üres sorral kell elválasztani a többitől.
 
-## Lists
+=== "Kód"
+    ```
+    Ez az első bekezdés
 
-Unordered
+    Ez a második bekezdés
+    ```
+=== "Megjelenés"
+    Ez az első bekezdés
 
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
+    Ez a második bekezdés
 
-Ordered
 
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
+### Szöveg kiemelés
 
+Szerkesztőtől függ, de általában gyorsgombok támogatva vanna, így annyival kevesebb szintaxisra kell emlékezni. HTML-hez hasonlóan, ha valamira valamit alkalmazni akarunk, akkor azt körbe kell fogni valamivel. Gyorsgomb használatakor jelöljük ki a formázandó szöveget, majd meg fog jelenni az elején és a végén két jel. Ami ez a két jel között van, arra fog alkalmazódni a formázás.
 
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
+| Gyorsgomb | Szintaxis | Végeredmény |
+|-----------|-----------|-------------|
+| ++ctrl+i++ | `*dőlt*` | *dőlt* |
+| ++ctrl+b++ | `**félkövér**` | **félkövér** |
+| - | `***dőltfélkövér***` | ***dőltfélkövér*** |
 
-Start numbering with offset:
+### Idézés
 
-57. foo
-1. bar
+Ha idézni szeretnél, akkor minden idézendő sort egy `>` jellel kell kezdened.
 
+=== "Kód"
+    ```
+    > Ez egy több soros
+    >
+    > idézet.
+    ```
+=== "Megjelenés"
+    > Ez egy több soros
+    >
+    > idézet.
 
-## Code
+!!! note
+    Egy idézeten belül is lehet formálni a szöveget.
 
-Inline `code`
+### Lista készítés
+
+Listából két fajta van: **számozott** és **számozatlan**.
 
-Indented code
+=== "Kód"
+    ```
+    1. Ez
+    2. Egy
+    3. Számozott
+        1. Lista
+    4. Amiben
+    5. Van
+    6. Beljebb kezdés
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
+    - Ez
+    - Egy
+    - Számozatlan
+        - Lista
+    - Amiben
+    - Van
+    - Beljebb kezdés
+    ```
+=== "Megjelenés"
+    1. Ez
+    2. Egy
+    3. Számozott
+        1. Lista
+    4. Amiben
+    5. Van
+    6. Beljebb kezdés
+    
+    Lista lista utánt nem szeret a program, így kell ide valamilyen szöveg.
 
+    - Ez
+    - Egy
+    - Számozatlan
+        - Lista
+    - Amiben
+    - Van
+    - Beljebb kezdés
 
-Block code "fences"
 
-```
-Sample text here...
-```
+!!! danger
+    Indentálásnál **4 darab** ++space++-t kell használni.
 
-Syntax highlighting
+!!! note
+    Számozott és számozatlan listát lehet egymásba ágyazni.
 
-``` js
-var foo = function (bar) {
-  return bar++;
-};
+### Kód beillesztés
+
+Kódot lehet teljes vagy részleges formában beilleszteni.
 
-console.log(foo(5));
-```
+=== "Kód"
+    ```markdown
+    Ebben a mondatban van egy `function()` kód, ami nem fut le.
+    ```
 
-## Tables
+            <div>
+                <span>Ez egy többsoros kód, amit beljebb kezdéssel érek el, hogy ne fusson le</span>
+            </div>
+=== "Megjelenés"
+    Ebben a mondatban van egy `function()` kód, ami nem fut le.
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+        <div>
+            <span>Ez egy többsoros kód, amit beljebb kezdéssel érek el, hogy ne fusson le</span>
+        </div>
 
-Right aligned columns
 
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+### Linkek
 
-## Tabok
+Linkeket is sokféleképpen lehet beilleszteni.
 
-!!! example "Tabok példa"
+=== "Kód"
+    ```
+    Lehet egy szövegrésznek [a link](https://google.com).
+    ```
 
-    === "Output"
-        === "Tab 1"
-            Markdown **content**.
+    Lehet hivatkozni is rá, pl. ha sok link van, sok helyen újra felhasználnád.
 
-            Multiple paragraphs.
+    ```
+    Ez egy [hivatkozás][id] egy linkre, amit valahol máshol definiálok.
 
-        === "Tab 2"
-            More Markdown **content**.
+    ...
+    [id]: https://google.com
+    ```
+=== "Megjelenés"
+    Lehet egy szövegrésznek [a link](https://google.com).
 
-            - list item a
-            - list item b
+    Lehet hivatkozni is rá, pl. ha sok link van, sok helyen újra felhasználnád.
 
-    === "Markdown"
-        ```
-        === "Tab 1"
-            Markdown **content**.
+    Ez egy [hivatkozás][id] egy linkre, amit valahol máshol definiálok.
 
-            Multiple paragraphs.
+    [id]: https://google.com
+
+### Képek
 
-        === "Tab 2"
-            More Markdown **content**.
+=== "Kód"
+    ```markdown
+    ![Ide jön a kép neve, ha nem toltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
+    ```
+=== "Megjelenés"
+    ![Ide jön a kép neve, ha nem toltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
+
+### További olvasmány
+
+Ez csak egy gyors összefoglalója az alap Markdown szintaxisnak, ennél bővebb útmutatók találhatóak szertemenően az interneten.
+
+Forrás: https://www.markdownguide.org/basic-syntax/
+
+## Kibővített szintaxis
+
+Ha a fenti feature-ökön végignézünk, akkor az elég szegényes. Nem is volt a célja a nyelvnek, hogy újra feltalálja a kereket, de ettől függetlenül néhány dolog még mindig hiányzik a nyelvől, amit jó volna, ha tudna. Ennek az lett az eredménye, hogy ki lett egészítve a nyelv.
 
-            - list item a
-            - list item b
-        ```
+Az itt leírtak már nem biztos hogy mindenhol, ahol Markdownt használnak, működni fog. Lehet egy kicsit módosítani kell majd rajta, de a *"nagyoknál"* működik.
 
+### Táblázatok
 
-## Links
+=== "Kód"
+    ```
+    | Valami | Más |
+    | ------ | --- |
+    | 1      | 2   |
+    | 3      | 4   |
+    ```
+=== "Megjelenés"
+    | Valami | Más |
+    | ------ | --- |
+    | 1      | 2   |
+    | 3      | 4   |
 
-[link text](http://dev.nodeca.com)
+### Határolt kódblokk
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+Eddig beljebb kellett kezdeni minden sort, amiben kód volt és nem szerettük volna, hogy lefusson.
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+Most már elég lesz körbehatárolni azt.
 
+=== "Kód"
+    ````
+    ```javascript
+    function add(a, b) {
+        return a + b;
+    }
+    ```
+    ````
+=== "Megjelenés"
+    ```javascript
+    function add(a, b) {
+        return a + b;
+    }
+    ```
 
-## Images
+Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó, így ha támogatva van a szintaxis felismerés, akkor már helyes színek mellett fog megjelenni a kód.
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+### Lábjegyzet
 
-Like links, Images also have a footnote style syntax
+=== "Kód"
+    ```
+    Ez egy átvett szöveg, aminek a végén van egy lábjegyzet[^1]
 
-![Alt text][id]
+    [^1]: Link vagy valami.
+    ```
+=== "Megjelenés"
+    Ez egy átvett szöveg, aminek a végén van egy lábjegyzet[^1]
 
-With a reference later in the document defining the URL location:
+    [^1]: Link vagy valami.
 
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+### Definíciós lista
 
+=== "Kód"
+    ```
+    First Term
+    : This is the definition of the first term.
 
+    Second Term
+    : This is one definition of the second term.
+    : This is another definition of the second term.
+    ```
+=== "Megjelenés"
+    First Term
+    : This is the definition of the first term.
+
+    Second Term
+    : This is one definition of the second term.
+    : This is another definition of the second term.
+
+### Áthúzott szöveg
+
+=== "Kód"
+    ```
+    ~~Ez át van húzva~~, ez már nem.
+    ```
+=== "Megjelenés"
+    ~~Ez át van húzva~~, ez már nem.
+
+### Feladat lista
+
+=== "Kód"
+    ```
+    - [x] Write the press release
+    - [ ] Update the website
+    - [ ] Contact the media
+    ```
+=== "Megjelenés"
+    - [x] Write the press release
+    - [ ] Update the website
+    - [ ] Contact the media
+
+### Emoji
+
+Beillesztéssel vagy *shortcode* használatával. 😍☺️👀✅➡️😕.
+
+### Automatikus URL felismerés
+
+Ha csak egy gyors linket szeretnél beilleszteni, akkor nem kell formázással törődnöd, elég csak a linket beilleszteni, amiből automatikusan kattintható változat lesz.
+
+### További olvasmány
+
+Ez csak egy gyors összefoglalója a kibővített Markdown szintaxisnak, ennél bővebb útmutatók találhatóak szertemenően az interneten.
+
+- Forrás: https://www.markdownguide.org/extended-syntax/
+- [Markdown Cheatsheet](/schdesign/tutorial/markdown-cheatsheet/)
