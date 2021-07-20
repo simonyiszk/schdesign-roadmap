@@ -1,7 +1,6 @@
 ---
-Title: Hozzájárulás
-Description: Elsőre nem is lehet olyan egyértelmű, hogy hogyan lehet tartalmilag bővíteni az oldalt. Ennek a lépésein megyünk végig.
-Author: Radeczki Gergő István
+title: Hozzájárulás
+description: Elsőre nem is lehet olyan egyértelmű, hogy hogyan lehet tartalmilag bővíteni az oldalt. Ennek a lépésein megyünk végig.
 ---
 
 # Hogyan járulhatok hozzá az oldalhoz?
