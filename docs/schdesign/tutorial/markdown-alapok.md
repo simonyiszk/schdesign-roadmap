@@ -31,7 +31,7 @@ Egész sorra kiható elemeket mindig egy üres sorral kell elválasztani a több
 Egy jól szervezett Markdown fájlnak a tartalmát fejlécek választják el. Ezek HTML-hez hasonlóan H1-től H6-ig terjednek, ahol H1 a legnagyobb. Általában egy darab H1-es fejléc szokott szerepelni egy dokumentumban, ami a dokumentum címét szokta viselni.
 
 === "Kód"
-    ```markdown
+    ```markdown linenums="1"
     # H1
 
     ## H2
@@ -60,7 +60,7 @@ Ennek az a hátránya, hogy lehet nincs támogatva, így egy sornak fogja tekint
 Ez sokkal hatásosabb, látványosabb. Az ilyeneket 1:1-ben átemelei a HTML kódba a fordító.
 
 === "Kód"
-    ```
+    ```html linenums="1"
     Ez az első sor
     Ez a második
 
@@ -79,7 +79,7 @@ Ez sokkal hatásosabb, látványosabb. Az ilyeneket 1:1-ben átemelei a HTML kó
 Egy bekezdés egy sorból áll. Minden új bekezdést egy üres sorral kell elválasztani a többitől.
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     Ez az első bekezdés
 
     Ez a második bekezdés
@@ -105,7 +105,7 @@ Szerkesztőtől függ, de általában gyorsgombok támogatva vanna, így annyiva
 Ha idézni szeretnél, akkor minden idézendő sort egy `>` jellel kell kezdened.
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     > Ez egy több soros
     >
     > idézet.
@@ -123,7 +123,7 @@ Ha idézni szeretnél, akkor minden idézendő sort egy `>` jellel kell kezdened
 Listából két fajta van: **számozott** és **számozatlan**.
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     1. Ez
     2. Egy
     3. Számozott
@@ -149,7 +149,7 @@ Listából két fajta van: **számozott** és **számozatlan**.
     5. Van
     6. Beljebb kezdés
     
-    Lista lista utánt nem szeret a program, így kell ide valamilyen szöveg.
+    Lista lista utánt nem szeret a program, így kell ide valamilyen szöveg 😢.
 
     - Ez
     - Egy
@@ -191,13 +191,13 @@ Kódot lehet teljes vagy részleges formában beilleszteni.
 Linkeket is sokféleképpen lehet beilleszteni.
 
 === "Kód"
-    ```
+    ```markdown
     Lehet egy szövegrésznek [a link](https://google.com).
     ```
 
     Lehet hivatkozni is rá, pl. ha sok link van, sok helyen újra felhasználnád.
 
-    ```
+    ```markdown
     Ez egy [hivatkozás][id] egy linkre, amit valahol máshol definiálok.
 
     ...
@@ -216,10 +216,10 @@ Linkeket is sokféleképpen lehet beilleszteni.
 
 === "Kód"
     ```markdown
-    ![Ide jön a kép neve, ha nem toltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
+    ![Ide jön a kép neve, ha nem töltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
     ```
 === "Megjelenés"
-    ![Ide jön a kép neve, ha nem toltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
+    ![Ide jön a kép neve, ha nem töltődne be](https://a-kép-elérési-útvonala.hu/kép.png "Ide pedig az a szöveg jön, amit egér rávitel során kell látni")
 
 ### További olvasmány
 
@@ -236,7 +236,7 @@ Az itt leírtak már nem biztos hogy mindenhol, ahol Markdownt használnak, műk
 ### Táblázatok
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     | Valami | Más |
     | ------ | --- |
     | 1      | 2   |
@@ -255,7 +255,7 @@ Eddig beljebb kellett kezdeni minden sort, amiben kód volt és nem szerettük v
 Most már elég lesz körbehatárolni azt.
 
 === "Kód"
-    ````
+    ````markdown linenums="1"
     ```javascript
     function add(a, b) {
         return a + b;
@@ -274,7 +274,7 @@ Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó
 ### Lábjegyzet
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     Ez egy átvett szöveg, aminek a végén van egy lábjegyzet[^1]
 
     [^1]: Link vagy valami.
@@ -287,7 +287,7 @@ Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó
 ### Definíciós lista
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     First Term
     : This is the definition of the first term.
 
@@ -306,7 +306,7 @@ Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó
 ### Áthúzott szöveg
 
 === "Kód"
-    ```
+    ```markdown
     ~~Ez át van húzva~~, ez már nem.
     ```
 === "Megjelenés"
@@ -315,7 +315,7 @@ Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó
 ### Feladat lista
 
 === "Kód"
-    ```
+    ```markdown linenums="1"
     - [x] Write the press release
     - [ ] Update the website
     - [ ] Contact the media
@@ -327,7 +327,29 @@ Emellett az első sornak a végén meg lehet adni, hogy milyen kódról van szó
 
 ### Emoji
 
-Beillesztéssel vagy *shortcode* használatával. 😍☺️👀✅➡️😕.
+Unicode vagy *shortcode* használatával.
+
+=== "Kód"
+    ```markdown linenums="1"
+    :apple:
+
+    :cheese:
+
+    :fontawesome-brands-facebook:
+
+    😍☺️👀✅➡️😕
+    ```
+=== "Megjelenés"
+    :apple:
+
+    :cheese:
+
+    :fontawesome-brands-facebook:
+
+    😍☺️👀✅➡️😕
+
+!!! note
+    Vegyük észre, hogy a shortcode-dal beillesztett `:apple:` vagy más emoji igazából egy kép, unicode karakter meg egy... nos... karakter. Ez akkor lehet igazán fontos, ha szöveget szeretnénk másolni.
 
 ### Automatikus URL felismerés
 
