@@ -32,7 +32,7 @@ A közeljövőben igyekszem minél átláthatóbbá tenni a technológiai hátte
 
 - [x] Az oldal általános struktúrájának kialakítása.
 - [x] *WIP:* Markdown segédlet kódokkal együtt.
-- [ ] Oldal szerkesztéséhez segédlet megírása.
+- [x] Oldal szerkesztéséhez segédlet megírása.
 - [ ] *WIP:* Webfejlesztős tartalmak feltöltése.
 - [x] Dani-féle Blender tutorial integrálása (első kész)
 - [ ] Webes projektjeinkről rendes leírás, link repóhoz, archiválás
