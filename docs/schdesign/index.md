@@ -22,9 +22,9 @@ a művészetet is be tudják emelni technológiai tudásuk mellé.
 
 Szakmai tevékenységünket három fő divízió mentén szervezzük: 
 
-- [web](https://roadmap.schdesign.hu/web/) 
-- [grafika](https://roadmap.schdesign.hu/grafika/) 
-- [3D](https://roadmap.schdesign.hu/3d/)
+- [web](/web/) 
+- [grafika](/grafika/) 
+- [3D](/3d/)
 
 Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen
 gondolatod számunkra, keress minket
