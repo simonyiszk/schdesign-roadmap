@@ -1,15 +1,17 @@
 ---
 title: Markdown Cheatsheet
-description: Az MCDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheatsheet, rövid kódrészlet mellett megmutatja hogyan fog inézni amit csinálsz
+description: Az MkDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheatsheet, rövid kódrészlet mellett megmutatja hogyan fog kinézni amit csinálsz
 author: Radeczki Gergő István
 date: June 12, 2021
 ---
 
-# Hogyan szerkeszd az oldalt
+# Markdown cheatsheet
+
+Az oldalon használt markdown az alapokon kívül is ki van egészítve extra feature-ökkel, amikről lentebb tudsz tájékozódni.
 
 ## Abbreviatioins
 
-Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. Mobilon nincs értelme, mert nem műküdik úgy, mint PC-n.
+Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. Mobilon egy kicsit bugos, de működik.
 
 !!! note
     === "példa kód"
@@ -20,7 +22,7 @@ Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. M
     *[W3C]: World Wide Web Consortium
     ```
     === "megjelenés"
-    The HTML specification is maintained by the W3C.
+    The HTML specification is maintained by the W3C.<br><br>
 
     *[HTML]: Hyper Text Markup Language
     *[W3C]: World Wide Web Consortium
@@ -235,7 +237,7 @@ Ha linkek helyett inkább menő gombokat szeretnél használni, akkor azt így t
     [Subscribe to our mailing list](#){ .md-button .md-button--primary }
     ```
     === "megjelenés"
-    [Subscribe to our mailing list](){ .md-button .md-button--primary }
+    [Subscribe to our mailing list](#){ .md-button .md-button--primary }
 
 !!! note "Kitöltött gomb ikonnal"
     === "példa kód"
@@ -251,7 +253,7 @@ A `(#)`-ben a *#* helyére kell írnod a webcímet.
 
 ### Forráskód szövegkiemeléssel
 
-Ha forráskódot szeretnél megosztani, szövegkiemeléssel.
+Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Python kód szövegkiemeléssel"
     === "példa kód"
@@ -461,11 +463,13 @@ Idk miért, de nem működik 😢
         | `PUT`       | :material-check-all: Update resource |
         | `DELETE`    | :material-close:     Delete resource |
 
-A táblázatok első sorára kattintva, az adott oszlop szerint lehet rendezni a sorokat.
+!!! tip ""
+    A táblázatok első sorára kattintva, az adott oszlop szerint lehet rendezni a sorokat.
 
 ## Diagram
 
-Nem értem miért nem működik 😢
+!!! warning ""
+    Nem értem miért nem működik 😢
 
 !!! note "Diagram készítése"
     === "példa kód"

@@ -55,6 +55,40 @@
   text-decoration: underline dotted var(--md-accent-fg-color);
 }
 
+/* Fix buttons */
+.md-content .md-button[href]  {
+  text-decoration: none;
+}
+
+.md-content .md-button[href]:hover  {
+  text-decoration: none;
+  color: white;
+}
+
+.md-content .md-button.md-button--primary[href]:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
+}
+
+[data-md-color-scheme="slate"] .md-content .md-button[href]  {
+  color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-content .md-button[href]:hover  {
+  color: white;
+}
+
+[data-md-color-scheme="slate"] .md-content .md-button.md-button--primary[href] {
+  color: white;
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-content .md-button.md-button--primary[href]:hover {
+  background-color: #485079;
+  border-color: #485079;
+}
+
 /* make links in main dotted and invert color on hover */
 .md-content a[href]:hover  {
   color: var(--md-accent-fg-color-invert);
@@ -65,6 +99,8 @@
 [data-md-color-scheme="slate"] img[alt="logo"] {
   content: url("../../img/schdesign_s_logo_red.svg");
 }
+
+/* YouTube iframe stuff */
 
 .youtube-16-9 {
   position: relative;
