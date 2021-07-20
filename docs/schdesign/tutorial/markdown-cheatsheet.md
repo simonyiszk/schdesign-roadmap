@@ -9,7 +9,7 @@ date: June 12, 2021
 
 ## Abbreviatioins
 
-Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. Mobilon nincs értelme, mert nem műküdik úgy, mint PC-n.
+Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. Mobilon egy kicsit bugos, de működik.
 
 !!! note
     === "példa kód"
@@ -20,7 +20,7 @@ Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. M
     *[W3C]: World Wide Web Consortium
     ```
     === "megjelenés"
-    The HTML specification is maintained by the W3C.
+    The HTML specification is maintained by the W3C.<br><br>
 
     *[HTML]: Hyper Text Markup Language
     *[W3C]: World Wide Web Consortium
