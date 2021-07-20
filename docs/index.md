@@ -75,7 +75,7 @@ Elsődlegesen, lépj be [Slacken](https://schdesign.slack.com/archives/C019S43GN
 
 A projekthez való hozzájáruláshoz be kell lépned az [schdesign](https://git.sch.bme.hu/schdesign) csoportba GitLaben és megfelelő jogosultságokkal kell, hogy rendelkezz.
 
-Bővebben a hozzájárulásról itt olvashatsz: *TODO: segédlet elkészítése és link iderakása*
+Bővebben a hozzájárulásról itt olvashatsz: [Hozzájárulás](/schdesign/tutorial/hozzajarulas/)
 
 ### Markdown
 
