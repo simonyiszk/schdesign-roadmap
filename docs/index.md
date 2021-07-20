@@ -1,6 +1,5 @@
 ---
 title: A Roadmap projekt
-author: Radeczki Gergő István
 ---
 
 # Üdvözöllek az schdesign Roadmap oldalán!
