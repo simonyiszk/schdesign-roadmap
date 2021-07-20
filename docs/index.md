@@ -37,10 +37,10 @@ Az oldal felépítésében próbáltunk arra törekedni, hogy a linkek szépek l
 
 ```text
 # Tutorial
-https://roadmap.schdesign.hu/<divízió>/<tutorial>/<név>/<oldalszám?>
+https://roadmap.schdesign.hu/<divízió>/tutorial/<név>/<oldalszám?>
 
 # Workshop
-https://roadmap.schdesign.hu/<divízió>/<workshop>/<dátum>/
+https://roadmap.schdesign.hu/<divízió>/workshop/<dátum>/
 ```
 
 ### Header
