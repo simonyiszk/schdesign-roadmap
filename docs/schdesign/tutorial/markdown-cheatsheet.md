@@ -237,7 +237,7 @@ Ha linkek helyett inkább menő gombokat szeretnél használni, akkor azt így t
     [Subscribe to our mailing list](#){ .md-button .md-button--primary }
     ```
     === "megjelenés"
-    [Subscribe to our mailing list](){ .md-button .md-button--primary }
+    [Subscribe to our mailing list](#){ .md-button .md-button--primary }
 
 !!! note "Kitöltött gomb ikonnal"
     === "példa kód"
