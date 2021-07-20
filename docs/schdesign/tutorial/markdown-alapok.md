@@ -3,11 +3,11 @@ title: Markdown szerkesztési segédlet
 description: Végig megyünk a markdown alapjain, lényegretőrően bemutatva mi hogyan épül fel.
 ---
 
-# Markdown szerkesztési segédlet
+# Markdown alapok
 
 ## Miért Markdown
 
-WYSIWYG-nek hívjuk azt, amikor úgy szerkeszted a fájl, hogy közben a végeredményt látod. Ennek az egyik legnagyobb hátránya akkor jelentkezik, amikor formázott szövegek közt kell oda-vissza lépkedned. Hányszor fordult elő, hogy be volt kapcsolva a **félkövér**/*dőlt* betűtípus, de te már egy új sorban elkezdtél gépelni, erre *minden amit leírtál az formázott lett*. Markdownban sokkal valószínűtlenebb, hogy ilyen előfordul, mert mindig látod milyen stílusnak mikor van vége.
+WYSIWYG-nek hívjuk azt, amikor úgy szerkeszted a fájlt, hogy közben a végeredményt látod. Ennek az egyik legnagyobb hátránya akkor jelentkezik, amikor formázott szövegek közt kell oda-vissza lépkedned. Hányszor fordult elő, hogy be volt kapcsolva a **félkövér**/*dőlt* betűtípus, de te már egy új sorban elkezdtél gépelni, erre *minden amit leírtál az formázott lett*. Markdownban sokkal valószínűtlenebb, hogy ilyen előfordul, mert mindig látod milyen stílusnak mikor van vége.
 
 *[WYSIWYG]: What You See Is What You Get
 
@@ -57,7 +57,7 @@ Ennek az a hátránya, hogy lehet nincs támogatva, így egy sornak fogja tekint
 
 **Használod a `<br>` HTML címkét**
 
-Ez sokkal hatásosabb, látványosabb. Az ilyeneket 1:1-ben átemelei a HTML kódba a fordító.
+Ez sokkal hatásosabb, látványosabb. Az ilyeneket 1:1-ben átemeli a HTML kódba a fordító.
 
 === "Kód"
     ```html linenums="1"
@@ -149,7 +149,7 @@ Listából két fajta van: **számozott** és **számozatlan**.
     5. Van
     6. Beljebb kezdés
     
-    Lista lista utánt nem szeret a program, így kell ide valamilyen szöveg 😢.
+    Lista lista utánt nem szeret a program, így kell ide valamilyen elválasztó szöveg 😢.
 
     - Ez
     - Egy

@@ -5,7 +5,9 @@ author: Radeczki Gergő István
 date: June 12, 2021
 ---
 
-# Hogyan szerkeszd az oldalt
+# Markdown cheatsheet
+
+Az oldalon használt markdown az alapokon kívül is ki van egészítve extra feature-ökkel, amikről lentebb tudsz tájékozódni.
 
 ## Abbreviatioins
 
@@ -251,7 +253,7 @@ A `(#)`-ben a *#* helyére kell írnod a webcímet.
 
 ### Forráskód szövegkiemeléssel
 
-Ha forráskódot szeretnél megosztani, szövegkiemeléssel.
+Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Python kód szövegkiemeléssel"
     === "példa kód"
@@ -461,11 +463,13 @@ Idk miért, de nem működik 😢
         | `PUT`       | :material-check-all: Update resource |
         | `DELETE`    | :material-close:     Delete resource |
 
-A táblázatok első sorára kattintva, az adott oszlop szerint lehet rendezni a sorokat.
+!!! tip ""
+    A táblázatok első sorára kattintva, az adott oszlop szerint lehet rendezni a sorokat.
 
 ## Diagram
 
-Nem értem miért nem működik 😢
+!!! warning ""
+    Nem értem miért nem működik 😢
 
 !!! note "Diagram készítése"
     === "példa kód"
