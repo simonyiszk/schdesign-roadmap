@@ -152,6 +152,7 @@ nav:
     - Szerkesztő programok:
       - Mit használjak?: web/tutorial/editor/index.md
       - Visual Studio Code: web/tutorial/editor/vscode.md
+      - WebStorm: web/tutorial/editor/webstorm.md
     - Weboldal készítés az alapoktól:
       - 0. Bevezető: web/tutorial/step-by-step/index.md
       - 1. HTML: web/tutorial/step-by-step/html.md
