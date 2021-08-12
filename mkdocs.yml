@@ -150,6 +150,7 @@ nav:
       - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
       - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
     - Szerkesztő programok:
+      - Mit használjak?: web/tutorial/editor/index.md
       - Visual Studio Code: web/tutorial/editor/vscode.md
     - Weboldal készítés az alapoktól:
       - 0. Bevezető: web/tutorial/step-by-step/index.md

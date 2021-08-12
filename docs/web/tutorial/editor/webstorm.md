@@ -1,4 +1,4 @@
-# Visual Studio Code
+# WebStorm
 
 !!! todo
     Megírni a szöveget
