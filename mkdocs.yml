@@ -84,6 +84,8 @@ extra:
       link: https://www.behance.net/wearethesds/
     - icon: fontawesome/brands/gitlab
       link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/github
+      link: https://github.com/simonyiszk
 
 # Extensions
 markdown_extensions:
