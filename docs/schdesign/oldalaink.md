@@ -16,10 +16,6 @@ BME-s és VIK-es logók gyűjtőoldala. Könnyedén tudod SVG, AI és PNG formá
 
 Írásos anyagaink megosztására használt weboldal. Markdown formátumban lehet szerkeszteni, amiből később mágiával statikus weboldal fog képződni.
 
-### [Mattermost](https://mattermost.schdesign.hu/)
-
-Körünk fő kommunikációs platformja.
-
 ## Közösségi médiás profiljaink
 
 ### [YouTube](https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q)
