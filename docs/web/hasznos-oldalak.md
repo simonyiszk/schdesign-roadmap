@@ -1,4 +1,4 @@
-# További hasznos oldalak
+# Hasznos oldalak
 
 ## Weboldalak
 

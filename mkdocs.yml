@@ -160,15 +160,15 @@ nav:
       - 2. CSS: web/tutorial/step-by-step/css.md
       - 3. JS: web/tutorial/step-by-step/js.md
       - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
-    - További hasznos oldalak: web/hasznos-oldalak.md
+    - Hasznos oldalak: web/hasznos-oldalak.md
   - Grafika:
     - grafika/index.md
-    - Hasznos oldalak: grafika/grafika-hasznos.md
     - Workshopok: 
       - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
       - 2020/21/2 Photoshop haladó: grafika/workshop/2021-03-01.md
       - 2020/21/2 Illustrator kezdő: grafika/workshop/2021-03-08.md
       - 2020/21/2 Illustrator haladó: grafika/workshop/2021-03-17.md
+    - Hasznos oldalak: grafika/hasznos-oldalak.md
   - 3D:
     - 3d/index.md
     - Interfész bemutatása:
@@ -178,3 +178,4 @@ nav:
     - Workshopok: 
       - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
       - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
+    - Hasznos oldalak: 3d/hasznos-oldalak.md
