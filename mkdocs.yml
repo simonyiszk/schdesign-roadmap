@@ -8,7 +8,7 @@ site_description: >-
 
 # Repository
 repo_name: schdesign/roadmap
-repo_url: https://git.sch.bme.hu/schdesign/roadmap
+repo_url: https://git.sch.bme.hu/schdesign/schdesign-roadmap
 edit_uri: "" # "edit/master/docs/" # it would add and edit link at the top of all the articles
 
 # Copyright
@@ -115,7 +115,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
       user: schdesign
-      repo: roadmap
+      repo: schdesign-roadmap
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
