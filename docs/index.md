@@ -52,7 +52,7 @@ Emellett helyett kapott itt a [GitLab repora mutató link](https://git.sch.bme.h
 
 ### Footer
 
-Tartalmilag, mint minden más weboldalnak a footerje. Link az [schdesign.hu](https://schdesign.hu/)-ra, hivatkozás a [host](https://kszk.sch.bme.hu/)ra és egyéb, közösségi médiás profiljaink linkjei: [:fontawesome-brands-youtube:](https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q), [:fontawesome-brands-facebook:](https://www.facebook.com/schonherzdesignstudio/), [:fontawesome-brands-instagram:](https://www.instagram.com/schdesign.hu/), [:fontawesome-brands-behance:](https://www.behance.net/wearethesds/), és [:fontawesome-brands-gitlab:](https://git.sch.bme.hu/schdesign).
+Tartalmilag, mint minden más weboldalnak a footerje. Link az [schdesign.hu](https://schdesign.hu/)-ra, hivatkozás a [host](https://kszk.sch.bme.hu/)ra és egyéb, közösségi médiás profiljaink linkjei: [:fontawesome-brands-youtube:](https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q), [:fontawesome-brands-facebook:](https://www.facebook.com/schonherzdesignstudio/), [:fontawesome-brands-instagram:](https://www.instagram.com/schdesign.hu/), [:fontawesome-brands-behance:](https://www.behance.net/wearethesds/), [:fontawesome-brands-gitlab:](https://git.sch.bme.hu/schdesign) és [:fontawesome-brands-github:](https://github.com/simonyiszk).
 
 ### Sidebar
 

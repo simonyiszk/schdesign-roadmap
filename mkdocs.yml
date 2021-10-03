@@ -8,7 +8,7 @@ site_description: >-
 
 # Repository
 repo_name: schdesign/roadmap
-repo_url: https://git.sch.bme.hu/schdesign/roadmap
+repo_url: https://git.sch.bme.hu/schdesign/schdesign-roadmap
 edit_uri: "" # "edit/master/docs/" # it would add and edit link at the top of all the articles
 
 # Copyright
@@ -84,6 +84,8 @@ extra:
       link: https://www.behance.net/wearethesds/
     - icon: fontawesome/brands/gitlab
       link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/github
+      link: https://github.com/simonyiszk
 
 # Extensions
 markdown_extensions:
@@ -113,7 +115,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
       user: schdesign
-      repo: roadmap
+      repo: schdesign-roadmap
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -139,6 +141,7 @@ nav:
       - Alapok: schdesign/tutorial/markdown-alapok.md
       - Cheatsheet: schdesign/tutorial/markdown-cheatsheet.md
     - Hozzájárulás: schdesign/tutorial/hozzajarulas.md
+    - Oldalaink: schdesign/oldalaink.md
     - Rólunk: schdesign/index.md
   - Web:
     - web/index.md
@@ -147,20 +150,25 @@ nav:
       - 2020/21/1 Todo lista: web/workshop/2020-21-1_todo-list.md
       - 2020/21/2 Web kezdő: web/workshop/2021-02-22.md
       - 2020/21/2 Web haladó: web/workshop/2021-03-03.md
+    - Szerkesztő programok:
+      - Mit használjak?: web/tutorial/editor/index.md
+      - Visual Studio Code: web/tutorial/editor/vscode.md
+      - WebStorm: web/tutorial/editor/webstorm.md
     - Weboldal készítés az alapoktól:
       - 0. Bevezető: web/tutorial/step-by-step/index.md
       - 1. HTML: web/tutorial/step-by-step/html.md
       - 2. CSS: web/tutorial/step-by-step/css.md
       - 3. JS: web/tutorial/step-by-step/js.md
       - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
+    - Hasznos oldalak: web/hasznos-oldalak.md
   - Grafika:
     - grafika/index.md
-    - Hasznos oldalak: grafika/grafika-hasznos.md
     - Workshopok: 
       - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
       - 2020/21/2 Photoshop haladó: grafika/workshop/2021-03-01.md
       - 2020/21/2 Illustrator kezdő: grafika/workshop/2021-03-08.md
       - 2020/21/2 Illustrator haladó: grafika/workshop/2021-03-17.md
+    - Hasznos oldalak: grafika/hasznos-oldalak.md
   - 3D:
     - 3d/index.md
     - Interfész bemutatása:
@@ -170,3 +178,4 @@ nav:
     - Workshopok: 
       - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
       - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
+    - Hasznos oldalak: 3d/hasznos-oldalak.md

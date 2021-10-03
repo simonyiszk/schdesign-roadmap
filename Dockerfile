@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:7.1.7
+FROM squidfunk/mkdocs-material:7.3.1
 
 ADD . /docs/
 

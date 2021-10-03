@@ -15,8 +15,8 @@ Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HT
 *Git*-et használva, *SSH*-n keresztül töltsük le a projektet, majd lépjünk be az imént létrejött mappába:
 
 ```powershell
-git clone git@git.sch.bme.hu:schdesign/roadmap.git
-cd roadmap
+git clone git@git.sch.bme.hu:schdesign/schdesign-roadmap.git
+cd schdesign-roadmap
 ```
 
 ## Futtatás egyszerűen

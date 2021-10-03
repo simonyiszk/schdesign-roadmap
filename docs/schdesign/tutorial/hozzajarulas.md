@@ -17,7 +17,7 @@ Ez a GitLab példány a KSZK által van hosztolva a kollégiumból. Ahhoz, hogy 
 
 #### Ha már van felhasználód
 
-Az oldalra GitLaben keresztül történik a tartalom feltöltése. Ahhoz, hogy hozzá tudjál járulni az oldalhoz, először is hozzáférés fog kelleni vagy a [repo](https://git.sch.bme.hu/schdesign/roadmap)-hoz, vagy a [GitLab group](https://git.sch.bme.hu/schdesign)-hoz.
+Az oldalra GitLaben keresztül történik a tartalom feltöltése. Ahhoz, hogy hozzá tudjál járulni az oldalhoz, először is hozzáférés fog kelleni vagy a [repo](https://git.sch.bme.hu/schdesign/schdesign-roadmap)-hoz, vagy a [GitLab group](https://git.sch.bme.hu/schdesign)-hoz.
 
 GitLab grouphoz csak **owner** rangú személy tud hozzáadni, így érdemes a [csoport tagjai](https://git.sch.bme.hu/groups/schdesign/-/group_members) közt körbenézni, hogy kinek van ehhez joga.
 
@@ -58,11 +58,11 @@ Vagy konzolon keresztül vagy grafikus kliensen keresztül másold le azt a pél
 
 === "SSH"
     ```git
-    git clone git@git.sch.bme.hu:schdesign/roadmap.git
+    git clone git@git.sch.bme.hu:schdesign/schdesign-roadmap.git
     ```
 === "HTTPS"
     ```git
-    git clone https://git.sch.bme.hu/schdesign/roadmap.git
+    git clone https://git.sch.bme.hu/schdesign/schdesign-roadmap.git
     ```
 
 ### 2. Indítsd el a Docker példányodat
