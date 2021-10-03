@@ -5,7 +5,7 @@ title: Rólunk
 # schdesign
 
 <figure>
-  <img src="rolunk/schdesign-csapatkep-designtabor-2021.jpg"/>
+  <img src="/schdesign/rolunk/schdesign-csapatkep-designtabor-2021.jpg"/>
   <figcaption>A csapat a 2021-es schdesign nyári táborban, Agárdon.</figcaption>
 </figure>
 
