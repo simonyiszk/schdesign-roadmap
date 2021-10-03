@@ -29,8 +29,7 @@ ftp:
   image: ubuntu:focal
   script:
     - apt-get update && apt-get install -y lftp ca-certificates
-    - lftp -e "set ftp:ssl-allow no; 
-               set dns:order 'inet inet6';
+    - lftp -e "set dns:order 'inet inet6';
                mirror -R site/ public/ ; quit"
            -u $FTP_USER,$FTP_PASS $FTP_HOST
   only:
