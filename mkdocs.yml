@@ -7,8 +7,8 @@ site_description: >-
   szakmai anyagainak gyűjtőhelyéül szolgáló platform.
 
 # Repository
-repo_name: schdesign/roadmap
-repo_url: https://git.sch.bme.hu/schdesign/schdesign-roadmap
+repo_name: schdesign-roadmap
+repo_url: https://github.com/simonyiszk/schdesign-roadmap
 edit_uri: "" # "edit/master/docs/" # it would add and edit link at the top of all the articles
 
 # Copyright
