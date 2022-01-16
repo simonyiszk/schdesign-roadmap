@@ -13,10 +13,10 @@ Az schdesign a [Simonyi KárolySzakkollégium](https://simonyi.bme.hu) kreatív 
 
 Körünk UI, UX, illetve digitális designnal foglalkozik. Célunk lehetőséget biztosítani, hogy a kódolás, forrasztás és szerver-konfigurálás mellett tagjaink a művészetet is be tudják emelni technológiai tudásuk mellé.
 
-Szakmai tevékenységünket három fő divízió mentén szervezzük: 
+Szakmai tevékenységünket három fő divízió mentén szervezzük:
 
-- [web](/web/) 
-- [grafika](/grafika/) 
+- [web](/web/)
+- [grafika](/grafika/)
 - [3D](/3d/)
 
 Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen gondolatod számunkra, keress minket a [hello@schdesign.hu](mailto:hello@schdesign.hu) e-mail címen.
