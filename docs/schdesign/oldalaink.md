@@ -20,7 +20,7 @@ BME-s és VIK-es logók gyűjtőoldala. Könnyedén tudod SVG, AI és PNG formá
 
 ### [YouTube](https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q)
 
-### [Facebook](https://www.facebook.com/schonherzdesignstudio/)
+### [Facebook](https://www.facebook.com/schdesignbme/)
 
 ### [Instagram](https://www.instagram.com/schdesign.hu/)
 

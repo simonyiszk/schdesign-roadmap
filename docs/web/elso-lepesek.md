@@ -7,7 +7,7 @@ description: Valahol el kell kezdeni, miért ne itt kezdenéd el?
 
 ## HTML
 
-Mivel a **HTML** valójában nem egy programozási nyelv, hanem **[egy leíró nyelv](https://i.imgur.com/YlyBQ.jpg)**, így először érdemes megnézni, hogy milyen alapvető alkotóelemekből is épül fel minden egyes weboldal, amivel találkozunk. Ezt a tanulási és ismerkedési folyamatot a w3schools weboldala nagyon szépen viszi végig, rengeteg példával kiegészítve. Ezeket az online editorukban egyből ki is lehet próbálni, a példáikat célszerű kedvedre szerkesztgetni. 
+Mivel a **HTML** valójában nem egy programozási nyelv, hanem **[egy leíró nyelv](https://i.imgur.com/YlyBQ.jpg)**, így először érdemes megnézni, hogy milyen alapvető alkotóelemekből is épül fel minden egyes weboldal, amivel találkozunk. Ezt a tanulási és ismerkedési folyamatot a w3schools weboldala nagyon szépen viszi végig, rengeteg példával kiegészítve. Ezeket az online editorukban egyből ki is lehet próbálni, a példáikat célszerű kedvedre szerkesztgetni.
 
 https://w3schools.com/html/default.asp
 
@@ -20,7 +20,7 @@ https://w3schools.com/css/default.asp
 
 ## Javascript
 
-Ezekkel még csak egy statikus oldalnál járunk. Interakció hozzáadásához a **Javascript**-en keresztül vezet az út. Ezt a nyelvet már csak azért is érdemes megtanulni, mert manapság mindenre IS használják (amiről egyébként mindenki eldöntheti, hogy mit gondol…). Ha eddig tetszett a w3schools weboldala, akkor a javascripten is végig vezetnek. 
+Ezekkel még csak egy statikus oldalnál járunk. Interakció hozzáadásához a **Javascript**-en keresztül vezet az út. Ezt a nyelvet már csak azért is érdemes megtanulni, mert manapság mindenre IS használják (amiről egyébként mindenki eldöntheti, hogy mit gondol…). Ha eddig tetszett a w3schools weboldala, akkor a javascripten is végig vezetnek.
 
 https://w3schools.com/js/default.asp
 
@@ -38,7 +38,7 @@ Ezen a ponton érdemes lehet elkezdeni egy **saját projektet**. Ne vállalj be 
     - Landing page.
     - Kvíz játék.
     - To-do lista.
-    - Javascriptes rajzoló program. 
+    - Javascriptes rajzoló program.
     - Visszaszámláló/stopper
     - Egy óra (engedd szabadjára a fantáziád!)
     - A [prog1-es nagyházi lista](https://infoc.eet.bme.hu/nhflista/) is szuper ötleteket adhat.
@@ -49,7 +49,7 @@ Ezen a ponton érdemes lehet elkezdeni egy **saját projektet**. Ne vállalj be 
 
 ## Az editor kérdése
 
-Alapvetően mindenkinek azt célszerű használnia, ami kényelmes neki. Alapvető HTML/CSS/JS webfejlesztéshez nincs is szükséged többre, mint a Notepad++. Egyébként a **[Visual Studio Code](https://code.visualstudio.com/)** egy hihetetlenül szuper alkalmazás webfejlesztéshez. Ingyenes és nyílt forráskódú. 
+Alapvetően mindenkinek azt célszerű használnia, ami kényelmes neki. Alapvető HTML/CSS/JS webfejlesztéshez nincs is szükséged többre, mint a Notepad++. Egyébként a **[Visual Studio Code](https://code.visualstudio.com/)** egy hihetetlenül szuper alkalmazás webfejlesztéshez. Ingyenes és nyílt forráskódú.
 
 A **[JetBrains](https://jetbrains.com/)** termékeihez is [igényelhető student licence](https://jetbrains.com/community/education/#students), amivel többek között a **[WebStorm](https://jetbrains.com/webstorm/)**-ot vagy **[PhpStorm](https://jetbrains.com/phpstorm/)**-ot ingyenesen használhatjátok.
 
