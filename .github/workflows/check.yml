@@ -1,4 +1,4 @@
-name: Check
+name: Syntax check
 on:
   push:
     branches-ignore:
