@@ -11,7 +11,7 @@ author: Ábrahám Zoltán
 !!! info "Friss tartalom"
     Ez a tartalom a Blender 2.81-es vagy annál frissebb verziójához készült!
 
-A cycles-el sokáig probléma volt a zaj és a "firefly"-ok. Ezeken a képen látható, hogy már egy egyszerű jelenetnél is könnyen előjöhet a zaj, és egy komplexebb, vagy kevésbé megvilágított jelenetnél garantált. Persze egy ideig bruteforce-olni is lehet a sample size, vagy a felbontás emelésével, de ez nagyon hamar napokig tartó renderidőhöz vezethet teljesen feleslegesen, és így sem garantál szép eredményt. 
+A cycles-el sokáig probléma volt a zaj és a "firefly"-ok. Ezeken a képen látható, hogy már egy egyszerű jelenetnél is könnyen előjöhet a zaj, és egy komplexebb, vagy kevésbé megvilágított jelenetnél garantált. Persze egy ideig bruteforce-olni is lehet a sample size, vagy a felbontás emelésével, de ez nagyon hamar napokig tartó renderidőhöz vezethet teljesen feleslegesen, és így sem garantál szép eredményt.
 
 ![before_lowSample](denoising/before_lowSample.png) 128 sample - 31 s - gtx 1070
 
@@ -31,7 +31,7 @@ Blenderben van a zaj és a firefly-ok ellen beépített denoiser. 2.81 óta ez e
 
 ### A denoiser bekapcsolása renderhez:
 
-- **1.lépés:** Jobb oldalt keressük meg a view layer properties fület, és pipáljuk be a denoising data-t.![step1_edited](denoising/step1_edited.png) 
+- **1.lépés:** Jobb oldalt keressük meg a view layer properties fület, és pipáljuk be a denoising data-t.![step1_edited](denoising/step1_edited.png)
 
 - **2.lépés:** Felül válasszuk ki a compositing workspace-t.![step2_edited](denoising/step2_edited.png)
 
