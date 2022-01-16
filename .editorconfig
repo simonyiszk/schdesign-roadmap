@@ -18,22 +18,12 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-# Top-level config
-root = true
 
-# All files
-[*]
+# Markdown
+[docs/*/*.md]
 charset = utf-8
 indent_style = space
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-# Markdown
-[docs/*/*.md]
-indent_size = 4
-
-# Python
-[*.py]
-indent_style = space
 indent_size = 4
