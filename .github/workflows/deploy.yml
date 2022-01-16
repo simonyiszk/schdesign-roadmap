@@ -1,0 +1,29 @@
+name: Deploy
+on:
+  workflow_call:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Declare some variables
+        id: vars
+        shell: bash
+        run: |
+          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+      - name: "Creating new branch"
+        run: git switch --orphan gh-pages-new
+      - name: Downloading artifact files
+        uses: actions/download-artifact@v2
+        with:
+          name: mkdocs-site
+      - name: GitHub Pages deploy
+        run: |
+          git branch --show-current
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
+          git branch -m gh-pages
+          git add .
+          git commit -m "Deployed ${{ steps.vars.outputs.sha_short }} using GitHub Actions"
+          git push origin gh-pages --force

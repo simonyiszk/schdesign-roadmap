@@ -1,0 +1,20 @@
+name: Publish
+on:
+  push:
+    branches: 
+      - master
+      - main
+jobs:
+  check:
+    name: Check syntax
+    uses: gergoradeczki/schdesign-roadmap/.github/workflows/check.yml@main
+  build:
+    if: github.repository_owner == 'simonyiszk'
+    needs: check
+    name: Build project
+    uses: gergoradeczki/schdesign-roadmap/.github/workflows/build.yml@main
+  deploy:
+    if: github.repository_owner == 'simonyiszk'
+    needs: build
+    name: Deploy project
+    uses: gergoradeczki/schdesign-roadmap/.github/workflows/deploy.yml@main

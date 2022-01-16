@@ -9,7 +9,8 @@ indent_size = None
 trim_trailing_whitespace = None
 max_line_length = None
 
-[*.md]
+[docs/*/*.md]
 trim_trailing_whitespace = false
 max_line_length = None
-indent_size = None
+indent_size = 4
+insert_final_newline = true
