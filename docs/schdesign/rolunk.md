@@ -9,16 +9,9 @@ title: Rólunk
     <figcaption>A csapat a 2021-es schdesign nyári táborban, Agárdon.</figcaption>
 </figure>
 
-A Schönherz Design Stúdió (schdesign) a [Simonyi Károly
-Szakkollégium](https://simonyi.bme.hu) kreatív
-alkotóműhelye. A szakkollégiumunk egyetemi hallgatókból álló szakmai
-szervezete a BME Villamosmérnöki és Informatikai Karán működik, öntevékeny
-szakmai köreiben a hallgatók egyetemi tanulmányaikon túlmutató tudáshoz jutnak,
-közösségi eseményeken vesznek részt.
+Az schdesign a [Simonyi KárolySzakkollégium](https://simonyi.bme.hu) kreatív alkotóműhelye. A szakkollégiumunk egyetemi hallgatókból álló szakmai szervezete a BME Villamosmérnöki és Informatikai Karán működik, öntevékeny szakmai köreiben a hallgatók egyetemi tanulmányaikon túlmutató tudáshoz jutnak, közösségi eseményeken vesznek részt.
 
-Körünk UI, UX, illetve digitális designnal foglalkozik. Célunk lehetőséget
-biztosítani, hogy a kódolás, forrasztás és szerver-konfigurálás mellett tagjaink
-a művészetet is be tudják emelni technológiai tudásuk mellé.
+Körünk UI, UX, illetve digitális designnal foglalkozik. Célunk lehetőséget biztosítani, hogy a kódolás, forrasztás és szerver-konfigurálás mellett tagjaink a művészetet is be tudják emelni technológiai tudásuk mellé.
 
 Szakmai tevékenységünket három fő divízió mentén szervezzük: 
 
@@ -26,8 +19,6 @@ Szakmai tevékenységünket három fő divízió mentén szervezzük:
 - [grafika](/grafika/) 
 - [3D](/3d/)
 
-Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen
-gondolatod számunkra, keress minket
-a [hello@schdesign.hu](mailto:hello@schdesign.hu) e-mail címen.
+Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen gondolatod számunkra, keress minket a [hello@schdesign.hu](mailto:hello@schdesign.hu) e-mail címen.
 
 Ha megtetszett neked a Kör és szívesen megismernél minket, csatlakoznál hozzánk, aktuális felvételinkről [schdesign.hu](https://schdesign.hu) oldalunkon olvashatsz

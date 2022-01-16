@@ -17,7 +17,7 @@ copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
 # Configuration
 theme: 
   name: material
-  custom_dir: docs/theme
+  custom_dir: overrides
   # Static files
   static_templates:
     - 404.html
@@ -47,8 +47,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: img/favicon.png
-  logo: img/schdesign_s_logo_white.svg
+  favicon: assets/favicon.png
+  logo: assets/schdesign_s_logo_white.svg
   icon:
     repo: fontawesome/brands/git-alt
 
@@ -74,18 +74,18 @@ extra:
   #  provider: google
   #  property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
   social:
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
     - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/schonherzdesignstudio/
+      link: https://www.facebook.com/schdesignbme/
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/schdesign.hu/
-    - icon: fontawesome/brands/behance
-      link: https://www.behance.net/wearethesds/
-    - icon: fontawesome/brands/gitlab
-      link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
     - icon: fontawesome/brands/github
       link: https://github.com/simonyiszk
+    - icon: fontawesome/brands/gitlab
+      link: https://git.sch.bme.hu/schdesign
+    - icon: fontawesome/brands/behance
+      link: https://www.behance.net/wearethesds/
 
 # Extensions
 markdown_extensions:
