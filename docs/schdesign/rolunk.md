@@ -5,8 +5,8 @@ title: Rólunk
 # schdesign
 
 <figure>
-  <img src="/schdesign/rolunk/schdesign-csapatkep-designtabor-2021.jpg"/>
-  <figcaption>A csapat a 2021-es schdesign nyári táborban, Agárdon.</figcaption>
+    <img src="/schdesign/rolunk/schdesign-csapatkep-designtabor-2021.jpg"/>
+    <figcaption>A csapat a 2021-es schdesign nyári táborban, Agárdon.</figcaption>
 </figure>
 
 A Schönherz Design Stúdió (schdesign) a [Simonyi Károly
@@ -30,6 +30,4 @@ Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen
 gondolatod számunkra, keress minket
 a [hello@schdesign.hu](mailto:hello@schdesign.hu) e-mail címen.
 
-Ha megtetszett neked a Kör és szívesen megismernél minket, csatlakoznál hozzánk,
-   aktuális felvételinkről [schdesign.hu](https://schdesign.hu) oldalunkon olvashatsz
-
+Ha megtetszett neked a Kör és szívesen megismernél minket, csatlakoznál hozzánk, aktuális felvételinkről [schdesign.hu](https://schdesign.hu) oldalunkon olvashatsz

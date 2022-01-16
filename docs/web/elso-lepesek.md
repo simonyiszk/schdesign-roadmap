@@ -44,7 +44,6 @@ Ezen a ponton érdemes lehet elkezdeni egy **saját projektet**. Ne vállalj be 
     - A [prog1-es nagyházi lista](https://infoc.eet.bme.hu/nhflista/) is szuper ötleteket adhat.
     - *... és tényleg bármi más, ami az érdeklődési körödbe vág, engedd szabadjára a fantáziádat*
 
-
 !!! warning ""
     A legfontosabb, hogy ne add fel! Ha bármiben elakadnál, inspirációra vagy segítségre van szükséged, nyugodtan **keress meg valaki a webfejlesztő divízióból**, és pikk-pakk segítségre fogsz találni.
 
