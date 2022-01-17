@@ -9,33 +9,26 @@ Nem feltétlenül kell egy workshop/tutorial ötlettel rendelkezned ahhoz, hogy 
 
 ## Előkészületek
 
-### 1. GitLab hozzáférés
+### 1. GitHub
 
 #### Ha még nincs felhasználód
 
-Ez a GitLab példány a KSZK által van hosztolva a kollégiumból. Ahhoz, hogy be tudjál lépni, szükséged lesz egy [SCH Account](https://kszk.sch.bme.hu/szolgaltatasaink/sch-account/) felhasználóra. A linkelt oldalon olvashatsz róla bővebben, hogyan lehet létrehozni, mire jó stb.
+Regisztrálj a https://github.com/signup oldalon.
 
 #### Ha már van felhasználód
 
-Az oldalra GitLaben keresztül történik a tartalom feltöltése. Ahhoz, hogy hozzá tudjál járulni az oldalhoz, először is hozzáférés fog kelleni vagy a [repo](https://git.sch.bme.hu/schdesign/schdesign-roadmap)-hoz, vagy a [GitLab group](https://git.sch.bme.hu/schdesign)-hoz.
-
-GitLab grouphoz csak **owner** rangú személy tud hozzáadni, így érdemes a [csoport tagjai](https://git.sch.bme.hu/groups/schdesign/-/group_members) közt körbenézni, hogy kinek van ehhez joga.
-
-GitLab repohoz minimum **maintainer** joggal kell rendelkeznie a személynek, aki meg tud hívni.
-
-!!! tip
-    Lehet jobban megéri csoport tagnak lenni, mint sima repo tagnak, mert ekkor öröklésen keresztül más repokhoz is lesz automatikusan jogod.
+Az oldalra GitHubon keresztül történik a tartalom feltöltése. Ahhoz, hogy hozzá tudjál járulni az oldalhoz, először meg kell forkolnod a [repo](https://github.com/simonyiszk/schdesign-roadmap)-t. Ekkor létre fog jönni a saját példányod, amin nyugodtan dolgozhatsz.
 
 ### 2. Docker letöltése
 
-Lokálisan lehet futtatni egy dev servert, amiben élőben láthatod a módosításaidat. Ehhez egy Docker Image-et fogunk letölteni és felkonfigurálni.
+Lokálisan lehet futtatni egy dev szervert, amiben élőben láthatod a módosításaidat. Ehhez egy Docker Image-et fogunk letölteni és felkonfigurálni.
 
 https://docs.docker.com/get-docker/
 
 Operációs rendszertől függően válaszd ki a neked kellő verziót.
 
 !!! danger
-    Windows esetén, ha **nem rendszergazda** vagy, akkor telepítést követően manuálisan hozzá kell adni a felhasználódat a `docker-users` csoporthoz. Ennek hiányában nem fogod tudni elindítani az alkalmazást. Jelentkezz ki és be, hogy érvényesüljön a csoport módosulás.
+    Windows esetén, ha **nem rendszergazda** vagy, akkor telepítést követően manuálisan hozzá kell adni a felhasználódat a `docker-users` csoporthoz. Ennek hiányában nem fogod tudni elindítani az alkalmazást. Jelentkezz ki és be, hogy érvényesüljön a csoport módosulás. Lehet újra is kell majd indítanod a gépedet.
 
 ### 3. Git kliens letöltése
 
@@ -58,35 +51,27 @@ Vagy konzolon keresztül vagy grafikus kliensen keresztül másold le azt a pél
 
 === "SSH"
     ```git
-    git clone git@git.sch.bme.hu:schdesign/schdesign-roadmap.git
+    git clone git@github.com:GITHUB_NEVED/schdesign-roadmap.git
     ```
+
 === "HTTPS"
     ```git
-    git clone https://git.sch.bme.hu/schdesign/schdesign-roadmap.git
+    git clone https://github.com/GITHUB_NEVED/schdesign-roadmap.git
     ```
 
 ### 2. Indítsd el a Docker példányodat
 
 Windows esetében először el kell indítani a `Docker Desktop` alkalmazást mielőtt ki tudnánk adni parancsokat neki.
 
-Star Menüből keressük ki és indítsuk el.
+Start Menüben keress rá és indítsd el.
 
-### 3. Futtassuk a Buildrun scriptet
+### 3. Futtassuk a scriptet
 
-Windows és Linux esetére kettő script fájl található meg a mappában. A megfelelő elindításával le fognak töltődni a virtualizációhoz szükséges fájlok és el fog indulni a developer server.
+```bash
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.7
+```
 
-Konzolba az alábbi parancsot kiadva is el tudjuk indítani a fájlt:
-
-=== "Windows"
-    ```powershell
-    .\buildrun.ps1
-    ```
-=== "Linux"
-    ```bash
-    ./buildrun.sh
-    ```
-
-Ezt követően elindul a developer server a http://localhost:8000/ címen.
+Ezt követően elindul a dev szerver a http://localhost:8000/ címen.
 
 !!! tip
     Nézd meg a gépednek milyen címe van a belső hálózatodon, mert ha engedélyezed tűzfalban, akkor pl. mobilon is megnézheted a webodoldalt.
@@ -95,21 +80,15 @@ Ezt követően elindul a developer server a http://localhost:8000/ címen.
 
 Elméletben ezen a ponton már minden megvan ahhoz, hogy megkezdhesd a munkát.
 
-Először is válts egy új branch-re, mert a master az védett, arra nem tudsz majd feltölteni.
-
-```git
-git checkout -b uj-branch-neve-ide
-```
-
 ### a) Meglévő tartalom módosítása
 
 A mappák és fájlok hierarchiája a weboldal tagolódását követi. Minden dokumentumot a `docs` mappában fogsz megtalálni, innen tudsz a divíziók felé elnavigálni stb.
 
-Ha megtaláltad a neked kellő Markdown fájlt, akkor nyisd meg, keresed meg a módosítandó részt, végezd el a módosítást, majd mentsd el a fájlt. Ekkor a Dev Server újra fog töltődni, adj neki pár másodpercet. A módosításod automatikusan tükröződnia fog a lokális szervereden.
+Ha megtaláltad a neked kellő Markdown fájlt, akkor nyisd meg, keresed meg a módosítandó részt, végezd el a módosítást, majd mentsd el a fájlt. Ekkor a dev szerver újra fog töltődni, adj neki pár másodpercet. A módosításod automatikusan tükröződni fog a lokális szervereden.
 
 ### b) Új tartalmi bővítés
 
-Mindenek előtt gondold végig, hogy amit hozzá akarsz adni, az logikailag hova illene.
+Mindenek előtt gondold végig, hogy amit hozzá akarsz adni az logikailag hova illene.
 
 - Melyik divízióhoz illene a tartalom?
 - Workshop vagy inkább tutorial jellegű?
@@ -118,7 +97,7 @@ Mindenek előtt gondold végig, hogy amit hozzá akarsz adni, az logikailag hova
 - Ki legyen a szerző?
 - Van-e már hasonló témában tartalom?
 
-És ami a legfontosabb: **egy öregebbnek is kérd ki a véleményét**, ha nem vagy biztos magadban.
+És ami a legfontosabb: **egy öregebbnek is kérd ki a véleményét**.
 
 #### Új fájl/mappa létrehozása
 
@@ -142,7 +121,7 @@ Ha megvan, hogy hova, melyik mappába akarod elhelyezni az irományodat, akkor e
     Nézd meg más mappában milyen struktúrába vannak a fájlok, használd te is ugyan azt a logikát.
 
 !!! note
-    Kérd ki egy öregebb véleményét ha nem vagy biztos magadban
+    Kérd ki egy öregebb véleményét
 
 Használd a Markdown [alapok](/schdesign/tutorial/markdown-alapok/) és [cheatsheet](/schdesign/tutorial/markdown-cheatsheet/) doksit, hogy formailag helyes legyen amit írsz.
 
@@ -150,7 +129,7 @@ Használd a Markdown [alapok](/schdesign/tutorial/markdown-alapok/) és [cheatsh
 
 A projekt gyökerében találhatsz egy `mkdocs.yml` nevű fájlt. Ennek a fájlnak a végén tudod hozzáadni az oldaladat.
 
-!!! danger
+!!! tip
     Tájékozódj a többi link alapján, hogy milyen formában kéne ezt a listát bővítened.
 
 ### Módosítások elmentése
@@ -169,23 +148,13 @@ git commit -m "Egy lényegre törő leírás"
 
 3\. *Push*-old a *remot*-ra.
 
-!!! note
-    Ha először pusholsz, akkor be kell állítanod az *upstream*-et:
-    ```git
-    git push --set-upstream origin uj-branch-neve-ide
-    ```
-
-    Ha már beállítottad az upstreamet, akkor utána a rövidebb formában is tudsz majd pusholni.
-
-    ```git
-    git push
-    ```
+```git
+git push
+```
 
 ### Véglegesítés
 
-Ha lokálisan minden oké volt és már fel is töltötted a remote-ra a módosításodat, akkor a GitLab webes felületén nyisd meg a repot és kezdeményez a *merge request*-et.
-
-Valószínűleg az oldal tetején lesz egy gomb, amire rányomva ezt meg tudod tenni.
+Ha lokálisan minden oké volt és már fel is töltötted a remote-ra a módosításodat, akkor a GitHub webes felületén nyisd meg a repodat és a *Contribute* fül alatt kezdeményezz egy *Pull request*-et
 
 #### Elfogadásra várás
 

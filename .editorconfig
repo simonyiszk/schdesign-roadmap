@@ -20,7 +20,7 @@
 
 
 # Markdown
-[docs/*/*.md]
+[*.md]
 charset = utf-8
 indent_style = space
 end_of_line = lf
