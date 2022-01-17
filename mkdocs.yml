@@ -70,9 +70,9 @@ plugins:
 
 # Customization
 extra:
-  #analytics:
-  #  provider: google
-  #  property: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  analytics:
+    provider: google
+    property: G-JXHSDHY784
   social:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schdesignbme/
