@@ -98,7 +98,7 @@ Ilyenkor futhat le:
 
 ### Deploy
 
-Az előbb előaállított *artifact*-ot letölti, majd a *gh-pages* ágra másolja, ahol .
+Az előbb előállított *artifact*-ot letölti, majd a *gh-pages* ágra másolja, ahol .
 
 Ilyenkor futhat le:
 
@@ -106,6 +106,6 @@ Ilyenkor futhat le:
 
 ### Publish
 
-Az előbbi 3 folyamat elindulásáért felel. Ha valamelyik megakad, akkor nem fut tovább.
+Az előbbi 3 folyamat elindulásáért felel. A szintaxis ellenőrzőt leszámítva ha valamelyik elakad, akkor a teljes folyamat leáll.
 
 Forkolt repo esetén csak a Syntax check fog lefutni, a többit figyelmen kívül hagyja.
