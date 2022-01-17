@@ -108,4 +108,4 @@ Ilyenkor futhat le:
 
 Az előbbi 3 folyamat elindulásáért felel. Ha valamelyik megakad, akkor nem fut tovább.
 
-Forkolt repo esetén csak a Syntax check fog lefutni, a többit figyelmen kívül hagyja
+Forkolt repo esetén csak a Syntax check fog lefutni, a többit figyelmen kívül hagyja.

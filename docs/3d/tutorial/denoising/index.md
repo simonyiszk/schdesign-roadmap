@@ -35,8 +35,8 @@ Blenderben van a zaj és a firefly-ok ellen beépített denoiser. 2.81 óta ez e
 
 - **2.lépés:** Felül válasszuk ki a compositing workspace-t.![step2_edited](denoising/step2_edited.png)
 
-  !!! warning ""
-      Ha nincs felül compositing fül, a + gombra kattintva ki lehet választani a + &rarr; General &rarr; Compositing almenüben
+    !!! warning ""
+        Ha nincs felül compositing fül, a + gombra kattintva ki lehet választani a + &rarr; General &rarr; Compositing almenüben
 
 - **3.lépés:** Pipáljuk be felül a Use Nodes-ot, és meg fog jelenni egy egyszerű node tree.![step3_edited](denoising/step3_edited.png)
 
