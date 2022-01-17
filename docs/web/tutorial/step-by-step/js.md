@@ -17,7 +17,7 @@ A JavaScript egy gyengén típusos nyelv. Ez azt jelenti, hogy változó létreh
 ``` js
 // egysoros komment
 /* 
- többsoros komment
+    többsoros komment
 */
 var alma = 5; // globális változó létrehozása
 var korte = 4;
