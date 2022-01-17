@@ -13,22 +13,22 @@ Ez a projekt azért jött létre, hogy egyszerűen tudjunk megosztani tutorial/w
 Az oldalt alapvetően 3+1 aloldalra lehet bontani. Ezek:
 
 - [web/](./web/)<br>
-     A web divízióhoz köthető tartalmak helye.
+    A web divízióhoz köthető tartalmak helye.
 - [grafika/](./grafika/)<br>
-     A grafika divízióhoz köthető tartalmak helye.
+    A grafika divízióhoz köthető tartalmak helye.
 - [3d/](./3d/)<br>
-     A 3D divízióhoz köthető tartalmak helye.
+    A 3D divízióhoz köthető tartalmak helye.
 - [schdesign/](./schdesign/)<br>
-     Egy általánosabb jellegű aloldal, ahol a körrel kapcsolatban tudhatsz meg dolgokat, illetve a nem divízióhoz kapcsolódó anyagokat is itt találhatod meg.
+    Egy általánosabb jellegű aloldal, ahol a körrel kapcsolatban tudhatsz meg dolgokat, illetve a nem divízióhoz kapcsolódó anyagokat is itt találhatod meg.
 
 #### Aloldalak aloldalai
 
 Az oldal felépítésében próbáltunk arra törekedni, hogy a linkek szépek legyenek, elég legyen csak a linket elolvasni, hogy legyen egy sejtésünk arról, hogy mi fog fogadni minket, amikor rákattintunk. Ennek érdekében az alábbi *alaloldalak* léteznek:
 
 - *<divízió\>*/tutorial/<br>
-     Nem workshop jellegű irományok, ahol bemutatunk egy klassz technikát vagy valamilyen lifehack / pro tippet adunk. Az ilyen linkek alatt maga a tutorial neve lesz látható. Ha több cikkből áll, akkor az *"oldalszámot"* is aloldalként fogod látni.
+    Nem workshop jellegű irományok, ahol bemutatunk egy klassz technikát vagy valamilyen lifehack / pro tippet adunk. Az ilyen linkek alatt maga a tutorial neve lesz látható. Ha több cikkből áll, akkor az *"oldalszámot"* is aloldalként fogod látni.
 - *<divízió\>*/workshop/<br>
-     A workshop, amit az adott divízióból tartottunk. Az ilyen linkek alatt általában a workshopnak az időpontja lesz látható. Vagy valamilyen YouTube videót fogsz itt találni az adott workshopról, vagy egy jegyzetet róla *(esetleg a kettő ötvözetét)*.
+    A workshop, amit az adott divízióból tartottunk. Az ilyen linkek alatt általában a workshopnak az időpontja lesz látható. Vagy valamilyen YouTube videót fogsz itt találni az adott workshopról, vagy egy jegyzetet róla *(esetleg a kettő ötvözetét)*.
 
 Általánosságban, ilyen fajta linkkekel találkozhatsz majd:
 
