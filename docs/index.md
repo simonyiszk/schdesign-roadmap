@@ -30,7 +30,7 @@ Az oldal felépítésében próbáltunk arra törekedni, hogy a linkek szépek l
 - *<divízió\>*/workshop/<br>
     A workshop, amit az adott divízióból tartottunk. Az ilyen linkek alatt általában a workshopnak az időpontja lesz látható. Vagy valamilyen YouTube videót fogsz itt találni az adott workshopról, vagy egy jegyzetet róla *(esetleg a kettő ötvözetét)*.
 
-Általánosságban, ilyen fajta linkkekel találkozhatsz majd:
+Általánosságban, ilyen fajta linkekkel találkozhatsz majd:
 
 ```text
 # Tutorial
@@ -48,8 +48,6 @@ Itt tudsz:
 - Egy kapcsoló segítségével változtatni a világos és sötét témák közt.
 - Keresni az oldalak közt.
 - Illetve, a [GitHub repo](https://github.com/simonyiszk/schdesign-roadmap)ra tudsz könnyedén átnavigálni
-
-
 
 ### Footer
 
@@ -69,7 +67,7 @@ Ezen a helyen tudsz a konkrét oldalon navigálni. Kiemelt színnel jelzi, hogy 
 
 ### Slack
 
-Elsődlegesen, lépj be [Slacken](https://schdesign.slack.com/archives/C019S43GNC8) a *#p-wb-schdesign-logotar* publikus csatornába, hogy up-to-date legyél a projektel kapcsolatban.
+Elsődlegesen, lépj be [Slacken](https://schdesign.slack.com/archives/C019S43GNC8) a *#p-wb-schdesign-logotar* publikus csatornába, hogy up-to-date legyél a projekttel kapcsolatban.
 
 ### GitHub
 
@@ -77,7 +75,7 @@ Bővebben a hozzájárulásról itt olvashatsz: [Hozzájárulás](/schdesign/tut
 
 ### Markdown
 
-Markdown nyelven íródnak a cikkek, amiket ezen az oldalon olvashatsz. Ez az alapja az egész oldalnak. Ezen felül, fel van túrbózva a nyelv *(lásd: [cheatsheet](./schdesign/tutorial/markdown-cheatsheet/)*, azaz ki van egészítve nem annyira szabványos újításokkal.
+Markdown nyelven íródnak a cikkek, amiket ezen az oldalon olvashatsz. Ez az alapja az egész oldalnak. Ezen felül, ki van bővítve a nyelv *(lásd: [cheat sheet](./schdesign/tutorial/markdown-cheatsheet/)*, azaz ki van egészítve nem annyira szabványos újításokkal.
 
 Az ilyen nyelven íródott fájlokból végül HTML kód fog generálódni, ami fel lesz töltve a webszerverre.
 

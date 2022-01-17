@@ -10,7 +10,6 @@ jobs:
     uses: gergoradeczki/schdesign-roadmap/.github/workflows/check.yml@main
   build:
     if: github.repository_owner == 'simonyiszk'
-    needs: check
     name: Build project
     uses: gergoradeczki/schdesign-roadmap/.github/workflows/build.yml@main
   deploy:

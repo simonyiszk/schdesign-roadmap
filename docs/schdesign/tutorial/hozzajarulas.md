@@ -38,7 +38,7 @@ https://git-scm.com/downloads
 
 ### 4. SSH vagy HTTPS
 
-Munkánkat feltölteni két féle képpen tudjuk: SSH-n vagy HTTPS-en keresztül. Tetszés szerint válaszd ki a neked szimpatikusat.
+Munkánkat feltölteni kétféleképpen tudjuk: SSH-n vagy HTTPS-en keresztül. Tetszés szerint válaszd ki a neked szimpatikusabbat.
 
 !!! tip
     Ajánlott SSH-t használni, mert ekkor nem kell felhasználónév-jelszó párossal azonosítanod magadat.
@@ -74,7 +74,7 @@ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.7
 Ezt követően elindul a dev szerver a http://localhost:8000/ címen.
 
 !!! tip
-    Nézd meg a gépednek milyen címe van a belső hálózatodon, mert ha engedélyezed tűzfalban, akkor pl. mobilon is megnézheted a webodoldalt.
+    Nézd meg a gépednek milyen címe van a belső hálózatodon, mert ha engedélyezed tűzfalban, akkor pl. mobilon is megnézheted a weboldalt.
 
 ## Munka megkezdése
 
@@ -123,7 +123,7 @@ Ha megvan, hogy hova, melyik mappába akarod elhelyezni az irományodat, akkor e
 !!! note
     Kérd ki egy öregebb véleményét
 
-Használd a Markdown [alapok](/schdesign/tutorial/markdown-alapok/) és [cheatsheet](/schdesign/tutorial/markdown-cheatsheet/) doksit, hogy formailag helyes legyen amit írsz.
+Használd a Markdown [alapok](/schdesign/tutorial/markdown-alapok/) és [cheat sheet](/schdesign/tutorial/markdown-cheatsheet/) doksit, hogy formailag helyes legyen amit írsz.
 
 #### Link hozzáadása a navigációs panelhez
 
@@ -146,7 +146,7 @@ git add eleresi/utvonal/a/modositashoz
 git commit -m "Egy lényegre törő leírás"
 ```
 
-3\. *Push*-old a *remot*-ra.
+3\. *Push*-old a *remote*-ra.
 
 ```git
 git push

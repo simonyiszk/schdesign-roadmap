@@ -12,7 +12,7 @@ Ahogy látható, HTML-el a weboldalnak az elemeit és azok kapcsolatait írtuk l
 
 ## A nyelv építőelemei
 
-HTML-hez hasonlóan, ebben is van lehetőségünk kommentelni: 
+HTML-hez hasonlóan, ebben is van lehetőségünk kommentelni:
 
 ``` css
 /*
@@ -37,14 +37,14 @@ Szóval igazából ezt fogjuk csinálni, amikor CSS-t írunk:
 1. csinálunk egy szelektort
 2. deklaráljuk
 3. tulajdonság-érték párokat adunk neki
-4. ellenőrízzük, hogy a böngészőben jól jelenik-e meg amit csináltunk
+4. ellenőrizzük, hogy a böngészőben jól jelenik-e meg amit csináltunk
 
 !!! warning "Erre figyelj"
     HTML-hez hasonlóan CSS-nél se csap rá a kezünkre a böngésző, ha valamit rosszul írunk, de itt valamennyivel látványosabb lesz, ha elgépelünk valamit.
 
 ### szelektorok
 
-Szelektorokat rengeteg féle képpen meg lehet adni. Ezekhez nézzünk meg egy leegyszerűsített táblázatot:
+Szelektorokat rengetegféleképpen meg lehet adni. Ezekhez nézzünk meg egy leegyszerűsített táblázatot:
 
 | Szelektor | Mire fog hatni |
 | --------- | ---------- |
@@ -118,13 +118,13 @@ Ez viszont egy ökölszabály lehet arra, hogy mit fog végül kapni az elemünk
 
 1. Fentről lefelé végigolvassuk a kódot.
 2. Megjegyezzük az utolsó ismert értéket.
-3. Leellenőrízzük, hogy van-e inline CSS (`style="..."`) az elemnek.
+3. Leellenőrizzük, hogy van-e inline CSS (`style="..."`) az elemnek.
     1. Ha van, akkor végignézzük benne, hogy mi az utolsó ismert érték.
 4. Megkaptuk a megoldást.
 
 ## Ahol minden folytatódik: style.css
 
-Hozzunk létre a gyökérmappában `style.css` nevű fájlt. Ez így önmagában még semmit sem tesz, mert a HTML dokumentum nem tud a CSS fájlnak a létezérésől. Hozzunk létre kapcsolatot a kettő között az `index.html` fájl `<head>` elemén belül:
+Hozzunk létre a gyökérmappában `style.css` nevű fájlt. Ez így önmagában még semmit sem tesz, mert a HTML dokumentum nem tud a CSS fájlnak a létezéséről. Hozzunk létre kapcsolatot a kettő között az `index.html` fájl `<head>` elemén belül:
 
 ``` html
 <link rel="stylesheet" href="style.css">
@@ -134,7 +134,7 @@ Ezzel kiegészítve az `index.html` fájl így fog kinézni:
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
@@ -210,20 +210,20 @@ Most már megkezdhetjük a `style.css` fájlnak a feltöltését kóddal:
 
 !!! example ""
     === "style.css"
-        ``` css
+        ```css
         body {
             margin: 0;
         }
         ```
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
                 <!-- Itt adjuk a böngésző tudtára, hogy létezik egy css fájlunk is, amit használni szeretnénk -->
-                <link rel="stylesheet" href="layout.css"> 
+                <link rel="stylesheet" href="layout.css">
                 <title>Ez a weboldalam címe</title>
             </head>
             <body>
@@ -268,7 +268,7 @@ Most már megkezdhetjük a `style.css` fájlnak a feltöltését kóddal:
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
@@ -300,8 +300,8 @@ Margón kívül van még egy pár dolog, amivel méreteket tudunk megadni, vegy�
 
 Ezekkel a tulajdonságokkal le tudjuk írni, hogy melyik HTML elem mekkora legyen és mekkora rés legyen kihagyva más elemekhez képest. Még viszont hátra van az elrendezés.
 
-!!! warning "Erre figylej!"
-    Ha egy elemnek megadjuk, hogy `width: 100px; padding: 10px;` akkor nem 100px széles lesz, hanem 120px. Ez úgy jön ki, hogy a 100px szélességhez hozzáadódik még a 10px kitöltés balról és jobbról is, így `100+10+10=120` lesz a valódi szélesség. Az alábbi kóddal ki lehet kapcsolni: 
+!!! warning "Erre figyelj!"
+    Ha egy elemnek megadjuk, hogy `width: 100px; padding: 10px;` akkor nem 100px széles lesz, hanem 120px. Ez úgy jön ki, hogy a 100px szélességhez hozzáadódik még a 10px kitöltés balról és jobbról is, így `100+10+10=120` lesz a valódi szélesség. Az alábbi kóddal ki lehet kapcsolni:
 
 ``` css
 /* A '*' szelektorral MINDEN html elemet kijelölünk */
@@ -382,7 +382,7 @@ A `<header>`-t is külső konténerként kezelve megmondjuk neki is, hogy *flex*
 A `<main>` középre tolja önmagát. Ezen felül kényelmi szempontok miatt adunk neki egy kis margint és paddinget.
 
 !!! note "Megjegyzés"
-    Jelenleg a `<footer>` nincs a böngésző aljába tolva. Ez azér van, mert nincs elég tartalom a jegyzetben. Az egyik megoldás, hogy kiegészítjük a jegyzetet elegendő tartalommal. A másikat meg majd a reszponzivitásnál fogjuk megnézni.
+    Jelenleg a `<footer>` nincs a böngésző aljába tolva. Ez azért van, mert nincs elég tartalom a jegyzetben. Az egyik megoldás, hogy kiegészítjük a jegyzetet elegendő tartalommal. A másikat meg majd a reszponzivitásnál fogjuk megnézni.
 
 #### Szervezzük ki egy másik fájlba
 
@@ -400,15 +400,15 @@ Most valahogy így állunk fájlokat tekintve:
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
                 <!-- Itt adjuk a böngésző tudtára, hogy létezik egy css fájlunk is, amit használni szeretnénk -->
-                <link rel="stylesheet" href="layout.css"> 
-                <link rel="stylesheet" href="style.css"> 
+                <link rel="stylesheet" href="layout.css">
+                <link rel="stylesheet" href="style.css">
                 <title>Ez a weboldalam címe</title>
             </head>
             <body>
@@ -453,7 +453,7 @@ Most valahogy így állunk fájlokat tekintve:
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
@@ -466,11 +466,11 @@ Most valahogy így állunk fájlokat tekintve:
         </html>
         ```
     === "style.css"
-        ``` css
+        ```css
         /* Jelenleg üres :( */
         ```
     === "layout.css"
-        ``` css
+        ```css
         body {
             margin: 0;
             display: flex;
@@ -608,7 +608,7 @@ p {
 }
 ```
 
-Mivel szeretnénk támogatni a képek beilesztését és a képaláírást, ezért még az alábbi sorokkal is egészítsük ki a kódunkat:
+Mivel szeretnénk támogatni a képek beillesztését és a képaláírást, ezért még az alábbi sorokkal is egészítsük ki a kódunkat:
 
 ``` css
 article img { /* Minden jegyzeten belüli képre alkalmazódni fog */
@@ -641,7 +641,7 @@ footer {
 ## Összegzés
 
 - `<link>`-eket felhasználva tudjuk hozzáadni a CSS fájlokat a HTML dokumentumunkhoz.
-- szelektorokon keresztül meghatározzuk, hogy mit akarank megváltoztatni.
+- szelektorokon keresztül meghatározzuk, hogy mit akarunk megváltoztatni.
 - `{...}` belül `tulajdonság: érték;` formában felsoroljuk a változtatásokat.
 - Ha többször szerepel egy tulajdonság, akkor a legutolsó értéke fog érvényesülni.
 
@@ -649,7 +649,7 @@ footer {
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
@@ -701,7 +701,7 @@ footer {
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
@@ -714,7 +714,7 @@ footer {
         </html>
         ```
     === "style.css"
-        ``` css
+        ```css
         @font-face {
             font-family: 'Roboto';
             src: url('Roboto-Regular.ttf')  format('truetype');
@@ -791,7 +791,7 @@ footer {
         }
         ```
     === "layout.css"
-        ``` css
+        ```css
         body {
             margin: 0;
             display: flex;

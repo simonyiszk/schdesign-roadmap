@@ -1,6 +1,6 @@
 ---
 title: Markdown szerkesztési segédlet
-description: Végig megyünk a markdown alapjain, lényegretőrően bemutatva mi hogyan épül fel.
+description: Végig megyünk a markdown alapjain, lényegre törően bemutatva mi hogyan épül fel.
 ---
 
 # Markdown alapok
@@ -92,7 +92,7 @@ Egy bekezdés egy sorból áll. Minden új bekezdést egy üres sorral kell elv�
 
 ### Szöveg kiemelés
 
-Szerkesztőtől függ, de általában gyorsgombok támogatva vanna, így annyival kevesebb szintaxisra kell emlékezni. HTML-hez hasonlóan, ha valamira valamit alkalmazni akarunk, akkor azt körbe kell fogni valamivel. Gyorsgomb használatakor jelöljük ki a formázandó szöveget, majd meg fog jelenni az elején és a végén két jel. Ami ez a két jel között van, arra fog alkalmazódni a formázás.
+Szerkesztőtől függ, de általában gyorsgombok támogatva vanna, így annyival kevesebb szintaxisra kell emlékezni. HTML-hez hasonlóan, ha valamire valamit alkalmazni akarunk, akkor azt körbe kell fogni valamivel. Gyorsgomb használatakor jelöljük ki a formázandó szöveget, majd meg fog jelenni az elején és a végén két jel. Ami ez a két jel között van, arra fog alkalmazkodni a formázás.
 
 | Gyorsgomb | Szintaxis | Végeredmény |
 |-----------|-----------|-------------|
@@ -185,7 +185,6 @@ Kódot lehet teljes vagy részleges formában beilleszteni.
             <span>Ez egy többsoros kód, amit beljebb kezdéssel érek el, hogy ne fusson le</span>
         </div>
 
-
 ### Linkek
 
 Linkeket is sokféleképpen lehet beilleszteni.
@@ -229,7 +228,7 @@ Forrás: https://www.markdownguide.org/basic-syntax/
 
 ## Kibővített szintaxis
 
-Ha a fenti feature-ökön végignézünk, akkor az elég szegényes. Nem is volt a célja a nyelvnek, hogy újra feltalálja a kereket, de ettől függetlenül néhány dolog még mindig hiányzik a nyelvől, amit jó volna, ha tudna. Ennek az lett az eredménye, hogy ki lett egészítve a nyelv.
+Ha a fenti feature-ökön végignézünk, akkor az elég szegényes. Nem is volt a célja a nyelvnek, hogy újra feltalálja a kereket, de ettől függetlenül néhány dolog még mindig hiányzik a nyelvről, amit jó volna, ha tudna. Ennek az lett az eredménye, hogy ki lett egészítve a nyelv.
 
 Az itt leírtak már nem biztos hogy mindenhol, ahol Markdownt használnak, működni fog. Lehet egy kicsit módosítani kell majd rajta, de a *"nagyoknál"* működik.
 
@@ -360,4 +359,4 @@ Ha csak egy gyors linket szeretnél beilleszteni, akkor nem kell formázással t
 Ez csak egy gyors összefoglalója a kibővített Markdown szintaxisnak, ennél bővebb útmutatók találhatóak szertemenően az interneten.
 
 - Forrás: https://www.markdownguide.org/extended-syntax/
-- [Markdown Cheatsheet](/schdesign/tutorial/markdown-cheatsheet/)
+- [Markdown Cheat sheet](/schdesign/tutorial/markdown-cheatsheet/)

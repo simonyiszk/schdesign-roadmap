@@ -1,14 +1,4 @@
 {
-  "git.ignoreLimitWarning": true,
-  "search.exclude": {
-    "**/material": true,
-    "**/node_modules": true,
-    "**/package-lock.json": true
-  },
-  "search.followSymlinks": false,
-  "stylelint.validate": ["css", "scss"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.insertSpaces": true,
-  "editor.tabSize": 4,
-  "editor.wordWrap": "on"
+  "spellright.language": ["en", "hu"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
 }

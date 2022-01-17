@@ -5,7 +5,7 @@ description: Vannak még el nem intézett dolgok, ezeket soroltuk itt fel.
 
 # *Ami már megvan, és ami még hiányzik...*
 
-### A roadmap projekt
+## A roadmap projekt
 
 Szia!
 
@@ -17,9 +17,9 @@ Ha van kedved beszállni az oldal fejlesztésébe, akkor nézz rá a [git repór
 
 **Ha szeretnél beszállni a projekt fejlesztésébe (akár tartalommal, akár fejlesztéssel), vagy csak kíváncsi vagy, hogy hogyan is áll össze ez az egész, akkor nyugodtan dobj egy e-mailt nekem a gergo.radeczki@schdesign.hu címre.**
 
-### Tennivalók
+## Tennivalók
 
-##### Technikai
+### Technikai
 
 - [x] A repo létrehozása, forduljon a projekt.
 - [x] CI-al automatikusan fellőni egy webszerverre.
@@ -27,7 +27,7 @@ Ha van kedved beszállni az oldal fejlesztésébe, akkor nézz rá a [git repór
 - [x] Material téma felülírása (szín és footer).
 - [x] *WIP:* Extension-ök bekonfigurálása
 
-##### Tartalmi
+### Tartalmi
 
 - [x] Az oldal általános struktúrájának kialakítása.
 - [x] *WIP:* Markdown segédlet kódokkal együtt.
@@ -41,10 +41,7 @@ Ha van kedved beszállni az oldal fejlesztésébe, akkor nézz rá a [git repór
 - [x] Kép feltöltése a *Rólunk* szekcióhoz.
 - [x] **"Rólunk" szöveg megírása.**
 
-##### Egyéb
+### Egyéb
 
 - [ ] Megismertetni az emberekkel a platformot.
 - [x] __Design__
-
-
-
