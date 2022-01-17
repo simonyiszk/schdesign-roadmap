@@ -1,4 +1,14 @@
 {
+  "git.ignoreLimitWarning": true,
+  "search.exclude": {
+    "**/material": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "search.followSymlinks": false,
   "spellright.language": ["en", "hu"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on"
 }
