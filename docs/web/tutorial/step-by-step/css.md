@@ -119,7 +119,7 @@ Ez viszont egy ökölszabály lehet arra, hogy mit fog végül kapni az elemünk
 1. Fentről lefelé végigolvassuk a kódot.
 2. Megjegyezzük az utolsó ismert értéket.
 3. Leellenőrízzük, hogy van-e inline CSS (`style="..."`) az elemnek.
-   1. Ha van, akkor végignézzük benne, hogy mi az utolsó ismert érték.
+    1. Ha van, akkor végignézzük benne, hogy mi az utolsó ismert érték.
 4. Megkaptuk a megoldást.
 
 ## Ahol minden folytatódik: style.css
