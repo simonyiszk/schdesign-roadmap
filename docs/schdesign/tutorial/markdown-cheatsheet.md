@@ -1,10 +1,10 @@
 ---
-title: Markdown Cheatsheet
-description: Az MkDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheatsheet, rövid kódrészlet mellett megmutatja hogyan fog kinézni amit csinálsz
+title: Markdown Cheat sheet
+description: Az MkDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheat sheet, rövid kódrészlet mellett megmutatja hogyan fog kinézni amit csinálsz
 date: June 12, 2021
 ---
 
-# Markdown cheatsheet
+# Markdown cheat sheet
 
 Az oldalon használt markdown az alapokon kívül is ki van egészítve extra feature-ökkel, amikről lentebb tudsz tájékozódni.
 
@@ -97,7 +97,7 @@ Színes dobozokat tudsz létrehozni. Többféleképpen meg lehet adni egyet.
 !!! warning inline end
     Egy sorba a szöveggel, a szöveg végén.
 
-``` markdown
+```markdown
 !!! warning inline end
     Egy sorba a szöveggel, a szöveg végén.
 ```
@@ -109,7 +109,7 @@ Színes dobozokat tudsz létrehozni. Többféleképpen meg lehet adni egyet.
 !!! warning inline
     Egy sorba a szöveggel, a szöveg végén.
 
-``` markdown
+```markdown
 !!! warning inline
     Egy sorba a szöveggel, a szöveg végén.
 ```
@@ -256,13 +256,13 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Python kód szövegkiemeléssel"
     === "példa kód"
-    ```` markdown
-    ``` python
+    ````markdown
+    ```python
     import tensorflow as tf
     ```
     ````
     === "megjelenés"
-    ``` python
+    ```python
     import tensorflow as tf
     ```
 
@@ -270,7 +270,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Python kód szövegkiemeléssel, sorszámmal"
     === "példa kód"
-    ```` markdown
+    ````markdown
     ``` python linenums="1"
     def bubble_sort(items):
         for i in range(len(items)):
@@ -280,7 +280,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
     ```
     ````
     === "megjelenés"
-    ``` python linenums="1"
+    ```python linenums="1"
     def bubble_sort(items):
         for i in range(len(items)):
             for j in range(len(items) - 1 - i):
@@ -292,7 +292,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Python kód szövegkiemeléssel, 2. és 3. sor kiemelése"
     === "példa kód"
-    ```` markdown
+    ````markdown
     ``` python hl_lines="2 3"
     def bubble_sort(items):
         for i in range(len(items)):
@@ -302,7 +302,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
     ```
     ````
     === "megjelenés"
-    ``` python hl_lines="2 3"
+    ```python hl_lines="2 3"
     def bubble_sort(items):
         for i in range(len(items)):
             for j in range(len(items) - 1 - i):
@@ -314,7 +314,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Szövegen belül kiemelés"
     === "példa kód"
-    ```` markdown
+    ````markdown
     The `#!python def bubble_sort(items)` function is used to generate a sequence of numbers.
     The `def bubble_sort(items)` function is used to generate a sequence of numbers.
     ````
@@ -326,7 +326,7 @@ Ha forráskódot szeretnél megosztani szövegkiemeléssel.
 
 !!! note "Billentyű gombok kiemelése"
     === "példa kód"
-    ```` markdown
+    ````markdown
     ++ctrl+alt+del++
     ````
     === "megjelenés"
@@ -338,14 +338,14 @@ Idk miért, de nem működik 😢
 
 !!! note "Másik fájl referenciaként"
     === "példa kód"
-    ```` markdown
+    ````markdown
     ```
-    --8<--​ ".browserslistrc"
+    --8<-- ".browserslistrc"
     ```
     ````
     === "megjelenés"
     ```html
-    --8<--​ "./rolunk.md"
+    --8<-- ".browserslistrc"
     ```
 
 ## Content tabs
@@ -399,7 +399,7 @@ Idk miért, de nem működik 😢
 
 !!! note "Táblázat"
     === "példa kód"
-    ```` markdown
+    ````markdown
     | Method      | Description                          |
     | ----------- | ------------------------------------ |
     | `GET`       | :material-check:     Fetch resource  |
@@ -418,7 +418,7 @@ Idk miért, de nem működik 😢
 !!! note "Táblázat igazítás"
     === "Bal"
         === "példa kód"
-        ```` markdown hl_lines="2"
+        ````markdown hl_lines="2"
         | Method      | Description                          |
         | :---------- | :----------------------------------- |
         | `GET`       | :material-check:     Fetch resource  |
@@ -433,7 +433,7 @@ Idk miért, de nem működik 😢
         | `DELETE`    | :material-close:     Delete resource |
     === "Közép"
         === "példa kód"
-        ```` markdown hl_lines="2"
+        ````markdown hl_lines="2"
         | Method      | Description                          |
         | :---------: | :----------------------------------: |
         | `GET`       | :material-check:     Fetch resource  |
@@ -448,7 +448,7 @@ Idk miért, de nem működik 😢
         | `DELETE`    | :material-close:     Delete resource |
     === "Jobb"
         === "példa kód"
-        ```` markdown hl_lines="2"
+        ````markdown hl_lines="2"
         | Method      | Description                          |
         | ----------: | -----------------------------------: |
         | `GET`       | :material-check:     Fetch resource  |
@@ -472,7 +472,7 @@ Idk miért, de nem működik 😢
 
 !!! note "Diagram készítése"
     === "példa kód"
-    ```` markdown
+    ````markdown
     ``` mermaid
     graph LR
     A[Start] --> B{Error?};
@@ -497,11 +497,11 @@ Idk miért, de nem működik 😢
 !!! note "Hivatkozás"
     === "példa kód"
     Ilyen formában add meg a szöveget:
-    ```` markdown
+    ````markdown
     Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
     ````
     Ezt pedig bárhol megadhatod a dokumentumban, de mindig a dokumentum aljában lesz megtalálható:
-    ```` markdown
+    ````markdown
     [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     [^2]:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
@@ -587,6 +587,7 @@ Idk miért, de nem működik 😢
 
         ++}
         ```
+
 ### BetterEm
 
 Szöveg formázása egyszerűen, markdown stílusban:
@@ -611,8 +612,6 @@ Szöveg formázása egyszerűen, markdown stílusban:
 ### Caret, Mark & Tilde
 
 #### Caret
-
-
 
 !!! note "Aláhúzás és felső indexbe tevés:"
     Vegyük észre, hogy a szóközt felső index esetében escape-elni kell a \ jellel.
@@ -750,7 +749,7 @@ A `Placeholder` helyére lehet írni, hogy milyen szöveg jelenjen meg, ha nem t
 === "Lazy-loading"
     _Example_:
 
-    ``` markdown
+    ```markdown
     ![Placeholder](https://dummyimage.com/600x400/eee/aaa){ loading=lazy }
     ```
 
@@ -901,4 +900,4 @@ date: June 12, 2021
 
 ## Variables
 
-Vannak változók, amiket includolni lehet, felülírni stb.
+Vannak változók, amiket include-olni lehet, felülírni stb.

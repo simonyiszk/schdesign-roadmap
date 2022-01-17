@@ -6,7 +6,7 @@ author: Radeczki Gergő István
 
 # Bevezető
 
-Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva létere fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
+Ebben a tutorialban végigvesszük, hogy mi az a HTML, CSS, JS, amikre minden weboldal épül. Majd ezeket a nyelveket felhasználva létre fogunk hozni egy nagyon egyszerű, statikus weboldalt, ami tökéletes lesz egy kezdetleges jegyzetnek a megjelenítésére.
 
 Mit is akarunk pontosan csinálni?
 
@@ -23,7 +23,7 @@ Minimum:
 
 Opcionális:
 
-- Engedélyezd az ismert kiterjesztések mutatását Windowsban 
+- Engedélyezd az ismert kiterjesztések mutatását Windowsban
 
 Ha tovább szeretnél majd haladni:
 

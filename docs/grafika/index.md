@@ -32,7 +32,6 @@ https://konferencia.simonyi.bme.hu/
 
 A Simonyi konferenciához hasonlóan fut le ez az évenkénti project is. Azonban ebben a projektben mindig van egy szabadság, mivel simonyisoktól simonyisoknak készül.
 
-
 ### SZTAKI plakát tervezés
 
 A kör sok megrendelés kap, ilyen volt a SZTAKI-től érkező plakát iránti kérés is. Ennek a projektnek az érdekessége, hogy egy meglévő plakátot kellett “felturbózni”. Így elég szűk kezet kapott a kör, de ez is csak egy kihívás volt, amit már a sikeresen leküzdötték közé lehet írni.

@@ -6,8 +6,8 @@
     "**/package-lock.json": true
   },
   "search.followSymlinks": false,
-  "stylelint.validate": ["css", "scss"],
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "spellright.language": ["en", "hu"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "editor.insertSpaces": true,
   "editor.tabSize": 4,
   "editor.wordWrap": "on"

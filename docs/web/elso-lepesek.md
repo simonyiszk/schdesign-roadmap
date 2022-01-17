@@ -14,7 +14,7 @@ https://w3schools.com/html/default.asp
 ## CSS
 
 Ha ezt legyűrted, akkor már készen is állsz arra, hogy egy [ilyen](https://motherfuckingwebsite.com/) szuper és abszolút legit weboldalt összedobjatok.
-Ezután jöhet a weboldal cicomázása. Ezt **CSS (Cascading Style Sheets)** segítségével tudod megtenni. Ezen megint csak a w3schoools oldala visz végig a css tutorialjuk keretében.
+Ezután jöhet a weboldal cicomázása. Ezt **CSS (Cascading Style Sheets)** segítségével tudod megtenni. Ezen megint csak a w3schools oldala visz végig a css tutoriáljuk keretében.
 
 https://w3schools.com/css/default.asp
 
@@ -31,7 +31,6 @@ Ha ezeket végig csináltátok, természetesen már csak végtelen türelem és 
 Minden webfejlesztő egyik legjobb barátja az **F12, “fejlesztői eszközök”** része a böngészőnek, itt tudod megnézni bármilyen oldal kódját, és garázdálkodni bármelyik részében.
 
 Ezen a ponton érdemes lehet elkezdeni egy **saját projektet**. Ne vállalj be egy megvalósíthatatlan, hatalmas dolgot. Érdemes olyan projektet elkezdeni, amivel szívesen foglalkozol.
-
 
 !!! note "Egy pár ötlet"
     - Egy oldalas, reszponzív weboldal. *Ez lehet egy tetszőleges személy/cég bemutatkozó oldala, egy Wikipédia-szócikk, vagy akár a kedvenc Pokémonjaid listája.*

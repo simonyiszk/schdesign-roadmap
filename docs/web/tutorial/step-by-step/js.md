@@ -17,7 +17,7 @@ A JavaScript egy gyengén típusos nyelv. Ez azt jelenti, hogy változó létreh
 ``` js
 // egysoros komment
 /* 
-   többsoros komment
+    többsoros komment
 */
 var alma = 5; // globális változó létrehozása
 var korte = 4;
@@ -62,14 +62,14 @@ Nagyon nagy valószínűséggel, ha valamit meg akarsz csinálni JavaScriptben, 
 
 !!! warning "Erre figyelj"
     A `===` jel ellenőrzi a típust és az értéket.
-    
+
 !!! warning "Erre figyelj"
     És még sok egyéb *"érdekességet"* is tartogat a nyelv.
 
 !!! note "Megjegyzés"
     C-től eltérően, JS-ben nincs kötelező `main()` függvény. A JavaScript kódok lefutását valamilyen eseményhez szoktuk kötni pl. betöltődik minden kért dokumentum.
 
-Ha JavaScript kódot szeretnénk futtatni, akkor annak az egyik módszere, hogy valami külső dolog indítja el *(pl. a felhasználó kattint vmire; minden betöltődött a weboldalon stb.)*. Ezzel kivédhetjük azt, hogy **még** nem létező HTML elemen szeretnénk műveletet végrehajtani, ezzel elkerülünk egy hibaüzenetet.
+Ha JavaScript kódot szeretnénk futtatni, akkor annak az egyik módszere, hogy valami külső dolog indítja el *(pl. a felhasználó kattint valamire; minden betöltődött a weboldalon stb.)*. Ezzel kivédhetjük azt, hogy **még** nem létező HTML elemen szeretnénk műveletet végrehajtani, ezzel elkerülünk egy hibaüzenetet.
 
 ### JS beillesztése HTML-be
 
@@ -78,7 +78,7 @@ CSS-sel ellentétben JS fájlokat a `<script src="..."></script>` HTML elemmel t
 Ezt azért célszerű így csinálni, mert ekkor *(jelen projektben)* már minden HTML elem betöltődött, nem fogunk tudni olyan elemen műveletet végrehajtani, ami még nem létezik.
 
 !!! note "Megjegyzés"
-    Ha `<head>`-ben `<script src="..." defer></script>`-ként adjuk meg a fájlt, akkor azzal garantáljuk, hogy a HTML dokumentom teljes betöltődése után fussanak le a benne leírtak. Előnye, hogy előbb kimegy a kérés az `src="..."`-ben megadott fájlért, ezzel javulhat a megjelenítés sebessége. Hátránya, hogy meg kell várni a HTML dokumentom betöltődését ahhoz, hogy érvényesüljenek a fájlban leírtak.
+    Ha `<head>`-ben `<script src="..." defer></script>`-ként adjuk meg a fájlt, akkor azzal garantáljuk, hogy a HTML dokumentum teljes betöltődése után fussanak le a benne leírtak. Előnye, hogy előbb kimegy a kérés az `src="..."`-ben megadott fájlért, ezzel javulhat a megjelenítés sebessége. Hátránya, hogy meg kell várni a HTML dokumentum betöltődését ahhoz, hogy érvényesüljenek a fájlban leírtak.
 
 !!! warning "Erre figyelj"
     Itt már szól a böngésző, ha valami baj van. Ezt a böngésző *Developer tools -> Console* részében tudjuk megtekinteni.
@@ -92,7 +92,7 @@ Felmerülhet a kérdés: *"a weboldal már kvázi készen van, minek ide JS?"*
 
 Nos, jelen pillanatban a `<header>` csak úgy van a weboldal tetején. Ha elég tartalommal feltöltjük a bekezdéseket *(Lorem ipsum)*, akkor nyilvánvalóvá válik, hogy a fejlécünk nem nagyon követi a nézőpontot görgetés közben. Ezt meg tudnánk oldani egy egyszerű CSS `position: static;` hozzáadásával *(vagy khm... `@media print` query-vel)*, de ezzel van egy kis gond:
 
-Ha arra vetemednénk, hogy pl. PDF-et készítűnk a weboldalról, akkor a fenti megoldás következtében a PDF minden egyes oldalának a tetején ott lenne a `<header>`.
+Ha arra vetemednénk, hogy pl. PDF-et készítünk a weboldalról, akkor a fenti megoldás következtében a PDF minden egyes oldalának a tetején ott lenne a `<header>`.
 
 Ennek a megoldása egy egyszerű JavaScript kódnak az írásával fog megvalósulni.
 
@@ -136,7 +136,7 @@ var header = document.querySelector("header");
 var main = document.querySelector("main");
 ```
 
-Változóként elmnentjük a `<header>`-t és a `<main>`-t, mert így egyszerűbb lesz majd rájuk hivatkozni. A `document.querySelector("...")` CSS stílusú szelektort vár el tőlünk, amivel rá tudunk mutatni a keresett HTML elemekre.
+Változóként elmentjük a `<header>`-t és a `<main>`-t, mert így egyszerűbb lesz majd rájuk hivatkozni. A `document.querySelector("...")` CSS stílusú szelektort vár el tőlünk, amivel rá tudunk mutatni a keresett HTML elemekre.
 
 ``` js
 var sticky = header.offsetTop;
@@ -161,7 +161,7 @@ header.classList.remove("sticky");
 main.style.marginTop = "20px";
 ```
 
-Különben elvesszük ezt a class-t és visszaállíttjuk a margót.
+Különben elvesszük ezt a class-t és visszaállítjuk a margót.
 
 ## *sticky* class
 
@@ -175,7 +175,7 @@ A fixed pozíciójú elemeknek van egy-két rossz tulajdonsága, amiket a `stick
 }
 ```
 
-Az egyik, hogy a *fixed* pozíciójú elemeknek explicit meg kell mondani, hogy mekkora legyen a mérete. A másik, hogy átkerülnek egy másik síkra, azzaz takarásba tud kerülni a többi elemünkkel.
+Az egyik, hogy a *fixed* pozíciójú elemeknek explicit meg kell mondani, hogy mekkora legyen a mérete. A másik, hogy átkerülnek egy másik síkra, azaz takarásba tud kerülni a többi elemünkkel.
 
 Mivel kikerül a síkból, ezért a helye üres marad. Minden ami alatta volt feljebb tolódik. Ez nagyon rosszul néz ki, ha görgetünk. Erre az egyik bevett szokás, hogy akkor közvetlen utána következő elem megpróbálja ellensúlyozni a helyzetet. Ezért lesz a `<main>`-nek `70px` a felső margója.
 
@@ -203,14 +203,14 @@ h1, h2, h3, h4, h5, h6 {
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
-                <link rel="stylesheet" href="layout.css"> 
-                <link rel="stylesheet" href="style.css"> 
+                <link rel="stylesheet" href="layout.css">
+                <link rel="stylesheet" href="style.css">
                 <title>Ez a weboldalam címe</title>
             </head>
             <body>
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
         </html>
         ```
     === "style.css"
-        ``` css
+        ```css
         @font-face {
             font-family: 'Roboto';
             src: url('Roboto-Regular.ttf')  format('truetype');
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         ```
     === "layout.css"
-        ``` css
+        ```css
         body {
             margin: 0;
             display: flex;
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         ```
     === "script.js"
-        ``` js
+        ```js
         window.onscroll = function() { changeHeader() };
 
         var header = document.querySelector("header");

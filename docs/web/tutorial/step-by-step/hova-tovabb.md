@@ -34,7 +34,7 @@ Mi most a `2. megoldást` fogjuk választani.
 
 #### HTML
 
-Ha most megnéznénk a készülő weboldalt mobilről, akkor látható hogy nagyon apró minden. Ez azért van, mert a metaadatok közt nem mondtuk meg a böngészőnek, hogy mit kezdjen kis kijelzőkkel.
+Ha most megnéznénk a készülő weboldalt mobilról, akkor látható hogy nagyon apró minden. Ez azért van, mert a metaadatok közt nem mondtuk meg a böngészőnek, hogy mit kezdjen kis kijelzőkkel.
 
 Pótoljuk ezt a hiányosságot. Adjuk hozzá az alábbit a `<head>`-hez:
 
@@ -42,7 +42,7 @@ Pótoljuk ezt a hiányosságot. Adjuk hozzá az alábbit a `<head>`-hez:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-Ezel most több mindent a böngésző tudtára adunk. Beállítottuk, hogy a weboldalnak a
+Ezzel most több mindent a böngésző tudtára adunk. Beállítottuk, hogy a weboldalnak a
 
 - szélessége kövesse az eszköznek a szélességét
 - kezdeti nagyítása 1 legyen *(azaz ne legyen se kicsinyítve, se nagyítva)*.
@@ -82,8 +82,6 @@ main {
 
 Az `<img>`-nek ezt adtuk meg: `max-width: 100%;`. Itt nem konkrétan megmondtunk egy pixel számot, hanem hogy a konténernek *(amiben benne van)* a 100%-os szélességéig nyúlhat. Azaz, ha változik a konténer szélessége *(pl. átméretezzük az ablakot)*, akkor ahhoz fog viszonyulni.
 
-
-
 `responsive.css`
 
 Hozzuk létre ezt a fájl a gyökérmappában és linkeljük a HTML dokumentumhoz utolsóként.
@@ -117,15 +115,15 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
                 <meta charset="UTF-8">
                 <link rel="icon" href="logo.svg">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="layout.css"> 
-                <link rel="stylesheet" href="style.css"> 
+                <link rel="stylesheet" href="layout.css">
+                <link rel="stylesheet" href="style.css">
                 <link rel="stylesheet" href="responsive.css">
                 <title>Ez a weboldalam címe</title>
             </head>
@@ -171,7 +169,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
@@ -185,7 +183,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
         </html>
         ```
     === "style.css"
-        ``` css
+        ```css
         @font-face {
             font-family: 'Roboto';
             src: url('Roboto-Regular.ttf')  format('truetype');
@@ -263,7 +261,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
         }
         ```
     === "layout.css"
-        ``` css
+        ```css
         body {
             min-height: 100vh;
             margin: 0;
@@ -299,7 +297,7 @@ Egy probléma maradt még: ha nincs elég tartalom, akkor most minimális méret
         }
         ```
     === "responsive.css"
-        ``` css
+        ```css
         @media only screen and (max-width: 959px) {
             main {
                 border-radius: 0;
@@ -336,9 +334,9 @@ A GitHubnak van egy GitHub Pages nevű szolgáltatása. Ebben statikus, vagy kli
 
 ### GitHub
 
-1. Készítsünk egy üres GitHub repositoryt, aminek a neve legyen `{github-felhasznalo-nevunk}.github.io`.
+1. Készítsünk egy üres GitHub repository-t, aminek a neve legyen `{github-felhasznalo-nevunk}.github.io`.
 2. Navigáljunk el az imént létrehozott repo beállításaihoz *(Options)*.
-3. Görgessünk le addig, ameddig nem látjuk a *GitHub Pages* címt.
+3. Görgessünk le addig, ameddig nem látjuk a *GitHub Pages* címet.
 4. Állítsuk be, legyen a *master* (vagy *main*) branch-ként kiválasztva.
 5. Mappának állítsuk be a `/ (root)`-ot.
 

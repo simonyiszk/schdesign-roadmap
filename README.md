@@ -1,6 +1,6 @@
 # Roadmap
 
-Egy dokumentációs repo.
+Az schdesign öntevékeny szakmai kör tudásmegosztó weboldala. Megtanulhatsz többet a körről, a körön belül található divíziókrók. Ezen kívül az általunk tartott workshopok anyagát és egyéb cikkeket találhatsz az oldalon.
 
 ## Hogyan is van ez
 
@@ -8,105 +8,104 @@ A `docs` mappában szöveges fájlokat találsz [markdown](https://www.markdowng
 
 ## Mi történik?
 
-Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HTML kódot a *docs/* mappából az *mkdocs.yml* fájl alapján Docker környezetben. A `Dockerfile`-ban van leírva, hogy mi történjen a konténer építése során. Ezt a folyamatot automatikusan végrehajtja a GitLab CI folyamata.
+Ez a repo [MkDocs](https://www.mkdocs.org/) segítségével generál statikus HTML kódot a *docs/* mappából az *mkdocs.yml* fájl alapján.
 
-## Repo letöltése
+## Letöltése
 
-*Git*-et használva, *SSH*-n keresztül töltsük le a projektet, majd lépjünk be az imént létrejött mappába:
+1. Forkold meg a repot
 
-```powershell
-git clone git@git.sch.bme.hu:schdesign/schdesign-roadmap.git
+2. Töltsd le
+
+*Git*-et használva, *SSH*-n keresztül:
+
+```bash
+git clone git@github.com:GITHUB_NEVED/schdesign-roadmap.git
 cd schdesign-roadmap
+
+git remote add upstream git@github.com:simonyiszk/schdesign-roadmap.git
 ```
 
-## Futtatás egyszerűen
+## Futtatás
 
-Windows és Linux rendszerek alól egyszerűen el lehet indítani a projektet a megfelelő *builrun* fájlt kiválasztva.
+Indítsd el a Dockert.
 
-```bash
-# Linux bash
-./buildrun.sh
-```
+A repo mappájából adjuk ki az alábbi parancsot:
 
 ```powershell
-# Windows PowerShell
-.\buildrun.ps1
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.7
 ```
 
-Ekkor megpróbál buildelni, azután meg elindítja a :8000 porton a lokális szervert.
+vagy használd a `run.ps1` fájlt.
 
-## Docker image ...
+Ekkor megkeresi a `squidfunk/mkdocs-material:8.1.7` képet, amit ha nem talál, akkor letölti azt, majd elindítja.
 
-### ...buildelése
-
-Buildelni csak egyszer fog kelleni, különös esetekben többször, de olyan esettel nem fogunk foglalkozni.
-
-Add ki az alábbi parancsot a `roadmap` mappából:
-
-```powershell
-docker build -t schdesign/roadmap:mkdocs-material .
-```
-
-Ezt követően a `Dockerimage` fájlban leírtak alapján létre fog jönni egy futtatható Docker Image.
-
-Amennyiben hibával tér vissza a parancs, akkor:
-
-- *(Windows esetén)* ellenőrizd le, hogy elindítottad-e *Docker Desktop* appot.
-- ellenőrizd le, hogy létezik-e korábbi buildje az image-nek *(pl. nem törölted ki korábbról)*
-- ellenőrizd le, hogy a Windows felhasználód benne van-e a `docker-users` csoportban.\
-  *(Windows keresőbe)* Computer Management -> *(megnyílik a program)* -> Computer Management -> System tools -> Local Users and Groups -> Groups -> docker-users *(dupla klikk)*
-
-### ...futtatása
-
-Az alábbi parancsot a `roadmap` mappából kiadva el fog indulni http://localhost:8000 címen a lokális másolatod a weboldalnak.
-
-```bash
-# Linux Bash:
-docker run -it -v "$PWD:/docs" --rm --publish 8000:8000 schdesign/roadmap:mkdocs-material
-```
-
-```powershell
-# Windows PowerShell:
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs schdesign/roadmap:mkdocs-material
-```
-
-Amennyiben hibával tér vissza a parancs, akkor:
-
-- *(Windows esetén)* ellenőrizd le, hogy elindítottad-e *Docker Desktop* appot.
-- ellenőrizd le, hogy nem fut-e már *(lehet egy korábbi futás után nem zártad be rendese)*
-- ellenőrizd le, hogy a Windows felhasználód benne van-e a `docker-users` csoportban.\
-  *(Windows keresőbe)* Computer Management -> *(megnyílik a program)* -> Computer Management -> System tools -> Local Users and Groups -> Groups -> docker-users *(dupla klikk)*
-
-Ez egy teljes értékű dev szerver, ha változtat valamelyik fájlon a `roadmap` mappában, akkor annak a módosítása automatikusan tükröződni fog egy kis idő elteltével, a weboldal újratöltése nélkül.
+Ha minden jól ment, akkor a [localhost:8000](https://localhost:8000/) címen lesz elérhető a weboldal.
 
 ## Szerkesztés
 
 ### Első lépés
 
-Mivel a *master* branch védve va, így semmi képpen sem tudsz közvetlen oda pusholni. Ez azárt van így, mert amint változik a *master* ág, egyből elindul a háttérben 3 darab job, amik fordítanak, majd FTP-n feltöltik a módosítást. Ez elég költséges, ezért csak mergelni lehet más ágakat a fő ágra.
-
-Hozz létre egy új ágat:
-
-```bash
-git checkout -b uj-agnak-a-neve
-```
-
-Amint látod, máris az új ágon vagy, el is kezdhetsz módosítani.
+A saját forkold változatodban dolgozz.
 
 ### Módosítások feltöltése
 
-Ha végeztél a módosításokkal, akkor *push*-old fel a *commit*-jaidat, majd a webes felületen kezdeményezd a *merge*-elést. Ha az imént töltötted fel az utolsó módosításod, akkor a repo tetején szólni fog egy kis dobozban, hogy mergelhetnéd a dolgaidat.
+Ha végeztél a módosításokkal, akkor *push*-old a *commit*-jaidat.
 
-Első push esetén hibát fog írni, ilyenkor az alábbi formában kell pusholni:
+```powershell
+# Módosítás mentése
+git add modosult_fajl_neve.md
+git commit -m "Szöveg a módosításhoz"
 
-```bash
-git push --set-upstream origin uj-agnak-a-neve
+# Módosítás feltöltése
+git push
 ```
 
-Ezt csak egyszer kell megtenni, következő push esetén nyugodtan használhatod már a `git push` parancsot.
+Ekkor a módosítások csak a te példányodban vannak jelen.
 
-### Mergelés
+A webes felületen a *Contribute* fül alatt kattints az *Open pull request* gombra. Innen a zöld gombokat követve kezdeményezheted azt hogy a módosításaid a *simonyiszk* változatában is jelen legyenek.
 
-Webes felületen kövesd végig a merge-elés folyamatát, ahol kell, ott adják meg valamit, hogy mások tudják miért és mit merge-elsz.
+## GitHub Actions
 
-Amint valaki elfogadja a módosításaidat, akkor GitLab-en a háttérben el fog indulni 3 munkamenet, amik azért felelnek, hogy a módosításaid elérhetőek legyenek a weboldalon. Amennyiben ezek sikeresen lefutnak, akkor a módosításaid már meg is jelentek a weboldalon. Ez egy olyan maximum 1 perces folyamat lehet.
+A munka megkönnyítésének az érdekében a webes felületen az *Actions* fül alatt találhatod meg ezeket a folyamatokat.
+
+Ha forkoltad a repo-t, akkor neked kell kezdeményezned az engedélyezésüket.
+
+### Syntax check
+
+Ellenőrzi a *docs* mappában a markdown fájlok formázását. Ha bármelyik hibás, akkor hibával tér vissza.
+
+Amikre ügyelj markdown fájlok esetén:
+
+- 4 szóközzel kell indentálni
+- Ne legyen felesleges szóköz a sor végén
+- Üres sorral kell végződnie a fájlnak
+
+Ilyenkor futhat le:
+
+- Minden push esemény hatására a main/master ágon
+- Pull request hatására
+- Publish folyamat esetén
+- Manuálisan, a webes felületen lehet kezdeményezni
+
+### Build
+
+Előállítja a statikus weboldal fájljait, majd a fájlokat *artifact*-ként elérhetővé teszi.
+
+Ilyenkor futhat le:
+
+- A Publish folyamat részeként
+- Manuálisan, a webes felületen lehet kezdeményezni
+
+### Deploy
+
+Az előbb előállított *artifact*-ot letölti, majd a *gh-pages* ágra másolja, ahol .
+
+Ilyenkor futhat le:
+
+- A Publish folyamat részeként
+
+### Publish
+
+Az előbbi 3 folyamat elindulásáért felel. A szintaxis ellenőrzőt leszámítva ha valamelyik elakad, akkor a teljes folyamat leáll.
+
+Forkolt repo esetén csak a Syntax check fog lefutni, a többit figyelmen kívül hagyja.

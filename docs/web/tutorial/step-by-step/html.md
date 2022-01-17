@@ -18,14 +18,15 @@ Más dokumentumokkal szemben *(pl. Word, Excel stb.)*, szerkesztéséhez elegend
 <img src="/web/tutorial/step-by-step/sbs_01_html_tag_analysis_dark.png" style="background-color: rgb(33, 34, 44);" />
 
 Egy HTML elem *(HTML tag)* 3 részre bontható: nyitó elem *(opening tag)*, tartalom *(content)* és záró elem *(closing tag)*. Ezek közül a nyitó elem az, amelyik a legfontosabb. Ebben ugyanis van lehetőségünk attribútumokat *(jellemzőket)* megadni, amik pontosabb képet adnak az elemünkről. Általában `attributum="érték"` párban találkozunk velük, de előfordulhat, hogy csak az attribútum neve szerepel. Ez azzal magyarázható, hogy vannak attribútumok, amiknek az értéke boolean típusú *(`true` vagy `false` lehet)*. Ilyenkor, pusztán leírni az attribútumot azt jelenti, hogy az értékét `true`-ra állítjuk, nem leírni meg ennek az ellenkezőjét.
-``` HTML
+
+```html
 <elem szín="kék">Ez egy kék szöveg</elem> <!-- szín: kék, hidden: false -->
 <elem hidden>Ezt a böngésző nem fogja megjeleníteni</elem> <!-- hidden: true -->
 ```
 
 A záró elem csak annyit jelent, hogy leírjuk az elem nevét és elé teszünk egy `/` jelet. De, elég hamar találkozni fogunk olyan elemekkel, amiknek nincsen záró része, kvázi a kezdő elem a záró elem is egyben. Ezeket kétféleképpen lehet lezárni: `<elem>` vagy `<elem />`. Ezeknek *"nincsen"* tartalma, emiatt nem is kell kezdő és záró elem, hogy közre fogják azt, valamelyik attribútuma alapján lesz jelentése. Ilyen esetekben, sokkal inkább azon van a hangsúly, hogy jelezni akarjuk a böngésző számára, hogy ott lesz még valami.
 
-``` HTML
+```html
 <!-- A HTML elemek lezárásának 3 fajtája: -->
 <elem></elem>
 <elem>
@@ -77,7 +78,7 @@ Hozzunk létre egy `index.html` nevű szöveges fájlt, ügyelve arra, hogy `.ht
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head></head>
@@ -206,7 +207,7 @@ Egy olyan attribútum, amit bármelyik elemnek megadhatunk és az értékének n
 
 ### style
 
-Ezt az attribútumot is megkaphatja mindegyik HTML elem, de a funkciója túlmutat a HTML-en. A következő *(CSS)* részben olvashatsz róla bővebben. 
+Ezt az attribútumot is megkaphatja mindegyik HTML elem, de a funkciója túlmutat a HTML-en. A következő *(CSS)* részben olvashatsz róla bővebben.
 
 Röviden és tömören: további attribútumokat tudunk vele megadni, amiket fel tudunk benne sorolni `attibutum: ertek;` formában.
 
@@ -319,7 +320,7 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
 
 !!! example ""
     === "index.html"
-        ``` html
+        ```html
         <!DOCTYPE HTML>
         <html>
             <head>
@@ -369,7 +370,7 @@ Ezen kívül a fejléceket különféle id-kal láttam el. Ezek révén lesz a t
                             <p>Ezt majd később feltöltjük.</p>
                             <img src="cat.jpg">
                             <p class="img-caption">Ez egy magyarázat a képhez</p>
-                            <p>Ezt majd később feltöltjük.</p>    
+                            <p>Ezt majd később feltöltjük.</p>
                         </section>
                         <section>
                             <h2 id="masodik-alfejezet">Második alfejezet</h2>
