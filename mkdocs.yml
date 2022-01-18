@@ -1,3 +1,23 @@
+# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
 # Project information
 site_name: Roadmap
 site_url: https://roadmap.schdesign.hu/
@@ -9,62 +29,76 @@ site_description: >-
 # Repository
 repo_name: schdesign-roadmap
 repo_url: https://github.com/simonyiszk/schdesign-roadmap
-edit_uri: "" # "edit/master/docs/" # it would add and edit link at the top of all the articles
+edit_uri: ""
 
 # Copyright
-copyright: "" # "Copyright &copy; 2020 - 2022 schdesign"
+copyright: #Copyright &copy; 2020 - 2022 schdesign
 
 # Configuration
-theme: 
+theme:
   name: material
   custom_dir: overrides
+
   # Static files
   static_templates:
     - 404.html
+
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
+
   # Default values, taken from mkdocs_theme.yml
+  language: hu
   features:
-    - navigation.instant
-    #- navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
+    - content.code.annotate
+    # - content.tabs.link
+    # - header.autohide
     - navigation.expand
     - navigation.indexes
-  language: hu
+    - navigation.instant
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.top
+    # - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: schdesign-light
+      accent: schdesign-accent-light
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      accent: schdesign-accent-dark
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
   logo: assets/schdesign_s_logo_white.svg
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/git-alt
 
-# Extra files for past build customization
-extra_javascript: 
-  - extras/extra.js
-  - extras/config.js
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-extra_css: 
+extra_css:
   - extras/extra.css
 
 # Plugins
 plugins:
   - search
+  #- redirects:
+  #    redirect_maps:
+  #      changelog/insiders.md: insiders/changelog.md
+  #      reference/meta-tags.md: reference/index.md
+  #      reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
+  #      sponsorship.md: insiders/index.md
+  #      upgrading.md: upgrade.md
   - minify:
       minify_html: true
 
@@ -76,16 +110,22 @@ extra:
   social:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schdesignbme/
+      name: schdesign on Facebook
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/schdesign.hu/
+      name: schdesign on Instagram
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCrpoUHr-I8VjjLgXUz-AV6Q/
+      name: schdesign on YouTube
     - icon: fontawesome/brands/github
       link: https://github.com/simonyiszk
+      name: schdesign on GitHub
     - icon: fontawesome/brands/gitlab
       link: https://git.sch.bme.hu/schdesign
+      name: schdesign on GitLab
     - icon: fontawesome/brands/behance
       link: https://www.behance.net/wearethesds/
+      name: schdesign on Behance
 
 # Extensions
 markdown_extensions:
