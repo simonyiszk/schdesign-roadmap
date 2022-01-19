@@ -1,10 +1,10 @@
 ---
-title: Markdown Cheat sheet
+title: Markdown Cheat Sheet
 description: Az MkDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheat sheet, rövid kódrészlet mellett megmutatja hogyan fog kinézni amit csinálsz
 date: June 12, 2021
 ---
 
-# Markdown cheat sheet
+# Markdown Cheat Sheet
 
 Az oldalon használt markdown az alapokon kívül is ki van egészítve extra feature-ökkel, amikről lentebb tudsz tájékozódni.
 

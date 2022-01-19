@@ -54,8 +54,8 @@ theme:
     # - content.tabs.link
     # - header.autohide
     - navigation.expand
-    - navigation.indexes
-    - navigation.instant
+    #- navigation.indexes
+    #- navigation.instant
     # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -106,7 +106,7 @@ plugins:
 extra:
   analytics:
     provider: google
-    property: G-JXHSDHY784
+    property: GTM-MJP9DM4
   social:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/schdesignbme/
@@ -176,7 +176,7 @@ nav:
     - Design Principles: schdesign/workshop/2021-02-26.md
     - Markdown:
       - Alapok: schdesign/tutorial/markdown-alapok.md
-      - Cheatsheet: schdesign/tutorial/markdown-cheatsheet.md
+      - Cheat Sheet: schdesign/tutorial/markdown-cheat-sheet.md
     - Hozzájárulás: schdesign/tutorial/hozzajarulas.md
     - Oldalaink: schdesign/oldalaink.md
     - Rólunk: schdesign/rolunk.md
@@ -191,12 +191,12 @@ nav:
       - Mit használjak?: web/tutorial/editor/index.md
       - Visual Studio Code: web/tutorial/editor/vscode.md
       - WebStorm: web/tutorial/editor/webstorm.md
-    - Weboldal készítés az alapoktól:
-      - 0. Bevezető: web/tutorial/step-by-step/index.md
-      - 1. HTML: web/tutorial/step-by-step/html.md
-      - 2. CSS: web/tutorial/step-by-step/css.md
-      - 3. JS: web/tutorial/step-by-step/js.md
-      - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
+    #- Weboldal készítés az alapoktól:
+    #  - 0. Bevezető: web/tutorial/step-by-step/index.md
+    #  - 1. HTML: web/tutorial/step-by-step/html.md
+    #  - 2. CSS: web/tutorial/step-by-step/css.md
+    #  - 3. JS: web/tutorial/step-by-step/js.md
+    #  - 4. Hova tovább: web/tutorial/step-by-step/hova-tovabb.md
     - Hasznos oldalak: web/hasznos-oldalak.md
   - Grafika:
     - grafika/index.md
