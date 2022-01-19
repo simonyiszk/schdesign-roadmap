@@ -66,9 +66,9 @@ A webes felületen a *Contribute* fül alatt kattints az *Open pull request* gom
 
 ## GitHub Actions
 
-A munka megkönnyítésének az érdekében a webes felületen az *Actions* fül alatt találhatod meg ezeket a folyamatokat.
+A munka megkönnyítésének érdekében GitHub Actions-t használunk. Ezt a webes felületen az *Actions* fül alatt találod meg.
 
-Ha forkoltad a repo-t, akkor neked kell kezdeményezned az engedélyezésüket.
+Ha forkoltad a repo-t, akkor neked kell kezdeményezned az engedélyezését.
 
 ### Syntax check
 
@@ -85,7 +85,7 @@ Ilyenkor futhat le:
 - Minden push esemény hatására a main/master ágon
 - Pull request hatására
 - Publish folyamat esetén
-- Manuálisan, a webes felületen lehet kezdeményezni
+- Manuálisan *(a webes felületen lehet kezdeményezni)*
 
 ### Build
 
@@ -94,11 +94,11 @@ Előállítja a statikus weboldal fájljait, majd a fájlokat *artifact*-ként e
 Ilyenkor futhat le:
 
 - A Publish folyamat részeként
-- Manuálisan, a webes felületen lehet kezdeményezni
+- Manuálisan *(a webes felületen lehet kezdeményezni)*
 
 ### Deploy
 
-Az előbb előállított *artifact*-ot letölti, majd a *gh-pages* ágra másolja, ahol .
+Létrehoz egy üres *gh-pages* ágat, az előbb előállított *artifact*-ot letölti és kicsomagolja. Feljegyzi, hogy melyik commit alapján indult el a folyamat. Commitol és pusholja a módosítást.
 
 Ilyenkor futhat le:
 
