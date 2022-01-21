@@ -8,5 +8,5 @@
   <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","{{ property }}","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
   <script async src="https://www.google-analytics.com/analytics.js"></script>
 {% elif property.startswith("GTM-") %}
-  <script>!function(){var e="dataLayer";window[e]=window[e]||[],window[e].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var t=document.getElementsByTagName("script")[0];(e=document.createElement("script")).async=!0,e.src="https://www.googletagmanager.com/gtm.js?id={{ property }}",e.parentNode.insertBefore(e,t)}()</script>
+  <script>!function(){var e="dataLayer";window[e]=window[e]||[],window[e].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var t=document.getElementsByTagName("script")[0];(e=document.createElement("script")).async=!0,e.src="https://www.googletagmanager.com/gtm.js?id={{ property }}",t.parentNode.insertBefore(e,t)}()</script>
 {% endif %}
