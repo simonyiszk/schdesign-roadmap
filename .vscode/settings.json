@@ -10,5 +10,9 @@
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "editor.insertSpaces": true,
   "editor.tabSize": 4,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*"
+  }
 }
