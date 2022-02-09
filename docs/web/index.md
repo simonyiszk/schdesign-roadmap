@@ -22,7 +22,7 @@ Fejlesztéshez leggyakrabban az alábbi technológiákat használjuk
 
 ## Néhány projektünk
 
-### Gólyahét weboldal
+### G7 weboldal
 
 **https://g7.sch.bme.hu/**
 
