@@ -32,12 +32,12 @@ Indítsd el a Dockert.
 A repo mappájából adjuk ki az alábbi parancsot:
 
 ```powershell
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.7
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.10
 ```
 
 vagy használd a `run.ps1` fájlt.
 
-Ekkor megkeresi a `squidfunk/mkdocs-material:8.1.7` képet, amit ha nem talál, akkor letölti azt, majd elindítja.
+Ekkor megkeresi a `squidfunk/mkdocs-material:8.1.10` képet, amit ha nem talál, akkor letölti azt, majd elindítja.
 
 Ha minden jól ment, akkor a [localhost:8000](https://localhost:8000/) címen lesz elérhető a weboldal.
 
