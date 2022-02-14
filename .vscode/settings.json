@@ -6,6 +6,7 @@
     "**/package-lock.json": true
   },
   "search.followSymlinks": false,
+  "spellright.groupDictionaries": true,
   "spellright.language": ["en", "hu"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "editor.insertSpaces": true,

@@ -9,7 +9,8 @@
     "MD026": false,
     "MD034": false,
     "MD036": false,
-    "MD046": {"style": "fenced"},
+    "MD046": false,
     "MD042": false,
-    "MD024": false
+    "MD024": false,
+    "MD038": false
 }
