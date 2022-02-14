@@ -42,54 +42,54 @@ code .
 
 Először megnyitva valami ehhez hasonló kép fog fogadni bennünket:
 
-<figure markdown>
-  ![Terminál megnyitása lent](vscode/welcome-page.png)
+<figure>
+    <img src="./welcome-page.png" alt="Terminál megnyitása lent"/>
 </figure>
 
 ### Toolbar
 
 Bal fent található meg. Többek közt innen is tudunk műveleteket végezni.
 
-<figure markdown>
-  ![Toolbar](vscode/toolbar.png)
+<figure>
+    <img src="./toolbar.png" alt="Toolbar"/>
 </figure>
 
 ### Activity Bar
 
 Bal legszélen található gombok összessége. Nézetek közt tudunk váltani. Legfelül az Explorer ablakot tudjuk megnyitni, amiben láthatjuk az éppen megnyitott mappa tartalmát.
 
-<figure markdown>
-  ![Activity Bar](vscode/activity-bar.png)
+<figure>
+    <img src="./activity-bar.png" alt="Activity Bar"/>
 </figure>
 
 ### Side Bar
 
 Az Activity Barban kijelölt elemnek az ablaka itt nyílik meg.
 
-<figure markdown>
-  ![Side Bar](vscode/side-bar.png)
+<figure>
+    <img src="./side-bar.png" alt="Side Bar"/>
 </figure>
 
 ### Status Bar
 
 Az ablaknak az alsó sávjában található meg. Láthatjuk sor hanyadik karakterénél járunk, az indentálás stílusát, a fájlnak a kódolását stb.
 
-<figure markdown>
-  ![Status Bar](vscode/status-bar.png)
+<figure>
+    <img src="./status-bar.png" alt="Status Bar"/>
 </figure>
 
 ### Minimap
 
 Megnyitott fájl esetén jobb fent tudjuk megtekinteni. Linter használata esetén kiemeli a *"rossz"* sorokat.
 
-<figure markdown>
-  ![Minimap](vscode/minimap.png)
+<figure>
+    <img src="./minimap.png" alt="Minimap"/>
 </figure>
 
 ### Command Palette
 
-<figure markdown>
-  ![Command Palette](vscode/command-palette.gif)
+<figure>
+    <img src="./command-palette.gif" alt="Command Palette"/>
 </figure>
 
 Az egyik legfontosabb része a vscode-nak. Megnyitni a ++ctrl+shift+p++ kombinációval tudjuk. Lényege, hogy az ezernyi parancs között könnyedén tudunk keresni, újakat felfedezni.
@@ -103,7 +103,7 @@ Többféleképpen is meg lehet nyitni:
 === "Lentről"
     ![Terminál megnyitása lent](vscode/open-terminal-1.gif)
 === "Toolbarból"
-    ![Terminál megnyitása toolbarból](vscode/open-terminal-2.gif)
+    ![Terminál megnyitása Toolbarból](vscode/open-terminal-2.gif)
 === "Command Palette-ből"
     ![Terminál megnyitása Command Palette-ből](vscode/open-terminal-3.gif)
 

@@ -29,48 +29,48 @@ Ezt itt tudod letölteni: https://www.jetbrains.com/toolbox-app/
 
 Letöltés és elindítás után egy ehhez hasonló ablak fog fogadni:
 
-<figure markdown>
-  ![Toolbox ablak](webstorm/toolbox.png){ width="300" }
+<figure>
+    <img src="./toolbox.png" width="300" alt="Toolbox ablak"/>
 </figure>
 
 Innen válasszuk ki a WebStormot és telepítsük fel.
 
 A WebStormot elindítva valami hasonló ablak fog minket választani:
 
-<figure markdown>
-  ![WebStorm start page](webstorm/webstorm-start-page.png){ width="500" }
+<figure>
+    <img src="./webstorm-start-page.png" width="500" alt="WebStorm start page"/>
 </figure>
 
 ## Kezelőfelület áttekintése
 
 Egy projektet megnyitva egy ehhez hasonló ablak fogad majd minket:
 
-<figure markdown>
-  ![WebStorm layout](webstorm/webstorm-layout.png)
+<figure>
+    <img src="./webstorm-layout.png" alt="WebStorm layout"/>
 </figure>
 
 ### Toolbar
 
 Bal fent található meg. Többek közt innen is tudunk műveleteket végezni.
 
-<figure markdown>
-  ![Toolbar](webstorm/toolbar.png)
+<figure>
+    <img src="./toolbar.png" alt="Toolbar"/>
 </figure>
 
 ### Projekt fájlok
 
 A megnyitott projekt fájljait találhatjuk meg itt.
 
-<figure markdown>
-  ![Side Bar](webstorm/project-files.png)
+<figure>
+    <img src="./project-files.png" alt="Side Bar"/>
 </figure>
 
 ### Status bar
 
 Az ablaknak az alsó sávjában található meg. Láthatjuk sor hanyadik karakterénél járunk, az indentálás stílusát, a fájlnak a kódolását stb.
 
-<figure markdown>
-  ![Status Bar](webstorm/status-bar.png)
+<figure>
+    <img src="./status-bar.png" alt="Status Bar"/>
 </figure>
 
 ## Integrált terminál

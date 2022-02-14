@@ -15,9 +15,9 @@ Körünk UI, UX, illetve digitális designnal foglalkozik. Célunk lehetőséget
 
 Szakmai tevékenységünket három fő divízió mentén szervezzük:
 
-- [web](/web/)
-- [grafika](/grafika/)
 - [3D](/3d/)
+- [grafika](/grafika/)
+- [web](/web/)
 
 Ha kapcsolatba szeretnél lépni velünk, lenne egy projekted vagy bármilyen gondolatod számunkra, keress minket a [hello@schdesign.hu](mailto:hello@schdesign.hu) e-mail címen.
 
