@@ -179,7 +179,25 @@ nav:
       - Cheat Sheet: schdesign/tutorial/markdown-cheat-sheet.md
     - Hozzájárulás: schdesign/tutorial/hozzajarulas.md
     - Oldalaink: schdesign/oldalaink.md
-    - Rólunk: schdesign/rolunk.md
+    - Rólunk: schdesign/index.md
+  - 3D:
+    - 3d/index.md
+    - Interfész bemutatása:
+      - 1. rész: 3d/tutorial/interface/1.md
+      - 2. rész: 3d/tutorial/interface/2.md
+    - Denoising: 3d/tutorial/denoising/index.md
+    - Workshopok: 
+      - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
+      - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
+    - Hasznos oldalak: 3d/hasznos-oldalak.md
+  - Grafika:
+    - grafika/index.md
+    - Workshopok: 
+      - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
+      - 2020/21/2 Photoshop haladó: grafika/workshop/2021-03-01.md
+      - 2020/21/2 Illustrator kezdő: grafika/workshop/2021-03-08.md
+      - 2020/21/2 Illustrator haladó: grafika/workshop/2021-03-17.md
+    - Hasznos oldalak: grafika/hasznos-oldalak.md
   - Web:
     - web/index.md
     - Első lépések: web/elso-lepesek.md
@@ -191,21 +209,3 @@ nav:
       - Visual Studio Code: web/tutorial/editor/vscode.md
       - WebStorm: web/tutorial/editor/webstorm.md
     - Hasznos oldalak: web/hasznos-oldalak.md
-  - Grafika:
-    - grafika/index.md
-    - Workshopok: 
-      - 2020/21/2 Photoshop kezdő: grafika/workshop/2021-02-24.md
-      - 2020/21/2 Photoshop haladó: grafika/workshop/2021-03-01.md
-      - 2020/21/2 Illustrator kezdő: grafika/workshop/2021-03-08.md
-      - 2020/21/2 Illustrator haladó: grafika/workshop/2021-03-17.md
-    - Hasznos oldalak: grafika/hasznos-oldalak.md
-  - 3D:
-    - 3d/index.md
-    - Interfész bemutatása:
-      - 1. rész: 3d/tutorial/interface/1.md
-      - 2. rész: 3d/tutorial/interface/2.md
-    - Denoising: 3d/tutorial/denoising/index.md
-    - Workshopok: 
-      - 2020/21/2 3D kezdő: 3d/workshop/2021-03-10.md
-      - 2020/21/2 3D haladó: 3d/workshop/2021-03-15.md
-    - Hasznos oldalak: 3d/hasznos-oldalak.md

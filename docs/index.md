@@ -12,12 +12,12 @@ Ez a projekt azért jött létre, hogy egyszerűen tudjunk megosztani tutorial/w
 
 Az oldalt alapvetően 3+1 aloldalra lehet bontani. Ezek:
 
-- [web/](./web/)<br>
-    A web divízióhoz köthető tartalmak helye.
-- [grafika/](./grafika/)<br>
-    A grafika divízióhoz köthető tartalmak helye.
 - [3d/](./3d/)<br>
     A 3D divízióhoz köthető tartalmak helye.
+- [grafika/](./grafika/)<br>
+    A grafika divízióhoz köthető tartalmak helye.
+- [web/](./web/)<br>
+    A web divízióhoz köthető tartalmak helye.
 - [schdesign/](./schdesign/)<br>
     Egy általánosabb jellegű aloldal, ahol a körrel kapcsolatban tudhatsz meg dolgokat, illetve a nem divízióhoz kapcsolódó anyagokat is itt találhatod meg.
 
