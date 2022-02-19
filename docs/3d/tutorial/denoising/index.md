@@ -2,6 +2,10 @@
 title: Denoising
 description: TODO
 author: Ábrahám Zoltán
+tags:
+    - 3d
+    - blender
+    - tutorial
 ---
 
 # Denoising

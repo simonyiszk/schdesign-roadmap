@@ -1,5 +1,8 @@
 ---
 title: A grafika divízióról
+tags:
+    - grafika
+    - intro
 ---
 
 # Bemutatkozó

@@ -1,5 +1,8 @@
 ---
 title: A 3D divízióról
+tags:
+    - 3d
+    - intro
 ---
 
 # Bemutatkozó

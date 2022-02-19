@@ -1,6 +1,8 @@
 ---
 title: Hozzájárulás
 description: Elsőre nem is lehet olyan egyértelmű, hogy hogyan lehet tartalmilag bővíteni az oldalt. Ennek a lépésein megyünk végig.
+tags:
+  - tutorial
 ---
 
 # Hogyan járulhatok hozzá az oldalhoz?
@@ -68,7 +70,7 @@ Start Menüben keress rá és indítsd el.
 ### 3. Futtassuk a scriptet
 
 ```bash
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.1.11
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.2.1
 ```
 
 Ezt követően elindul a dev szerver a http://localhost:8000/ címen.

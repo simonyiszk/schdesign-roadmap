@@ -2,6 +2,8 @@
 title: Markdown Cheat Sheet
 description: Az MkDocs Materialban rengeteg új dologgal egészül ki az, amit egy markdown fájlba leírhatsz. Ezeken megy gyorsan végig ez a cheat sheet, rövid kódrészlet mellett megmutatja hogyan fog kinézni amit csinálsz
 date: June 12, 2021
+tags:
+    - markdown
 ---
 
 # Markdown Cheat Sheet
@@ -466,9 +468,6 @@ Idk miért, de nem működik 😢
     A táblázatok első sorára kattintva, az adott oszlop szerint lehet rendezni a sorokat.
 
 ## Diagram
-
-!!! warning ""
-    Nem értem miért nem működik 😢
 
 !!! note "Diagram készítése"
     === "példa kód"
