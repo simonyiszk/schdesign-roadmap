@@ -7,13 +7,13 @@ on:
 jobs:
   check:
     name: Check syntax
-    uses: simonyiszk/schdesign-roadmap/.github/workflows/check.yml@main
+    uses: ./.github/workflows/check.yml
   build:
     if: github.repository_owner == 'simonyiszk'
     name: Build project
-    uses: simonyiszk/schdesign-roadmap/.github/workflows/build.yml@main
+    uses: ./.github/workflows/build.yml
   deploy:
     if: github.repository_owner == 'simonyiszk'
     needs: build
     name: Deploy project
-    uses: simonyiszk/schdesign-roadmap/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
