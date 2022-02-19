@@ -91,6 +91,8 @@ extra_css:
 
 # Plugins
 plugins:
+  - tags:
+      tags_file: tags.md
   - search
   #- redirects:
   #    redirect_maps:
@@ -179,6 +181,7 @@ nav:
       - Cheat Sheet: schdesign/tutorial/markdown-cheat-sheet.md
     - Hozzájárulás: schdesign/tutorial/hozzajarulas.md
     - Oldalaink: schdesign/oldalaink.md
+    - Címkék: tags.md
     - Rólunk: schdesign/index.md
   - 3D:
     - 3d/index.md
