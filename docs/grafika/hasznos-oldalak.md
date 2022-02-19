@@ -1,3 +1,9 @@
+---
+tags:
+    - grafika
+    - collection
+---
+
 # Hasznos oldalak
 
 ## Weboldal

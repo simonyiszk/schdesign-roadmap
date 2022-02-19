@@ -1,6 +1,8 @@
 ---
 title: Markdown szerkesztési segédlet
 description: Végig megyünk a markdown alapjain, lényegre törően bemutatva mi hogyan épül fel.
+tags:
+    - markdown
 ---
 
 # Markdown alapok

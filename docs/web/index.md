@@ -1,5 +1,8 @@
 ---
 title: A web divízióról
+tags:
+    - web
+    - intro
 ---
 
 # Bemutatkozó

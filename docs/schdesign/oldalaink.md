@@ -1,3 +1,8 @@
+---
+tags:
+    - collection
+---
+
 # Oldalaink
 
 Körünk a létrejöttétől kezdve számos weboldallal, közösségi médiás profillal gyarapodott. Ezeket az oldalakat láthatod itt, egy kisebb leírással együtt.

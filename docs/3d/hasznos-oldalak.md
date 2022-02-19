@@ -1,3 +1,9 @@
+---
+tags:
+    - 3d
+    - collection
+---
+
 # Hasznos oldalak
 
 ## Textúrák

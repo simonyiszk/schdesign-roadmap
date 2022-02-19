@@ -1,3 +1,9 @@
+---
+tags:
+    - web
+    - collection
+---
+
 # Hasznos oldalak
 
 ## Weboldalak
