@@ -3,6 +3,9 @@
         <a style="padding: 10px 0" href="https://schdesign.hu" target="_blank" rel="noopener" title="schdesign.hu">schdesign.hu</a>
         <a style="padding: 10px 0" href="https://logotar.schdesign.hu" target="_blank" rel="noopener" title="Logótár">Logótár</a>
     </div>
+    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+      <a style="padding: 10px 0" href="mailto:vezetoseg+roadmap@schdesign.hu" target="_blank" title="Email küldés">Kapcsolat</a>
+    </div>
     {% for social in config.extra.social %}
       {% set title = social.name %}
       {% if not title and "//" in social.link %}
