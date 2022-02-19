@@ -2,7 +2,7 @@
 title: Hozzájárulás
 description: Elsőre nem is lehet olyan egyértelmű, hogy hogyan lehet tartalmilag bővíteni az oldalt. Ennek a lépésein megyünk végig.
 tags:
-  - tutorial
+    - tutorial
 ---
 
 # Hogyan járulhatok hozzá az oldalhoz?
