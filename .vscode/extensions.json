@@ -2,8 +2,8 @@
   "recommendations": [
     "shd101wyy.markdown-preview-enhanced",
     "davidanson.vscode-markdownlint",
+    "ms-vscode.wordcount",
     "ban.spellright",
-    "redhat.vscode-yaml",
-    "EditorConfig.EditorConfig"
+    "redhat.vscode-yaml"
   ]
 }

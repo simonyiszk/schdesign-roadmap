@@ -10,7 +10,7 @@ tags:
 
 Az oldalon használt markdown az alapokon kívül is ki van egészítve extra feature-ökkel, amikről lentebb tudsz tájékozódni.
 
-## Abbreviatioins
+## Abbreviations
 
 Ismeretlen szavakra ha ráviszed a kurzort, akkor megmutatja a jelentésüket. Mobilon egy kicsit bugos, de működik.
 
