@@ -1,0 +1,25 @@
+{
+  "name": "schdesign-roadmap",
+  "version": "1.0.0",
+  "description": "Az schdesign öntevékeny szakmai kör tudásmegosztó weboldala. Megtanulhatsz többet a körről, a körön belül található divíziókrók. Ezen kívül az általunk tartott workshopok anyagát és egyéb cikkeket találhatsz az oldalon.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gergoradeczki/schdesign-roadmap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gergoradeczki/schdesign-roadmap/issues"
+  },
+  "homepage": "https://github.com/gergoradeczki/schdesign-roadmap#readme",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.4.0"
+  }
+}
