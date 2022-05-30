@@ -6,8 +6,8 @@ on:
       - main
 jobs:
   check:
-    name: Check syntax
-    uses: ./.github/workflows/check.yml
+    name: Lint files
+    uses: ./.github/workflows/linter.yml
   build:
     if: github.repository_owner == 'simonyiszk'
     name: Build project
