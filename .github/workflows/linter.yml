@@ -17,10 +17,6 @@ name: Lint Code Base
 on:
   workflow_call:
   workflow_dispatch:
-  push:
-    branches: [master, main]
-  pull_request:
-    branches: [master, main]
 
 ###############
 # Set the Job #
