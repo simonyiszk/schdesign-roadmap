@@ -47,7 +47,7 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
-          LINTER_RULES_PATH: .
+          LINTER_RULES_PATH: /
           VALIDATE_MARKDOWN: true
           MARKDOWN_CONFIG_FILE: .markdownlint.json
           VALIDATE_ALL_CODEBASE: false
