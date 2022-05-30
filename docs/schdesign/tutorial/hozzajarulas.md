@@ -70,7 +70,7 @@ Start Menüben keress rá és indítsd el.
 ### 3. Futtassuk a scriptet
 
 ```bash
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.2.1
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:8.2.16
 ```
 
 Ezt követően elindul a dev szerver a http://localhost:8000/ címen.

@@ -29,7 +29,6 @@ site_description: >-
 # Repository
 repo_name: schdesign-roadmap
 repo_url: https://github.com/simonyiszk/schdesign-roadmap
-edit_uri: ""
 
 # Copyright
 copyright: #Copyright &copy; 2020 - 2022 schdesign
@@ -52,10 +51,12 @@ theme:
   features:
     - content.code.annotate
     # - content.tabs.link
+    - content.tooltips
     # - header.autohide
     - navigation.expand
     #- navigation.indexes
     - navigation.instant
+    # - navigation.prune
     # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
@@ -64,6 +65,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - toc.follow
     # - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -101,8 +103,6 @@ plugins:
   #      reference/variables.md: https://mkdocs-macros-plugin.readthedocs.io/
   #      sponsorship.md: insiders/index.md
   #      upgrading.md: upgrade.md
-  - minify:
-      minify_html: true
 
 # Customization
 extra:
@@ -131,8 +131,8 @@ extra:
 
 # Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes

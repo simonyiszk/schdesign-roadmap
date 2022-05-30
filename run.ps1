@@ -1,4 +1,4 @@
-$version = "8.2.1"
+$version = "8.2.16"
 
 # remove previous image
 #docker image rm squidfunk/mkdocs-material:$version
