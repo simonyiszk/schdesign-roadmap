@@ -8,6 +8,8 @@ Ez a projekt azért jött létre, hogy egyszerűen tudjunk megosztani tutorial/w
 
 ## Az oldal felépítése
 
+
+
 ### Aloldalak
 
 Az oldalt alapvetően 3+1 aloldalra lehet bontani. Ezek:
