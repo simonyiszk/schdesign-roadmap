@@ -8,6 +8,7 @@
   "search.followSymlinks": false,
   "spellright.groupDictionaries": true,
   "spellright.language": ["en", "hu"],
+  "spellright.notificationClass": "warning",
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "editor.insertSpaces": true,
   "editor.tabSize": 4,
