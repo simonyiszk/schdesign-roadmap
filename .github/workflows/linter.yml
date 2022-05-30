@@ -1,7 +1,4 @@
-name: Lint Code Base
-
-# Documentation:
-# https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+name: Linter
 
 on:
   workflow_call:
@@ -10,11 +7,12 @@ on:
 
 jobs:
   build:
-    name: Lint Code Base
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
 
     - name: markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.0.1
