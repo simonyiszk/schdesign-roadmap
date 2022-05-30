@@ -91,7 +91,6 @@ Egy bekezdés egy sorból áll. Minden új bekezdést egy üres sorral kell elv�
 
     Ez a második bekezdés
 
-
 ### Szöveg kiemelés
 
 Szerkesztőtől függ, de általában gyorsgombok támogatva vanna, így annyival kevesebb szintaxisra kell emlékezni. HTML-hez hasonlóan, ha valamire valamit alkalmazni akarunk, akkor azt körbe kell fogni valamivel. Gyorsgomb használatakor jelöljük ki a formázandó szöveget, majd meg fog jelenni az elején és a végén két jel. Ami ez a két jel között van, arra fog alkalmazkodni a formázás.
@@ -150,7 +149,7 @@ Listából két fajta van: **számozott** és **számozatlan**.
     4. Amiben
     5. Van
     6. Beljebb kezdés
-    
+
     Lista lista utánt nem szeret a program, így kell ide valamilyen elválasztó szöveg 😢.
 
     - Ez
@@ -160,7 +159,6 @@ Listából két fajta van: **számozott** és **számozatlan**.
     - Amiben
     - Van
     - Beljebb kezdés
-
 
 !!! danger
     Indentálásnál **4 darab** ++space++-t kell használni.

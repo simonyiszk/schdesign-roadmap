@@ -520,7 +520,7 @@ Idk miért, de nem működik 😢
 !!! note "Szöveg formázás"
     === "Megjelenés"
         Here is some {--*incorrect*--} Markdown.  I am adding this{++ here++}.  Here is some more {--text
-        that I am removing--}text.  And here is even more {++text that I 
+        that I am removing--}text.  And here is even more {++text that I
         am ++}adding.{~~
 
         ~>  ~~}Paragraph was deleted and replaced with some spaces.{~~  ~>
@@ -729,7 +729,7 @@ A `Placeholder` helyére lehet írni, hogy milyen szöveg jelenjen meg, ha nem t
     massa, nec semper lorem quam in massa.
 
 === "Caption"
-    _Example_:
+    *Example*:
 
     ```html
     <figure>
@@ -738,7 +738,7 @@ A `Placeholder` helyére lehet írni, hogy milyen szöveg jelenjen meg, ha nem t
     </figure>
     ```
 
-    _Result_:
+    *Result*:
 
     <figure>
     <img src="https://dummyimage.com/600x400/f5f5f5/aaaaaa&text=–%20Image%20–" width="300" />
@@ -746,7 +746,7 @@ A `Placeholder` helyére lehet írni, hogy milyen szöveg jelenjen meg, ha nem t
     </figure>
 
 === "Lazy-loading"
-    _Example_:
+    *Example*:
 
     ```markdown
     ![Placeholder](https://dummyimage.com/600x400/eee/aaa){ loading=lazy }
