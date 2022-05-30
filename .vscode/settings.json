@@ -8,7 +8,7 @@
   "search.followSymlinks": false,
   "spellright.groupDictionaries": true,
   "spellright.language": ["en", "hu"],
-  "spellright.ignoreFiles": [ "**/.gitignore", "**/.spellignore", "**/node_modules/*", "**/.vscode/*" ],
+  "spellright.ignoreFiles": [ "**/.gitignore", "**/.spellignore", "**/node_modules/*", "**/.vscode/*", "**/.markdownlintignore" ],
   "spellright.notificationClass": "warning",
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "editor.insertSpaces": true,

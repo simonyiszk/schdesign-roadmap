@@ -21,6 +21,6 @@
   "homepage": "https://github.com/gergoradeczki/schdesign-roadmap#readme",
   "devDependencies": {
     "markdownlint": "^0.25.1",
-    "markdownlint-cli2": "^0.4.0"
+    "markdownlint-cli": "^0.31.1"
   }
 }

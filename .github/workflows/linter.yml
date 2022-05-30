@@ -12,20 +12,15 @@ jobs:
   build:
     name: Lint Code Base
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
-          fetch-depth: 1
+    - name: Checkout Code
+      uses: actions/checkout@v3
 
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          LINTER_RULES_PATH: /
-          VALIDATE_MARKDOWN: true
-          MARKDOWN_CONFIG_FILE: .markdownlint.json
-          VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v3.0.1
+      with:
+        files: .
+        config_file: .markdownlint.json
+        #ignore_files: examples/ignore/*
+        ignore_path: .markdownlintignore
+        #rules: examples/rules/custom.js
