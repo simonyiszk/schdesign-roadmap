@@ -11,7 +11,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Installing MKDocs
-        run: pip install -Iv mkdocs-material==8.2.1
+        run: pip install -Iv mkdocs-material==8.2.16
       - name: Installing MKDocs Minify Plugin
         run: pip install mkdocs-minify-plugin
       - name: Building project

@@ -1,0 +1,24 @@
+name: Linter
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+
+    - name: markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v3.0.1
+      with:
+        files: .
+        config_file: .markdownlint.json
+        #ignore_files: examples/ignore/*
+        ignore_path: .markdownlintignore
+        #rules: examples/rules/custom.js

@@ -44,4 +44,4 @@ Ha van kedved beszállni az oldal fejlesztésébe, akkor nézz rá a [git repór
 ### Egyéb
 
 - [ ] Megismertetni az emberekkel a platformot.
-- [x] __Design__
+- [x] **Design**
