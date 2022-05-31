@@ -1,0 +1,47 @@
+[data-md-color-scheme="schdesign-light"] {
+    --md-primary-fg-color:        #f8485e;
+    --md-primary-fg-color--light: #ff7e8b;
+    --md-primary-fg-color--dark:  #bf0035;
+}
+
+[data-md-color-accent="schdesign-accent-light"] {
+  --md-accent-fg-color:                hsla(352, 94%, 57%, 1);
+  --md-accent-fg-color--transparent:   hsla(352, 94%, 57%, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color:        #7b88cc;
+    --md-primary-fg-color--light: #acb8ff;
+    --md-primary-fg-color--dark:  #4b5b9b;
+    --md-hue: 232; 
+}
+
+[data-md-color-accent="schdesign-accent-dark"] {
+    --md-accent-fg-color:                hsla(231, 100%, 84%, 1);
+    --md-accent-fg-color--transparent:   hsla(231, 100%, 84%, 0.1);
+}
+
+[data-md-color-scheme="slate"] header,
+[data-md-color-scheme="slate"] nav.md-tabs {
+    background-color: rgb(61, 61, 61)
+}
+
+/* Login in header will be red */
+[data-md-color-scheme="slate"] img[alt="logo"] {
+    content: url("../../assets/schdesign_s_logo_red.svg");
+}
+
+/* 16:9 full width YouTube videos */
+.youtube-16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .youtube-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }

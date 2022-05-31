@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 140 140.14435"
+   version="1.1"
+   id="svg3833"
+   sodipodi:docname="schdesign_s_logo.svg"
+   width="140"
+   height="140.14435"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata3837">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1916"
+     inkscape:window-height="1039"
+     id="namedview3835"
+     showgrid="false"
+     inkscape:zoom="3.9388819"
+     inkscape:cx="86.921531"
+     inkscape:cy="81.636646"
+     inkscape:window-x="0"
+     inkscape:window-y="39"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs3805">
+    <style
+       id="style3803">.cls-1{fill:#f8485e;}.cls-2{fill:#3d3d3d;}</style>
+  </defs>
+  <title
+     id="title3807">logoEszköz 2</title>
+  <g
+     id="Réteg_2"
+     data-name="Réteg 2"
+     transform="translate(0,-78.030705)">
+    <g
+       id="Layer_1"
+       data-name="Layer 1">
+      <path
+         class="cls-2"
+         d="m 138.73,134.63 h -110 A 43.39,43.39 0 0 1 70,104.69 43.22,43.22 0 0 1 100.65,117.37 L 119.48,98.51 A 70,70 0 0 0 26.68,93.05 68.35,68.35 0 0 0 20.5,98.53 70.33,70.33 0 0 0 10.43,111.23 69.83,69.83 0 0 0 0,145.62 v 4.9 a 70.69,70.69 0 0 0 1.24,11 h 110 a 43.39,43.39 0 0 1 -71.91,17.29 l -12.68,12.7 -6.15,6.16 a 70,70 0 0 0 99,0 69.79,69.79 0 0 0 20.5,-48.87 v -1.45 a 71,71 0 0 0 -1.27,-12.72 z m -68.73,13.5 -0.16,0.1 0.12,-0.12 v 0 0 l 0.07,0.07 z"
+         id="path3825"
+         inkscape:connector-curvature="0"
+         style="fill:#f8485e;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
