@@ -83,7 +83,7 @@ Az ilyen nyelven íródott fájlokból végül HTML kód fog generálódni, ami 
 
 1. Forkold a repot
 2. Klónozd a saját példányodat
-3. Futtasd a `run.ps1` scriptet
+3. Futtasd a docker scriptet
 4. <i>Commit</i>-old a módosításaidat
 5. <i>Push</i>old a <i>remote</i>-ra
 6. GitHubon indíts egy <i>pull request</i>-et
