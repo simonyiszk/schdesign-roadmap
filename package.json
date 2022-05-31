@@ -7,18 +7,21 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "mkdocs serve",
+    "start:dirty": "mkdocs serve --dirtyreload",
+    "build": "mkdocs build",
+    "lint": "markdownlint '**/*.md' --ignore node_modules"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gergoradeczki/schdesign-roadmap.git"
+    "url": "git+https://github.com/simonyiszk/schdesign-roadmap.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gergoradeczki/schdesign-roadmap/issues"
+    "url": "https://github.com/simonyiszk/schdesign-roadmap/issues"
   },
-  "homepage": "https://github.com/gergoradeczki/schdesign-roadmap#readme",
+  "homepage": "https://github.com/simonyiszk/schdesign-roadmap#readme",
   "devDependencies": {
     "markdownlint": "^0.25.1",
     "markdownlint-cli": "^0.31.1"

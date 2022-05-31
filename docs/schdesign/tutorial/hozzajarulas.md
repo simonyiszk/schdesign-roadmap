@@ -7,7 +7,7 @@ tags:
 
 # Hogyan járulhatok hozzá az oldalhoz?
 
-Nem feltétlenül kell egy workshop/tutorial ötlettel rendelkezned ahhoz, hogy hozzá tudjál járulni az oldalhoz. Már az is bőven megteszi, ha találtál egy elgépelést, vagy már egy meglévő irományban szeretnél módosítást végezni, mert valami nem lett elég jól leírva/helytelen.
+Nem feltétlenül kell egy workshop/tutorial ötlettel rendelkezned ahhoz, hogy hozzá tudjál járulni az oldalhoz. Már az is bőven megteszi, ha találtál egy elgépelést, vagy egy meglévő irományban szeretnél módosítást végezni, mert valami nem lett elég jól leírva/helytelen.
 
 ## Előkészületek
 
@@ -162,4 +162,4 @@ Ha lokálisan minden oké volt és már fel is töltötted a remote-ra a módos�
 
 Ezt követően egy megfelelő jogosultsággal rendelkező személy majd átnézi, amit csináltál. Ha minden oké, akkor el fogja fogadni. Ha nem, akkor majd kapsz egy üzenetet, hogy mi a gond.
 
-Amennyiben el lett fogadva a módosításod, akkor kb. 2 percen belül már élesedni is fog az Roadmap oldalán a hozzájárulásod.
+Amennyiben el lett fogadva a módosításod, akkor kb. 2 percen belül már élesedni is fog a Roadmap oldalán a hozzájárulásod.
