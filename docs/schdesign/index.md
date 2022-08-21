@@ -15,6 +15,9 @@ Az schdesign a [Simonyi KárolySzakkollégium](https://simonyi.bme.hu) kreatív 
 
 Körünk UI, UX, illetve digitális designnal foglalkozik. Célunk lehetőséget biztosítani, hogy a kódolás, forrasztás és szerver-konfigurálás mellett tagjaink a művészetet is be tudják emelni technológiai tudásuk mellé.
 
+!!! note
+    Husika a fóka épp elgondolkodik az életén, és hogy miért kell minden nap felkelni :)
+
 Szakmai tevékenységünket három fő divízió mentén szervezzük:
 
 - [3D](/3d/)
